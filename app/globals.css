@@ -1,26 +1,159 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ink: #102033;
+  --color-shell: #f4efe8;
+  --color-paper: #fcfaf6;
+  --color-card: rgba(255, 255, 255, 0.72);
+  --color-line: rgba(16, 32, 51, 0.12);
+  --color-slate: #506274;
+  --color-ocean: #2f7185;
+  --color-ocean-soft: #7fc6d6;
+  --color-ember: #c29157;
+  --color-ember-soft: #ebd0aa;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: clip;
+  font-family: var(--font-body), sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(194, 145, 87, 0.16), transparent 22%),
+    radial-gradient(circle at top right, rgba(67, 138, 170, 0.16), transparent 20%),
+    linear-gradient(180deg, #f4efe8 0%, #f5f1ea 44%, #fcfaf6 100%);
+  color: var(--color-ink);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(194, 145, 87, 0.22);
+  color: var(--color-ink);
+}
+
+.font-display {
+  font-family: var(--font-display), sans-serif;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.panel-surface {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(16, 32, 51, 0.08);
+  box-shadow: 0 30px 90px -42px rgba(16, 32, 51, 0.2);
+  backdrop-filter: blur(26px);
+  -webkit-backdrop-filter: blur(26px);
+}
+
+.hero-mesh {
+  background:
+    radial-gradient(circle at 18% 22%, rgba(194, 145, 87, 0.18), transparent 26%),
+    radial-gradient(circle at 84% 16%, rgba(67, 138, 170, 0.18), transparent 26%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.84), rgba(244, 239, 232, 0.58));
+}
+
+.grid-aura {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(16, 32, 51, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 32, 51, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), transparent 100%);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(16, 32, 51, 0.1);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.68rem 1rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-slate);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--color-ember), var(--color-ocean));
+  box-shadow: 0 0 0 0.32rem rgba(194, 145, 87, 0.12);
+}
+
+.shimmer-line {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-line::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.38), transparent);
+  animation: shimmer 4.5s ease-in-out infinite;
+}
+
+.grain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.18;
+  mix-blend-mode: multiply;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(16, 32, 51, 0.12) 0.5px, transparent 0.8px),
+    radial-gradient(circle at 80% 40%, rgba(16, 32, 51, 0.08) 0.6px, transparent 1px),
+    radial-gradient(circle at 35% 80%, rgba(16, 32, 51, 0.08) 0.5px, transparent 0.9px);
+  background-size: 34px 34px, 42px 42px, 28px 28px;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-120%);
+  }
+  35%,
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .shimmer-line::after {
+    animation: none;
+  }
 }
