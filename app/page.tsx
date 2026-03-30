@@ -786,7 +786,7 @@ export default async function Home() {
               <Link
                 href={WHATSAPP_URL}
                 target="_blank"
-                className="mt-8 inline-flex items-center gap-3 rounded-full bg-white px-6 py-4 text-sm font-semibold text-[var(--color-purple-dark)] transition hover:-translate-y-0.5"
+                className="mt-8 inline-flex items-center gap-3 rounded-full bg-white px-6 py-4 text-sm font-semibold text-[#5F2476] transition hover:-translate-y-0.5 hover:bg-[#F5C2CE]"
               >
                 Abrir bot
                 <ArrowUpRightIcon />
@@ -823,15 +823,10 @@ export default async function Home() {
               <Link href={PAYMENT_ROUTE} className="transition hover:text-[#DA1F5C]">Pago demo</Link>
             </div>
           </div>
-          <div className="flex flex-col gap-2 border-t border-[rgba(218,31,92,0.10)] pt-6 sm:flex-row sm:items-center sm:justify-between">
+          <div className="border-t border-[rgba(218,31,92,0.10)] pt-6">
             <p className="text-xs text-[var(--color-slate)]">
               {SITE_NAME} &middot; Conectividad residencial y empresarial con soporte humano real.
             </p>
-            <div className="flex gap-2">
-              {["#DA1F5C","#E9678F","#F5C2CE","#5F2476","#9B61AC","#D4B6DD"].map((c) => (
-                <div key={c} className="h-4 w-4 rounded-full" style={{ backgroundColor: c }} />
-              ))}
-            </div>
           </div>
         </div>
       </footer>
