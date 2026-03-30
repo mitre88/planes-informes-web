@@ -13,9 +13,9 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Alma Cobertura | Conectividad residencial y empresarial",
+  title: "PowerLink | Conectividad residencial y empresarial",
   description:
-    "Presentacion corporativa con QR social, FODA, bot de WhatsApp, portal de pago demo, coberturas y galeria de servicios.",
+    "PowerLink - Tu proveedor de internet de confianza. Instalaciones residenciales y empresariales, cobertura amplia y soporte tecnico especializado.",
 };
 
 export default function RootLayout({

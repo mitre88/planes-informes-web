@@ -1,4 +1,4 @@
-export const SITE_NAME = "Alma Cobertura";
+export const SITE_NAME = "PowerLink";
 export const SITE_BASE_URL = "https://planes-informes-web.vercel.app";
 export const SOCIAL_ROUTE = "/redes-demo";
 export const PAYMENT_ROUTE = "/pago-demo";
@@ -8,23 +8,23 @@ export const WHATSAPP_URL =
 export const SOCIAL_LINKS = [
   {
     name: "Instagram",
-    handle: "@alma.cobertura",
-    href: "https://instagram.com/alma.cobertura",
-    accent: "from-[#ee7f6d] via-[#d94ba5] to-[#7b5cff]",
+    handle: "@powerlink.mx",
+    href: "https://instagram.com/powerlink.mx",
+    accent: "from-[#DA1F5C] via-[#E9678F] to-[#9B61AC]",
     description: "Promociones, instalaciones recientes y cobertura actualizada.",
   },
   {
     name: "Facebook",
-    handle: "Alma Cobertura",
-    href: "https://facebook.com/alma.cobertura",
-    accent: "from-[#6ba4ff] to-[#2d67ff]",
+    handle: "PowerLink",
+    href: "https://facebook.com/PowerLink",
+    accent: "from-[#5F2476] to-[#9B61AC]",
     description: "Atencion local, avisos de servicio y testimonios de clientes.",
   },
   {
     name: "TikTok",
-    handle: "@alma.conecta",
-    href: "https://tiktok.com/@alma.conecta",
-    accent: "from-[#0f172a] via-[#0f172a] to-[#35d2ff]",
+    handle: "@powerlink.conecta",
+    href: "https://tiktok.com/@powerlink.conecta",
+    accent: "from-[#0f172a] via-[#5F2476] to-[#DA1F5C]",
     description: "Microvideos de instalaciones, cobertura y tips de conectividad.",
   },
 ] as const;

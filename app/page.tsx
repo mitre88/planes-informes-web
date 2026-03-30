@@ -19,16 +19,16 @@ const metrics = [
 
 const serviceShowcase = [
   {
-    title: "Instalaciones que se explican y se entregan limpias",
+    title: "Instalaciones profesionales con entrega impecable",
     description:
-      "Alta residencial, reubicacion, alineacion de equipos y puesta en marcha con comunicacion clara para la clienta final.",
+      "Alta residencial, reubicacion, alineacion de equipos y puesta en marcha con comunicacion clara para el cliente final.",
     image:
       "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1400&q=80",
     className: "lg:col-span-7 lg:row-span-2",
     align: "large" as const,
   },
   {
-    title: "Cobertura para casas, locales y puntos operativos",
+    title: "Cobertura para hogares, empresas y puntos comerciales",
     description:
       "Diagnosticos de factibilidad, extension por zonas y seguimiento postinstalacion con soporte directo.",
     image:
@@ -37,7 +37,7 @@ const serviceShowcase = [
     align: "compact" as const,
   },
   {
-    title: "Atencion tecnica, mantenimiento y cambios de domicilio",
+    title: "Soporte tecnico, mantenimiento y reubicaciones",
     description:
       "Trabajos correctivos, preventivos y reubicaciones programadas sin exponer planes fijos que luego queden obsoletos.",
     image:
@@ -48,21 +48,21 @@ const serviceShowcase = [
 ];
 
 const workCategories = [
-  "Instalacion residencial y empresarial",
+  "Instalacion residencial de fibra y punto a punto",
+  "Internet empresarial y coworking",
   "Reubicacion y cambio de domicilio",
-  "Mantenimiento correctivo y preventivo",
+  "Mantenimiento preventivo y correctivo",
   "Diagnostico de senal y factibilidad",
-  "Soporte tecnico con seguimiento humano",
-  "Levantamiento para ampliacion de cobertura",
+  "Soporte tecnico con seguimiento personalizado",
 ];
 
 const values = [
-  "Respuesta honesta",
-  "Instalacion limpia",
-  "Seguimiento postventa",
-  "Lenguaje claro para el cliente",
-  "Cobertura responsable",
-  "Cotizacion contextual",
+  "Velocidad real garantizada",
+  "Instalacion limpia y profesional",
+  "Soporte humano 24/7",
+  "Precios transparentes",
+  "Cobertura verificada",
+  "Compromiso post-instalacion",
 ];
 
 const coverageZones: CoverageZone[] = [
@@ -72,7 +72,7 @@ const coverageZones: CoverageZone[] = [
     x: 210,
     y: 174,
     radius: 58,
-    fill: "rgba(63, 124, 148, 0.5)",
+    fill: "rgba(218, 31, 92, 0.38)",
     descriptor:
       "Sector con alta densidad comercial y solicitudes de respuesta rapida para negocios, despachos y puntos de venta.",
     responseTime: "4 a 8 horas",
@@ -83,7 +83,7 @@ const coverageZones: CoverageZone[] = [
     x: 356,
     y: 136,
     radius: 68,
-    fill: "rgba(194, 145, 87, 0.38)",
+    fill: "rgba(95, 36, 118, 0.32)",
     descriptor:
       "Zona habitacional y mixto-comercial con demanda recurrente de instalaciones iniciales y ajustes por crecimiento.",
     responseTime: "Mismo dia",
@@ -94,7 +94,7 @@ const coverageZones: CoverageZone[] = [
     x: 450,
     y: 264,
     radius: 66,
-    fill: "rgba(67, 138, 170, 0.42)",
+    fill: "rgba(233, 103, 143, 0.40)",
     descriptor:
       "Cobertura demo con foco en residenciales, fraccionamientos y mantenimiento por cambio de ubicacion de equipos.",
     responseTime: "8 a 24 horas",
@@ -105,7 +105,7 @@ const coverageZones: CoverageZone[] = [
     x: 286,
     y: 320,
     radius: 62,
-    fill: "rgba(105, 153, 102, 0.36)",
+    fill: "rgba(155, 97, 172, 0.34)",
     descriptor:
       "Area de crecimiento gradual donde se priorizan visitas de factibilidad para garantizar promesas realistas.",
     responseTime: "24 horas",
@@ -116,7 +116,7 @@ const coverageZones: CoverageZone[] = [
     x: 556,
     y: 172,
     radius: 74,
-    fill: "rgba(34, 87, 123, 0.34)",
+    fill: "rgba(95, 36, 118, 0.28)",
     descriptor:
       "Zona ilustrativa para prospectos empresariales y operaciones con horarios definidos de instalacion.",
     responseTime: "Cita programada",
@@ -127,7 +127,7 @@ const coverageZones: CoverageZone[] = [
     x: 620,
     y: 316,
     radius: 88,
-    fill: "rgba(194, 145, 87, 0.28)",
+    fill: "rgba(218, 31, 92, 0.20)",
     descriptor:
       "Cobertura referencial con validacion previa por visibilidad, distancia y disponibilidad de infraestructura.",
     responseTime: "Bajo estudio",
@@ -139,33 +139,33 @@ const swotCards = [
     badge: "Fortalezas",
     title: "Trato directo, seguimiento cercano y ejecucion ordenada.",
     copy:
-      "La propuesta se apoya en acompanamiento humano, explicacion clara al cliente y una presencia de campo que transmite confianza.",
+      "PowerLink se apoya en acompanamiento humano, explicacion clara al cliente y una presencia de campo que transmite confianza desde la primer llamada.",
     tone:
-      "bg-[linear-gradient(145deg,rgba(255,255,255,0.92),rgba(246,239,229,0.9))] border-[rgba(194,145,87,0.18)]",
+      "bg-[linear-gradient(145deg,rgba(255,255,255,0.92),rgba(245,194,206,0.28))] border-[rgba(218,31,92,0.16)]",
   },
   {
     badge: "Oportunidades",
     title: "Crecimiento en negocios locales, residenciales y zonas mixtas.",
     copy:
-      "La web puede captar solicitudes por cobertura, soporte y cambios de domicilio sin depender de planes fijos publicados.",
+      "La web capta solicitudes por cobertura, soporte y cambios de domicilio sin depender de planes fijos publicados. El bot de WhatsApp filtra y convierte.",
     tone:
-      "bg-[linear-gradient(145deg,rgba(236,247,250,0.92),rgba(255,255,255,0.92))] border-[rgba(67,138,170,0.18)]",
+      "bg-[linear-gradient(145deg,rgba(212,182,221,0.22),rgba(255,255,255,0.92))] border-[rgba(95,36,118,0.16)]",
   },
   {
     badge: "Debilidades",
     title: "La factibilidad cambia por saturacion, altura y condiciones del sitio.",
     copy:
-      "Por eso la cotizacion debe permanecer dinamica y el bot de WhatsApp funciona como filtro inicial antes de confirmar servicio.",
+      "Por eso la cotizacion permanece dinamica y el bot de WhatsApp funciona como filtro inicial antes de confirmar el servicio al cliente.",
     tone:
-      "bg-[linear-gradient(145deg,rgba(255,255,255,0.94),rgba(243,244,246,0.94))] border-[rgba(16,32,51,0.12)]",
+      "bg-[linear-gradient(145deg,rgba(255,255,255,0.94),rgba(243,244,246,0.94))] border-[rgba(0,0,0,0.10)]",
   },
   {
     badge: "Amenazas",
     title: "Terreno, clima y operadores agresivos pueden alterar la promesa comercial.",
     copy:
-      "La respuesta profesional es mostrar cobertura ilustrativa, diagnostico previo y mensajes prudentes en todos los puntos de contacto.",
+      "La respuesta de PowerLink es mostrar cobertura ilustrativa, diagnostico previo y mensajes prudentes en todos los puntos de contacto con el prospecto.",
     tone:
-      "bg-[linear-gradient(145deg,rgba(255,247,242,0.94),rgba(255,255,255,0.94))] border-[rgba(202,105,55,0.14)]",
+      "bg-[linear-gradient(145deg,rgba(245,194,206,0.20),rgba(255,255,255,0.94))] border-[rgba(218,31,92,0.12)]",
   },
 ];
 
@@ -259,7 +259,7 @@ function SectionHeading({
 function MetricCard({ value, label }: { value: string; label: string }) {
   return (
     <article className="panel-surface rounded-[1.6rem] px-5 py-5">
-      <p className="font-display text-[clamp(2rem,4vw,3rem)] leading-none tracking-[-0.05em] text-[var(--color-ink)]">
+      <p className="font-display text-[clamp(2rem,4vw,3rem)] leading-none tracking-[-0.05em] text-[var(--color-pink-dark)]">
         {value}
       </p>
       <p className="mt-2 text-sm leading-6 text-[var(--color-slate)]">{label}</p>
@@ -272,8 +272,8 @@ export default async function Home() {
     width: 320,
     margin: 1,
     color: {
-      dark: "#102033",
-      light: "#F7F2EA",
+      dark: "#5F2476",
+      light: "#FFF8FA",
     },
   });
 
@@ -283,8 +283,8 @@ export default async function Home() {
         <div className="mx-auto max-w-7xl px-4 pt-4 sm:px-6 lg:px-8">
           <div className="panel-surface flex items-center justify-between rounded-full px-4 py-3 sm:px-6">
             <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[linear-gradient(135deg,rgba(194,145,87,0.92),rgba(47,113,133,0.88))] text-white shadow-[0_16px_40px_-24px_rgba(16,32,51,0.9)]">
-                <span className="font-display text-lg">A</span>
+              <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-white shadow-[0_16px_40px_-24px_rgba(95,36,118,0.5)]">
+                <Image src="/powerlink-logo.jpeg" alt="PowerLink" width={48} height={48} className="h-full w-full object-cover" />
               </div>
               <div>
                 <p className="text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-[var(--color-slate)]">
@@ -314,7 +314,7 @@ export default async function Home() {
             <Link
               href={WHATSAPP_URL}
               target="_blank"
-              className="inline-flex items-center gap-2 rounded-full bg-[var(--color-ink)] px-4 py-3 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-white transition hover:-translate-y-0.5 hover:bg-[color:color-mix(in_oklab,var(--color-ink)_82%,white)]"
+              className="inline-flex items-center gap-2 rounded-full bg-[var(--color-pink-dark)] px-4 py-3 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-white transition hover:-translate-y-0.5 hover:bg-[var(--color-purple-dark)]"
             >
               <WhatsAppIcon />
               Bot WhatsApp
@@ -329,32 +329,31 @@ export default async function Home() {
 
         <div className="mx-auto max-w-7xl">
           <div className="panel-surface hero-mesh relative overflow-hidden rounded-[2.8rem] px-5 py-8 sm:px-8 sm:py-10 lg:px-10 lg:py-12">
-            <div className="absolute inset-y-0 right-0 w-1/2 bg-[radial-gradient(circle_at_top_right,rgba(67,138,170,0.18),transparent_54%)]" />
+            <div className="absolute inset-y-0 right-0 w-1/2 bg-[radial-gradient(circle_at_top_right,rgba(95,36,118,0.12),transparent_54%)]" />
 
             <div className="grid gap-8 lg:grid-cols-[minmax(0,1.06fr)_minmax(22rem,0.94fr)] lg:items-end">
               <div className="relative">
-                <div className="eyebrow">Demo corporativo para presentacion comercial</div>
+                <div className="eyebrow">Conectividad con respaldo profesional</div>
                 <h1 className="font-display mt-6 max-w-4xl text-balance text-[clamp(3.3rem,8vw,7.2rem)] leading-[0.9] tracking-[-0.06em] text-[var(--color-ink)]">
-                  Una web sobria para vender cobertura, atencion y confianza.
+                  Conectividad que se instala, se explica y se mantiene.
                 </h1>
                 <p className="mt-6 max-w-2xl text-[1.05rem] leading-8 text-[var(--color-slate)] sm:text-[1.12rem]">
-                  La web deja de mostrar planes estaticos y pasa a presentar lo que hoy si da
-                  valor: mision, vision, valores, experiencia, trabajos que realizan, coberturas
-                  y accesos rapidos a redes, pago y bot de WhatsApp.
+                  PowerLink ofrece instalaciones residenciales y empresariales con soporte humano,
+                  cobertura verificada y una experiencia de servicio que va mas alla de la conexion.
                 </p>
 
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <Link
                     href={WHATSAPP_URL}
                     target="_blank"
-                    className="inline-flex items-center justify-center gap-3 rounded-full bg-[var(--color-ink)] px-7 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[color:color-mix(in_oklab,var(--color-ink)_82%,white)]"
+                    className="inline-flex items-center justify-center gap-3 rounded-full bg-[var(--color-pink-dark)] px-7 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[var(--color-purple-dark)]"
                   >
                     <WhatsAppIcon />
                     Solicitar cobertura por WhatsApp
                   </Link>
                   <Link
                     href={PAYMENT_ROUTE}
-                    className="inline-flex items-center justify-center gap-3 rounded-full border border-[rgba(16,32,51,0.12)] bg-white/80 px-7 py-4 text-sm font-semibold text-[var(--color-ink)] transition hover:-translate-y-0.5 hover:border-[rgba(16,32,51,0.24)]"
+                    className="inline-flex items-center justify-center gap-3 rounded-full border border-[rgba(218,31,92,0.20)] bg-white/80 px-7 py-4 text-sm font-semibold text-[var(--color-ink)] transition hover:-translate-y-0.5 hover:border-[rgba(218,31,92,0.36)]"
                   >
                     <PaymentIcon />
                     Abrir portal de pago demo
@@ -369,7 +368,7 @@ export default async function Home() {
               </div>
 
               <div className="relative grid gap-4">
-                <article className="shimmer-line overflow-hidden rounded-[2rem] border border-[rgba(16,32,51,0.08)] bg-[linear-gradient(160deg,rgba(16,32,51,0.96),rgba(14,63,82,0.94))] p-6 text-white shadow-[0_30px_90px_-48px_rgba(16,32,51,1)]">
+                <article className="shimmer-line overflow-hidden rounded-[2rem] border border-[rgba(218,31,92,0.14)] bg-[linear-gradient(160deg,rgba(95,36,118,0.96),rgba(218,31,92,0.88))] p-6 text-white shadow-[0_30px_90px_-48px_rgba(95,36,118,0.9)]">
                   <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white/58">
                     Estrategia comercial actualizada
                   </p>
@@ -394,7 +393,7 @@ export default async function Home() {
 
                 <div className="grid gap-4 sm:grid-cols-2">
                   <article className="panel-surface rounded-[1.8rem] p-5">
-                    <div className="flex items-center gap-2 text-[var(--color-ember)]">
+                    <div className="flex items-center gap-2 text-[var(--color-pink-dark)]">
                       <MapIcon />
                       <p className="text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-[var(--color-slate)]">
                         Coberturas
@@ -409,7 +408,7 @@ export default async function Home() {
                   </article>
 
                   <article className="panel-surface rounded-[1.8rem] p-5">
-                    <div className="flex items-center gap-2 text-[var(--color-ocean)]">
+                    <div className="flex items-center gap-2 text-[var(--color-purple-dark)]">
                       <QrIcon />
                       <p className="text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-[var(--color-slate)]">
                         Redes y pago
@@ -419,7 +418,7 @@ export default async function Home() {
                       QR a redes sociales y acceso a portal de pago demo.
                     </p>
                     <p className="mt-2 text-sm leading-7 text-[var(--color-slate)]">
-                      Dos acciones inmediatas para la clienta sin saturar la portada.
+                      Dos acciones inmediatas para el cliente sin saturar la portada.
                     </p>
                   </article>
                 </div>
@@ -429,12 +428,46 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* Seccion mascota PowerLink */}
+      <section className="relative py-16 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
+          <div className="flex-1">
+            <h2 className="font-display text-[clamp(2rem,4vw,3.5rem)] leading-tight tracking-tight text-[var(--color-ink)] mb-6">
+              Tu conexion, nuestra mision
+            </h2>
+            <p className="text-lg text-[var(--color-slate)] leading-8">
+              En PowerLink nos comprometemos a brindarte la mejor conectividad con instalaciones de
+              calidad, soporte humano y cobertura real en tu zona.
+            </p>
+            <div className="mt-8 flex gap-4">
+              <Link
+                href={WHATSAPP_URL}
+                target="_blank"
+                className="inline-flex items-center gap-2 rounded-full bg-[var(--color-pink-dark)] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[var(--color-purple-dark)]"
+              >
+                <WhatsAppIcon />
+                Contactar ahora
+              </Link>
+            </div>
+          </div>
+          <div className="flex-shrink-0">
+            <Image
+              src="/mascota-present.jpeg"
+              alt="Mascota PowerLink"
+              width={380}
+              height={440}
+              className="object-contain drop-shadow-2xl rounded-[2rem]"
+            />
+          </div>
+        </div>
+      </section>
+
       <section id="empresa" className="px-4 py-18 sm:px-6 sm:py-24 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionHeading
             tag="Empresa"
-            title="Una narrativa de marca que si transmite operacion real."
-            description="La clienta ya no necesita exhibir paquetes rigidos. Necesita una pagina que explique quienes son, como trabajan y por que conviene escribirles para recibir una cotizacion actualizada."
+            title="Una marca que transmite operacion real y conectividad confiable."
+            description="PowerLink no exhibe paquetes rigidos. Presenta quienes son, como trabajan y por que conviene escribirles para recibir una cotizacion actualizada y real."
           />
 
           <div className="mt-10 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.94fr)]">
@@ -446,13 +479,13 @@ export default async function Home() {
                 Llevar conectividad confiable con una atencion que se siente cercana.
               </p>
               <p className="mt-4 max-w-2xl text-sm leading-8 text-[var(--color-slate)]">
-                La marca acompana desde la primer pregunta hasta la entrega final. La experiencia
+                PowerLink acompana desde la primer pregunta hasta la entrega final. La experiencia
                 digital y la operacion en campo hablan con la misma voz: orden, claridad y
                 expectativas realistas.
               </p>
 
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                <article className="rounded-[1.6rem] border border-[rgba(16,32,51,0.08)] bg-[rgba(255,255,255,0.78)] px-5 py-5">
+                <article className="rounded-[1.6rem] border border-[rgba(218,31,92,0.10)] bg-[rgba(255,255,255,0.78)] px-5 py-5">
                   <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">
                     Vision
                   </p>
@@ -462,11 +495,11 @@ export default async function Home() {
                     servicio.
                   </p>
                 </article>
-                <article className="rounded-[1.6rem] border border-[rgba(16,32,51,0.08)] bg-[rgba(255,255,255,0.78)] px-5 py-5">
+                <article className="rounded-[1.6rem] border border-[rgba(218,31,92,0.10)] bg-[rgba(255,255,255,0.78)] px-5 py-5">
                   <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">
                     Anos de experiencia
                   </p>
-                  <p className="font-display mt-3 text-[3.6rem] leading-none tracking-[-0.06em] text-[var(--color-ink)]">
+                  <p className="font-display mt-3 text-[3.6rem] leading-none tracking-[-0.06em] text-[var(--color-pink-dark)]">
                     12
                   </p>
                   <p className="mt-2 text-sm leading-7 text-[var(--color-slate)]">
@@ -485,7 +518,7 @@ export default async function Home() {
                 {values.map((value) => (
                   <span
                     key={value}
-                    className="rounded-full border border-[rgba(16,32,51,0.12)] bg-white/78 px-4 py-2 text-sm font-medium text-[var(--color-ink)]"
+                    className="rounded-full border border-[rgba(218,31,92,0.16)] bg-white/78 px-4 py-2 text-sm font-medium text-[var(--color-ink)]"
                   >
                     {value}
                   </span>
@@ -496,9 +529,9 @@ export default async function Home() {
                 {workCategories.map((item) => (
                   <div
                     key={item}
-                    className="flex items-start gap-3 rounded-[1.4rem] border border-[rgba(16,32,51,0.08)] bg-white/70 px-4 py-4"
+                    className="flex items-start gap-3 rounded-[1.4rem] border border-[rgba(218,31,92,0.08)] bg-white/70 px-4 py-4"
                   >
-                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[rgba(194,145,87,0.14)] text-[var(--color-ember)]">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[rgba(218,31,92,0.10)] text-[var(--color-pink-dark)]">
                       <CheckIcon />
                     </div>
                     <div>
@@ -520,8 +553,8 @@ export default async function Home() {
         <div className="mx-auto max-w-7xl">
           <SectionHeading
             tag="Trabajos que realizan"
-            title="Fotos de muestra integradas como prueba visual del servicio."
-            description="La galeria sirve para vestir la propuesta, ayudar a la clienta a imaginar la operacion y bajar la sensacion de demo rapido. Las imagenes pueden reemplazarse despues por fotos propias."
+            title="Instalaciones reales, entregadas con orden y comunicacion clara."
+            description="La galeria presenta los frentes de trabajo de PowerLink. Cada imagen representa un tipo de servicio real que se puede cotizar via WhatsApp o visita tecnica programada."
           />
 
           <div className="mt-10 grid gap-6 lg:grid-cols-12 lg:grid-rows-2">
@@ -539,12 +572,12 @@ export default async function Home() {
                       sizes={item.align === "large" ? "(min-width: 1024px) 42vw, 100vw" : "(min-width: 1024px) 28vw, 100vw"}
                       className="object-cover"
                     />
-                    <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent,rgba(16,32,51,0.34))]" />
+                    <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent,rgba(95,36,118,0.28))]" />
                   </div>
                   <div className="flex flex-col justify-between p-6 sm:p-7">
                     <div>
                       <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[var(--color-slate)]">
-                        Operacion visual
+                        Operacion PowerLink
                       </p>
                       <h3 className="font-display mt-4 text-[clamp(2rem,3vw,3rem)] leading-[0.96] tracking-[-0.04em] text-[var(--color-ink)]">
                         {item.title}
@@ -553,7 +586,7 @@ export default async function Home() {
                         {item.description}
                       </p>
                     </div>
-                    <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-ink)]">
+                    <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-pink-dark)]">
                       Ver como se presenta el servicio
                       <ArrowUpRightIcon />
                     </div>
@@ -583,8 +616,8 @@ export default async function Home() {
         <div className="mx-auto max-w-7xl">
           <SectionHeading
             tag="FODA"
-            title="Analisis sintetico para que la clienta vea direccion, no solo decoracion."
-            description="El FODA se presenta como parte del discurso comercial: deja claro que la marca entiende su terreno, sus ventajas competitivas y por que la cotizacion debe seguir siendo dinamica."
+            title="PowerLink entiende su terreno, sus ventajas y sus limites."
+            description="El FODA se presenta como parte del discurso comercial: deja claro que la marca conoce su sector, sus ventajas competitivas y por que la cotizacion debe seguir siendo dinamica y verificada."
           />
 
           <div className="mt-10 grid gap-6 md:grid-cols-2">
@@ -611,12 +644,12 @@ export default async function Home() {
           <SectionHeading
             tag="Accesos rapidos"
             title="QR social, pago demo y entrada directa al bot."
-            description="La parte operativa queda clara y visible. Todo lo que pediste esta conectado en un bloque final que se siente premium y accionable."
+            description="La parte operativa queda clara y visible. Todo lo que necesitas para contactar, pagar o seguir a PowerLink esta en un bloque final premium y accionable."
           />
 
           <div className="mt-10 grid gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,0.7fr)_minmax(0,0.8fr)]">
             <article className="panel-surface rounded-[2rem] p-6 sm:p-7">
-              <div className="flex items-center gap-3 text-[var(--color-ocean)]">
+              <div className="flex items-center gap-3 text-[var(--color-purple-dark)]">
                 <QrIcon />
                 <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[var(--color-slate)]">
                   QR para redes sociales
@@ -624,7 +657,7 @@ export default async function Home() {
               </div>
 
               <div className="mt-5 grid gap-5 sm:grid-cols-[14rem_1fr] sm:items-center">
-                <div className="overflow-hidden rounded-[1.8rem] border border-[rgba(16,32,51,0.08)] bg-[#f7f2ea] p-4">
+                <div className="overflow-hidden rounded-[1.8rem] border border-[rgba(95,36,118,0.12)] bg-[#fff8fa] p-4">
                   <Image
                     src={socialQrData}
                     alt="QR hacia la pagina de redes demo"
@@ -647,7 +680,7 @@ export default async function Home() {
                         key={social.name}
                         href={social.href}
                         target="_blank"
-                        className="flex items-center justify-between rounded-[1.3rem] border border-[rgba(16,32,51,0.08)] bg-white/72 px-4 py-3 transition hover:-translate-y-0.5 hover:border-[rgba(16,32,51,0.16)]"
+                        className="flex items-center justify-between rounded-[1.3rem] border border-[rgba(218,31,92,0.10)] bg-white/72 px-4 py-3 transition hover:-translate-y-0.5 hover:border-[rgba(218,31,92,0.22)]"
                       >
                         <div>
                           <p className="text-sm font-semibold text-[var(--color-ink)]">
@@ -664,7 +697,7 @@ export default async function Home() {
             </article>
 
             <article className="panel-surface rounded-[2rem] p-6 sm:p-7">
-              <div className="flex items-center gap-3 text-[var(--color-ember)]">
+              <div className="flex items-center gap-3 text-[var(--color-pink-dark)]">
                 <PaymentIcon />
                 <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[var(--color-slate)]">
                   Link de pago
@@ -681,13 +714,13 @@ export default async function Home() {
 
               <Link
                 href={PAYMENT_ROUTE}
-                className="mt-8 inline-flex items-center gap-3 rounded-full bg-[var(--color-ink)] px-6 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[color:color-mix(in_oklab,var(--color-ink)_82%,white)]"
+                className="mt-8 inline-flex items-center gap-3 rounded-full bg-[var(--color-pink-dark)] px-6 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[var(--color-purple-dark)]"
               >
                 Abrir pago demo
                 <ArrowUpRightIcon />
               </Link>
 
-              <div className="mt-8 rounded-[1.6rem] border border-[rgba(16,32,51,0.08)] bg-white/70 p-5">
+              <div className="mt-8 rounded-[1.6rem] border border-[rgba(218,31,92,0.10)] bg-white/70 p-5">
                 <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">
                   Ideal para
                 </p>
@@ -698,7 +731,7 @@ export default async function Home() {
               </div>
             </article>
 
-            <article className="overflow-hidden rounded-[2rem] border border-[rgba(16,32,51,0.08)] bg-[linear-gradient(155deg,rgba(16,32,51,0.98),rgba(14,63,82,0.94))] p-6 text-white shadow-[0_30px_90px_-48px_rgba(16,32,51,1)] sm:p-7">
+            <article className="overflow-hidden rounded-[2rem] border border-[rgba(95,36,118,0.16)] bg-[linear-gradient(155deg,rgba(95,36,118,0.97),rgba(218,31,92,0.90))] p-6 text-white shadow-[0_30px_90px_-48px_rgba(95,36,118,0.8)] sm:p-7">
               <div className="flex items-center gap-3">
                 <WhatsAppIcon />
                 <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white/58">
@@ -734,7 +767,7 @@ export default async function Home() {
               <Link
                 href={WHATSAPP_URL}
                 target="_blank"
-                className="mt-8 inline-flex items-center gap-3 rounded-full bg-white px-6 py-4 text-sm font-semibold text-[var(--color-ink)] transition hover:-translate-y-0.5"
+                className="mt-8 inline-flex items-center gap-3 rounded-full bg-white px-6 py-4 text-sm font-semibold text-[var(--color-purple-dark)] transition hover:-translate-y-0.5"
               >
                 Abrir bot
                 <ArrowUpRightIcon />
@@ -744,22 +777,22 @@ export default async function Home() {
         </div>
       </section>
 
-      <footer className="border-t border-[rgba(16,32,51,0.08)] px-4 py-8 text-sm text-[var(--color-slate)] sm:px-6 lg:px-8">
+      <footer className="border-t border-[rgba(218,31,92,0.10)] px-4 py-8 text-sm text-[var(--color-slate)] sm:px-6 lg:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            {SITE_NAME} · Presentacion corporativa con coberturas, QR social, FODA y portal demo.
+            {SITE_NAME} &middot; Conectividad residencial y empresarial con soporte humano real.
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="#empresa" className="transition hover:text-[var(--color-ink)]">
+            <a href="#empresa" className="transition hover:text-[var(--color-pink-dark)]">
               Empresa
             </a>
-            <a href="#cobertura" className="transition hover:text-[var(--color-ink)]">
+            <a href="#cobertura" className="transition hover:text-[var(--color-pink-dark)]">
               Coberturas
             </a>
-            <Link href={SOCIAL_ROUTE} className="transition hover:text-[var(--color-ink)]">
+            <Link href={SOCIAL_ROUTE} className="transition hover:text-[var(--color-pink-dark)]">
               Redes
             </Link>
-            <Link href={PAYMENT_ROUTE} className="transition hover:text-[var(--color-ink)]">
+            <Link href={PAYMENT_ROUTE} className="transition hover:text-[var(--color-pink-dark)]">
               Pago demo
             </Link>
           </div>
