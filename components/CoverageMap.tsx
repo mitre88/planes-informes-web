@@ -282,11 +282,11 @@ export function CoverageMap({ zones }: CoverageMapProps) {
               simultanea del sector.
             </dd>
           </div>
-          <div className="rounded-[1.4rem] border border-[rgba(16,32,51,0.08)] bg-[linear-gradient(145deg,rgba(16,32,51,0.98),rgba(13,57,74,0.93))] px-4 py-4 text-white shadow-[0_24px_70px_-42px_rgba(16,32,51,0.9)]">
-            <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-white/74">
+          <div className="rounded-[1.4rem] border border-[rgba(95,36,118,0.22)] bg-[linear-gradient(145deg,rgba(95,36,118,0.97),rgba(218,31,92,0.88))] px-4 py-4 text-white shadow-[0_24px_70px_-42px_rgba(95,36,118,0.9)]">
+            <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-white/90">
               Nota operativa
             </p>
-            <p className="mt-2 text-sm leading-7 text-white/80">
+            <p className="mt-2 text-sm leading-7 text-white/88">
               No se publican planes fijos en la web. El bot de WhatsApp y la visita tecnica
               entregan la opcion vigente segun zona, equipos y saturacion del nodo.
             </p>

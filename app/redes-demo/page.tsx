@@ -102,14 +102,14 @@ export default function SocialDemoPage() {
             ))}
           </div>
 
-          <div className="mt-10 rounded-[2rem] border border-[rgba(16,32,51,0.08)] bg-[linear-gradient(155deg,rgba(16,32,51,0.98),rgba(14,63,82,0.94))] px-6 py-6 text-white sm:px-8">
-            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white/72">
+          <div className="mt-10 rounded-[2rem] border border-[rgba(95,36,118,0.22)] bg-[linear-gradient(155deg,rgba(95,36,118,0.97),rgba(218,31,92,0.88))] px-6 py-6 text-white sm:px-8">
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white/85">
               Contacto rapido
             </p>
             <h2 className="font-display mt-4 text-[clamp(2rem,4vw,3.3rem)] leading-[0.95] tracking-[-0.05em]">
               Si prefieren cerrar desde mensaje, el bot sigue disponible.
             </h2>
-            <p className="mt-4 max-w-2xl text-sm leading-8 text-white/74">
+            <p className="mt-4 max-w-2xl text-sm leading-8 text-white/86">
               Este panel mantiene coherencia con la portada: QR, redes y WhatsApp trabajan juntos
               para no perder prospectos entre tantos enlaces.
             </p>

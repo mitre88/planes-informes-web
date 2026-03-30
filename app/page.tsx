@@ -365,22 +365,22 @@ export default async function Home() {
 
               <div className="relative grid gap-4">
                 <article className="shimmer-line overflow-hidden rounded-[2rem] border border-[rgba(218,31,92,0.14)] bg-[linear-gradient(160deg,rgba(95,36,118,0.96),rgba(218,31,92,0.88))] p-6 text-white shadow-[0_30px_90px_-48px_rgba(95,36,118,0.9)]">
-                  <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white/72">
+                  <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white/88">
                     Estrategia comercial actualizada
                   </p>
                   <h2 className="font-display mt-4 text-[clamp(2rem,4vw,3rem)] leading-[0.95] tracking-[-0.05em]">
                     Los planes ya no viven aqui.
                   </h2>
-                  <p className="mt-4 text-sm leading-7 text-white/76">
+                  <p className="mt-4 text-sm leading-7 text-white/90">
                     Se cotizan de forma dinamica segun factibilidad, altura, distancia, saturacion
                     y tipo de cliente. La web ahora prepara la venta y el cierre sucede en
                     WhatsApp o durante la visita tecnica.
                   </p>
                   <div className="mt-5 rounded-[1.4rem] border border-white/10 bg-white/8 px-4 py-4">
-                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-white/72">
+                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-white/88">
                       Guion recomendado del bot
                     </p>
-                    <p className="mt-2 text-sm leading-7 text-white/82">
+                    <p className="mt-2 text-sm leading-7 text-white/93">
                       &ldquo;Comparten ubicacion, tipo de servicio y horario de visita; el bot
                       responde con disponibilidad, siguientes pasos y promesa comercial.&rdquo;
                     </p>
@@ -761,7 +761,7 @@ export default async function Home() {
               <h3 className="font-display text-[clamp(2.1rem,3.5vw,3rem)] leading-[0.96] tracking-[-0.04em]">
                 El cierre comercial entra por aqui.
               </h3>
-              <p className="mt-4 text-sm leading-8 text-white/76">
+              <p className="mt-4 text-sm leading-8 text-white/90">
                 El bot recibe zona, tipo de servicio y horario sugerido. Desde ahi se envian
                 cobertura, seguimiento y paso siguiente sin exponer planes desactualizados.
               </p>
@@ -769,14 +769,14 @@ export default async function Home() {
               <div className="mt-6 space-y-3">
                 <div className="rounded-[1.4rem] border border-white/10 bg-white/8 px-4 py-4">
                   <p className="text-sm font-semibold text-white">Entrada recomendada</p>
-                  <p className="mt-1 text-sm leading-7 text-white/72">
+                  <p className="mt-1 text-sm leading-7 text-white/88">
                     &ldquo;Hola, quiero saber si hay cobertura en mi zona y cual es el tiempo de
                     instalacion.&rdquo;
                   </p>
                 </div>
                 <div className="rounded-[1.4rem] border border-white/10 bg-white/8 px-4 py-4">
                   <p className="text-sm font-semibold text-white">Promesa correcta</p>
-                  <p className="mt-1 text-sm leading-7 text-white/72">
+                  <p className="mt-1 text-sm leading-7 text-white/88">
                     Cotizacion variable, visita tecnica y seguimiento humano cuando la operacion lo
                     requiera.
                   </p>

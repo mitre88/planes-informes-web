@@ -117,10 +117,10 @@ export default function PaymentDemoPage() {
           </div>
         </section>
 
-        <section className="overflow-hidden rounded-[2.6rem] border border-[rgba(16,32,51,0.08)] bg-[linear-gradient(155deg,rgba(16,32,51,0.98),rgba(14,63,82,0.94))] px-6 py-6 text-white shadow-[0_30px_90px_-48px_rgba(16,32,51,1)] sm:px-8 sm:py-8">
+        <section className="overflow-hidden rounded-[2.6rem] border border-[rgba(95,36,118,0.22)] bg-[linear-gradient(155deg,rgba(95,36,118,0.97),rgba(218,31,92,0.88))] px-6 py-6 text-white shadow-[0_30px_90px_-48px_rgba(95,36,118,0.9)] sm:px-8 sm:py-8">
           <div className="flex items-center gap-3">
             <PaymentIcon />
-            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white/72">
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white/88">
               Resumen de pago
             </p>
           </div>
@@ -138,25 +138,25 @@ export default function PaymentDemoPage() {
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <div>
-                <p className="text-xs uppercase tracking-[0.18em] text-white/68">Referencia</p>
+                <p className="text-xs uppercase tracking-[0.18em] text-white/85">Referencia</p>
                 <p className="mt-1 text-lg font-semibold">ALMA-2403-9087</p>
               </div>
               <div>
-                <p className="text-xs uppercase tracking-[0.18em] text-white/68">Concepto</p>
+                <p className="text-xs uppercase tracking-[0.18em] text-white/85">Concepto</p>
                 <p className="mt-1 text-lg font-semibold">Anticipo de instalacion</p>
               </div>
               <div>
-                <p className="text-xs uppercase tracking-[0.18em] text-white/68">Monto demo</p>
+                <p className="text-xs uppercase tracking-[0.18em] text-white/85">Monto demo</p>
                 <p className="mt-1 text-[2.4rem] font-semibold tracking-[-0.05em]">$ 1,250.00</p>
               </div>
               <div>
-                <p className="text-xs uppercase tracking-[0.18em] text-white/68">Vigencia</p>
+                <p className="text-xs uppercase tracking-[0.18em] text-white/85">Vigencia</p>
                 <p className="mt-1 text-lg font-semibold">48 horas</p>
               </div>
             </div>
 
             <div className="mt-8 rounded-[1.6rem] border border-white/10 bg-white/8 p-4">
-              <p className="text-xs uppercase tracking-[0.18em] text-white/68">Metodos demo</p>
+              <p className="text-xs uppercase tracking-[0.18em] text-white/85">Metodos demo</p>
               <div className="mt-3 flex flex-wrap gap-3">
                 {["Tarjeta", "Transferencia", "Referencia OXXO"].map((method) => (
                   <span
