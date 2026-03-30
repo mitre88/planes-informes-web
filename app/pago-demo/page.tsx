@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { SITE_NAME, WHATSAPP_URL } from "@/lib/site-content";
 
@@ -82,7 +83,23 @@ export default function PaymentDemoPage() {
             ))}
           </div>
 
-          <div className="mt-8 flex flex-wrap gap-3">
+          {/* Link — helper badge */}
+          <div className="mt-6 flex items-center gap-3 rounded-[1.4rem] border border-[rgba(218,31,92,0.10)] bg-white/70 px-4 py-3">
+            <div className="h-10 w-10 flex-none overflow-hidden rounded-full border border-[rgba(218,31,92,0.18)] shadow-sm">
+              <Image
+                src="/mascota-present.jpeg"
+                alt="Link, mascota PowerLink"
+                width={40}
+                height={40}
+                className="h-full w-full object-cover object-top"
+              />
+            </div>
+            <p className="text-xs leading-5 text-[var(--color-slate)]">
+              Link confirma que este flujo puede conectarse a una pasarela real cuando estes lista.
+            </p>
+          </div>
+
+          <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href="/"
               className="inline-flex items-center gap-2 rounded-full border border-[rgba(16,32,51,0.12)] bg-white/84 px-5 py-3 text-sm font-semibold text-[var(--color-ink)] transition hover:-translate-y-0.5"
@@ -103,7 +120,7 @@ export default function PaymentDemoPage() {
         <section className="overflow-hidden rounded-[2.6rem] border border-[rgba(16,32,51,0.08)] bg-[linear-gradient(155deg,rgba(16,32,51,0.98),rgba(14,63,82,0.94))] px-6 py-6 text-white shadow-[0_30px_90px_-48px_rgba(16,32,51,1)] sm:px-8 sm:py-8">
           <div className="flex items-center gap-3">
             <PaymentIcon />
-            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white/58">
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white/72">
               Resumen de pago
             </p>
           </div>
@@ -111,7 +128,7 @@ export default function PaymentDemoPage() {
           <div className="mt-8 rounded-[2rem] border border-white/10 bg-white/8 p-6">
             <div className="flex items-start justify-between gap-4">
               <div>
-                <p className="text-sm text-white/64">Cliente</p>
+                <p className="text-sm text-white/80">Cliente</p>
                 <p className="mt-1 text-xl font-semibold">Instalacion premium demo</p>
               </div>
               <span className="rounded-full border border-white/10 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-white/76">
@@ -121,25 +138,25 @@ export default function PaymentDemoPage() {
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               <div>
-                <p className="text-xs uppercase tracking-[0.18em] text-white/52">Referencia</p>
+                <p className="text-xs uppercase tracking-[0.18em] text-white/68">Referencia</p>
                 <p className="mt-1 text-lg font-semibold">ALMA-2403-9087</p>
               </div>
               <div>
-                <p className="text-xs uppercase tracking-[0.18em] text-white/52">Concepto</p>
+                <p className="text-xs uppercase tracking-[0.18em] text-white/68">Concepto</p>
                 <p className="mt-1 text-lg font-semibold">Anticipo de instalacion</p>
               </div>
               <div>
-                <p className="text-xs uppercase tracking-[0.18em] text-white/52">Monto demo</p>
+                <p className="text-xs uppercase tracking-[0.18em] text-white/68">Monto demo</p>
                 <p className="mt-1 text-[2.4rem] font-semibold tracking-[-0.05em]">$ 1,250.00</p>
               </div>
               <div>
-                <p className="text-xs uppercase tracking-[0.18em] text-white/52">Vigencia</p>
+                <p className="text-xs uppercase tracking-[0.18em] text-white/68">Vigencia</p>
                 <p className="mt-1 text-lg font-semibold">48 horas</p>
               </div>
             </div>
 
             <div className="mt-8 rounded-[1.6rem] border border-white/10 bg-white/8 p-4">
-              <p className="text-xs uppercase tracking-[0.18em] text-white/52">Metodos demo</p>
+              <p className="text-xs uppercase tracking-[0.18em] text-white/68">Metodos demo</p>
               <div className="mt-3 flex flex-wrap gap-3">
                 {["Tarjeta", "Transferencia", "Referencia OXXO"].map((method) => (
                   <span
@@ -160,7 +177,7 @@ export default function PaymentDemoPage() {
             </button>
           </div>
 
-          <p className="mt-5 text-sm leading-7 text-white/64">
+          <p className="mt-5 text-sm leading-7 text-white/75">
             {SITE_NAME} puede reemplazar despues este flujo por Stripe, Mercado Pago o la pasarela
             que la clienta prefiera. Por ahora comunica orden y seriedad.
           </p>

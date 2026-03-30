@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { SITE_NAME, SOCIAL_LINKS, WHATSAPP_URL } from "@/lib/site-content";
 
@@ -42,7 +43,18 @@ export default function SocialDemoPage() {
         <div className="panel-surface overflow-hidden rounded-[2.8rem] px-6 py-6 sm:px-8 sm:py-8">
           <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <div className="eyebrow">Hub social demo</div>
+              <div className="flex items-center gap-3">
+                <div className="eyebrow">Hub social demo</div>
+                <div className="h-10 w-10 overflow-hidden rounded-full border border-[rgba(95,36,118,0.18)] shadow-sm">
+                  <Image
+                    src="/mascota-purple.jpeg"
+                    alt="Link, mascota PowerLink"
+                    width={40}
+                    height={40}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+              </div>
               <h1 className="font-display mt-5 text-[clamp(3rem,6vw,5rem)] leading-[0.9] tracking-[-0.06em] text-[var(--color-ink)]">
                 Redes sociales listas para compartir.
               </h1>
@@ -91,7 +103,7 @@ export default function SocialDemoPage() {
           </div>
 
           <div className="mt-10 rounded-[2rem] border border-[rgba(16,32,51,0.08)] bg-[linear-gradient(155deg,rgba(16,32,51,0.98),rgba(14,63,82,0.94))] px-6 py-6 text-white sm:px-8">
-            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white/58">
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white/72">
               Contacto rapido
             </p>
             <h2 className="font-display mt-4 text-[clamp(2rem,4vw,3.3rem)] leading-[0.95] tracking-[-0.05em]">

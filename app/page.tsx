@@ -365,7 +365,7 @@ export default async function Home() {
 
               <div className="relative grid gap-4">
                 <article className="shimmer-line overflow-hidden rounded-[2rem] border border-[rgba(218,31,92,0.14)] bg-[linear-gradient(160deg,rgba(95,36,118,0.96),rgba(218,31,92,0.88))] p-6 text-white shadow-[0_30px_90px_-48px_rgba(95,36,118,0.9)]">
-                  <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white/58">
+                  <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white/72">
                     Estrategia comercial actualizada
                   </p>
                   <h2 className="font-display mt-4 text-[clamp(2rem,4vw,3rem)] leading-[0.95] tracking-[-0.05em]">
@@ -377,7 +377,7 @@ export default async function Home() {
                     WhatsApp o durante la visita tecnica.
                   </p>
                   <div className="mt-5 rounded-[1.4rem] border border-white/10 bg-white/8 px-4 py-4">
-                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-white/58">
+                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-white/72">
                       Guion recomendado del bot
                     </p>
                     <p className="mt-2 text-sm leading-7 text-white/82">
@@ -418,6 +418,22 @@ export default async function Home() {
                     </p>
                   </article>
                 </div>
+
+                {/* Mascota hero — Link presentando */}
+                <div className="relative overflow-hidden rounded-[2rem] border border-[rgba(218,31,92,0.14)] bg-white shadow-[0_20px_60px_-20px_rgba(218,31,92,0.30)]">
+                  <Image
+                    src="/mascota-present.jpeg"
+                    alt="Link, mascota de PowerLink"
+                    width={480}
+                    height={340}
+                    className="h-[260px] w-full object-contain object-bottom bg-white"
+                  />
+                  <div className="flex items-center gap-3 border-t border-[rgba(218,31,92,0.10)] bg-white/90 px-5 py-3 backdrop-blur-sm">
+                    <div className="h-2 w-2 rounded-full bg-[#DA1F5C]" />
+                    <p className="text-sm font-semibold text-[var(--color-ink)]">Link te orienta</p>
+                    <p className="ml-auto text-xs text-[var(--color-slate)]">Escribenos ahora</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -435,74 +451,6 @@ export default async function Home() {
         <div className="flex-1 bg-[#000000]" />
       </div>
 
-      {/* Seccion mascota PowerLink */}
-      <section className="relative py-20 overflow-hidden bg-[linear-gradient(135deg,rgba(245,194,206,0.22)_0%,rgba(212,182,221,0.22)_50%,rgba(255,255,255,0.96)_100%)]">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
-            {/* Text column */}
-            <div>
-              <span className="badge-pink mb-4 inline-flex">Nuestra Promesa</span>
-              <h2 className="font-display text-[clamp(2rem,4vw,3.5rem)] leading-tight tracking-[-0.04em] text-[var(--color-ink)] mb-6 mt-3">
-                Tu conexion, nuestra mision
-              </h2>
-              <p className="text-lg text-[var(--color-slate)] leading-8">
-                En PowerLink nos comprometemos a brindarte la mejor conectividad con instalaciones de
-                calidad, soporte humano y cobertura real en tu zona.
-              </p>
-              {/* Mini paleta de marca */}
-              <div className="mt-8 flex items-center gap-3">
-                {["#DA1F5C","#E9678F","#F5C2CE","#5F2476","#9B61AC","#D4B6DD","#000000"].map((c) => (
-                  <div key={c} className="h-7 w-7 rounded-full border-2 border-white shadow-md" style={{ backgroundColor: c }} />
-                ))}
-              </div>
-              <div className="mt-6">
-                <Link
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  className="inline-flex items-center gap-2 rounded-full bg-[#DA1F5C] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#5F2476]"
-                >
-                  <WhatsAppIcon />
-                  Contactar ahora
-                </Link>
-              </div>
-            </div>
-
-            {/* Images grid — 3 fotos de mascota */}
-            <div className="grid grid-cols-2 gap-4" style={{ gridTemplateRows: "1fr 1fr" }}>
-              {/* Mascota principal — ocupa toda la altura */}
-              <div className="row-span-2 relative overflow-hidden rounded-[2rem] border border-[rgba(218,31,92,0.12)] shadow-[0_20px_60px_-20px_rgba(218,31,92,0.25)] bg-white/60">
-                <Image
-                  src="/mascota-present.jpeg"
-                  alt="Mascota PowerLink presentando"
-                  width={280}
-                  height={480}
-                  className="h-full w-full object-cover object-top"
-                />
-              </div>
-              {/* Mascota con logo — secundaria */}
-              <div className="relative overflow-hidden rounded-[2rem] border border-[rgba(95,36,118,0.18)] shadow-md">
-                <Image
-                  src="/mascota-purple.jpeg"
-                  alt="Mascota PowerLink con logo"
-                  width={280}
-                  height={230}
-                  className="h-full w-full object-cover"
-                />
-              </div>
-              {/* Mascota en oficina — terciaria */}
-              <div className="relative overflow-hidden rounded-[2rem] border border-[rgba(218,31,92,0.10)] shadow-md">
-                <Image
-                  src="/mascota-oficina.jpeg"
-                  alt="PowerLink — equipo en campo"
-                  width={280}
-                  height={230}
-                  className="h-full w-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <section id="empresa" className="px-4 py-18 sm:px-6 sm:py-24 lg:px-8">
         <div className="mx-auto max-w-7xl">
@@ -512,8 +460,8 @@ export default async function Home() {
             description="PowerLink no exhibe paquetes rigidos. Presenta quienes son, como trabajan y por que conviene escribirles para recibir una cotizacion actualizada y real."
           />
 
-          <div className="mt-10 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.94fr)]">
-            <article className="panel-surface rounded-[2rem] px-6 py-6 sm:px-8 sm:py-8">
+          <div className="mt-10 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.94fr)_minmax(0,0.52fr)]">
+            <article className="panel-surface relative overflow-hidden rounded-[2rem] px-6 py-6 sm:px-8 sm:py-8">
               <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[var(--color-slate)]">
                 Mision
               </p>
@@ -587,6 +535,23 @@ export default async function Home() {
                 ))}
               </div>
             </article>
+
+            {/* Mascota oficina — panel visual empresa */}
+            <div className="overflow-hidden rounded-[2rem] bg-[linear-gradient(160deg,rgba(245,194,206,0.30),rgba(212,182,221,0.30))] border border-[rgba(218,31,92,0.12)] shadow-md flex flex-col">
+              <div className="flex-1 relative min-h-[240px]">
+                <Image
+                  src="/mascota-oficina.jpeg"
+                  alt="Equipo PowerLink en campo"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(min-width:1024px) 18vw, 100vw"
+                />
+              </div>
+              <div className="px-5 py-4 bg-white/80 border-t border-[rgba(218,31,92,0.10)]">
+                <p className="text-[0.68rem] font-bold uppercase tracking-[0.18em] text-[#DA1F5C]">Equipo PowerLink</p>
+                <p className="mt-1 text-sm font-medium text-[var(--color-ink)]">Profesionales en campo, listos para ti.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -773,15 +738,27 @@ export default async function Home() {
               </div>
             </article>
 
-            <article className="overflow-hidden rounded-[2rem] border border-[rgba(95,36,118,0.16)] bg-[linear-gradient(155deg,rgba(95,36,118,0.97),rgba(218,31,92,0.90))] p-6 text-white shadow-[0_30px_90px_-48px_rgba(95,36,118,0.8)] sm:p-7">
-              <div className="flex items-center gap-3">
-                <WhatsAppIcon />
-                <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white/58">
-                  Bot de WhatsApp
-                </p>
+            <article className="overflow-hidden rounded-[2rem] border border-[rgba(95,36,118,0.16)] bg-[linear-gradient(155deg,rgba(95,36,118,0.97),rgba(218,31,92,0.90))] text-white shadow-[0_30px_90px_-48px_rgba(95,36,118,0.8)]">
+              {/* Mascota purple — imagen grande en card WhatsApp */}
+              <div className="relative h-52 overflow-hidden border-b border-white/10">
+                <Image
+                  src="/mascota-purple.jpeg"
+                  alt="Link mascota PowerLink"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(min-width:1024px) 28vw, 100vw"
+                />
+                <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent_40%,rgba(95,36,118,0.85))]" />
+                <div className="absolute bottom-4 left-5 flex items-center gap-2">
+                  <WhatsAppIcon />
+                  <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white/90">
+                    Bot de WhatsApp
+                  </p>
+                </div>
               </div>
 
-              <h3 className="font-display mt-5 text-[clamp(2.1rem,3.5vw,3rem)] leading-[0.96] tracking-[-0.04em]">
+              <div className="p-6 sm:p-7">
+              <h3 className="font-display text-[clamp(2.1rem,3.5vw,3rem)] leading-[0.96] tracking-[-0.04em]">
                 El cierre comercial entra por aqui.
               </h3>
               <p className="mt-4 text-sm leading-8 text-white/76">
@@ -814,6 +791,7 @@ export default async function Home() {
                 Abrir bot
                 <ArrowUpRightIcon />
               </Link>
+              </div>
             </article>
           </div>
         </div>

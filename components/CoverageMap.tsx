@@ -283,7 +283,7 @@ export function CoverageMap({ zones }: CoverageMapProps) {
             </dd>
           </div>
           <div className="rounded-[1.4rem] border border-[rgba(16,32,51,0.08)] bg-[linear-gradient(145deg,rgba(16,32,51,0.98),rgba(13,57,74,0.93))] px-4 py-4 text-white shadow-[0_24px_70px_-42px_rgba(16,32,51,0.9)]">
-            <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-white/60">
+            <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-white/74">
               Nota operativa
             </p>
             <p className="mt-2 text-sm leading-7 text-white/80">
