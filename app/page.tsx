@@ -137,35 +137,39 @@ const coverageZones: CoverageZone[] = [
 const swotCards = [
   {
     badge: "Fortalezas",
+    badgeColor: "text-[#DA1F5C] bg-[rgba(218,31,92,0.10)] border-[rgba(218,31,92,0.22)]",
     title: "Trato directo, seguimiento cercano y ejecucion ordenada.",
     copy:
       "PowerLink se apoya en acompanamiento humano, explicacion clara al cliente y una presencia de campo que transmite confianza desde la primer llamada.",
     tone:
-      "bg-[linear-gradient(145deg,rgba(255,255,255,0.92),rgba(245,194,206,0.28))] border-[rgba(218,31,92,0.16)]",
+      "bg-[linear-gradient(145deg,rgba(218,31,92,0.08),rgba(245,194,206,0.18),rgba(255,255,255,0.96))] border-[rgba(218,31,92,0.18)]",
   },
   {
     badge: "Oportunidades",
+    badgeColor: "text-[#5F2476] bg-[rgba(95,36,118,0.10)] border-[rgba(95,36,118,0.22)]",
     title: "Crecimiento en negocios locales, residenciales y zonas mixtas.",
     copy:
       "La web capta solicitudes por cobertura, soporte y cambios de domicilio sin depender de planes fijos publicados. El bot de WhatsApp filtra y convierte.",
     tone:
-      "bg-[linear-gradient(145deg,rgba(212,182,221,0.22),rgba(255,255,255,0.92))] border-[rgba(95,36,118,0.16)]",
+      "bg-[linear-gradient(145deg,rgba(95,36,118,0.08),rgba(212,182,221,0.22),rgba(255,255,255,0.96))] border-[rgba(95,36,118,0.18)]",
   },
   {
     badge: "Debilidades",
+    badgeColor: "text-[#E9678F] bg-[rgba(233,103,143,0.10)] border-[rgba(233,103,143,0.22)]",
     title: "La factibilidad cambia por saturacion, altura y condiciones del sitio.",
     copy:
       "Por eso la cotizacion permanece dinamica y el bot de WhatsApp funciona como filtro inicial antes de confirmar el servicio al cliente.",
     tone:
-      "bg-[linear-gradient(145deg,rgba(255,255,255,0.94),rgba(243,244,246,0.94))] border-[rgba(0,0,0,0.10)]",
+      "bg-[linear-gradient(145deg,rgba(233,103,143,0.08),rgba(245,194,206,0.16),rgba(255,255,255,0.96))] border-[rgba(233,103,143,0.18)]",
   },
   {
     badge: "Amenazas",
+    badgeColor: "text-[#9B61AC] bg-[rgba(155,97,172,0.10)] border-[rgba(155,97,172,0.22)]",
     title: "Terreno, clima y operadores agresivos pueden alterar la promesa comercial.",
     copy:
       "La respuesta de PowerLink es mostrar cobertura ilustrativa, diagnostico previo y mensajes prudentes en todos los puntos de contacto con el prospecto.",
     tone:
-      "bg-[linear-gradient(145deg,rgba(245,194,206,0.20),rgba(255,255,255,0.94))] border-[rgba(218,31,92,0.12)]",
+      "bg-[linear-gradient(145deg,rgba(155,97,172,0.08),rgba(212,182,221,0.18),rgba(255,255,255,0.96))] border-[rgba(155,97,172,0.18)]",
   },
 ];
 
@@ -282,17 +286,9 @@ export default async function Home() {
       <header className="fixed inset-x-0 top-0 z-50">
         <div className="mx-auto max-w-7xl px-4 pt-4 sm:px-6 lg:px-8">
           <div className="panel-surface flex items-center justify-between rounded-full px-4 py-3 sm:px-6">
-            <div className="flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-white shadow-[0_16px_40px_-24px_rgba(95,36,118,0.5)]">
-                <Image src="/powerlink-logo.jpeg" alt="PowerLink" width={48} height={48} className="h-full w-full object-cover" />
-              </div>
-              <div>
-                <p className="text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-[var(--color-slate)]">
-                  {SITE_NAME}
-                </p>
-                <p className="text-xs text-[var(--color-slate)]">
-                  Conectividad residencial y empresarial
-                </p>
+            <div className="flex items-center">
+              <div className="overflow-hidden rounded-2xl bg-white shadow-[0_4px_20px_-4px_rgba(95,36,118,0.25)] px-2 py-1">
+                <Image src="/powerlink-logo.jpeg" alt="PowerLink" width={140} height={52} className="h-[52px] w-auto object-contain" />
               </div>
             </div>
 
@@ -428,35 +424,54 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* Banda de colores de marca */}
+      <div className="flex h-2 w-full">
+        <div className="flex-1 bg-[#DA1F5C]" />
+        <div className="flex-1 bg-[#E9678F]" />
+        <div className="flex-1 bg-[#F5C2CE]" />
+        <div className="flex-1 bg-[#D4B6DD]" />
+        <div className="flex-1 bg-[#9B61AC]" />
+        <div className="flex-1 bg-[#5F2476]" />
+        <div className="flex-1 bg-[#000000]" />
+      </div>
+
       {/* Seccion mascota PowerLink */}
-      <section className="relative py-16 overflow-hidden">
+      <section className="relative py-20 overflow-hidden bg-[linear-gradient(135deg,rgba(245,194,206,0.22)_0%,rgba(212,182,221,0.22)_50%,rgba(255,255,255,0.96)_100%)]">
         <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-1">
-            <h2 className="font-display text-[clamp(2rem,4vw,3.5rem)] leading-tight tracking-tight text-[var(--color-ink)] mb-6">
+            <span className="badge-pink mb-4 inline-flex">Nuestra Promesa</span>
+            <h2 className="font-display text-[clamp(2rem,4vw,3.5rem)] leading-tight tracking-[-0.04em] text-[var(--color-ink)] mb-6 mt-3">
               Tu conexion, nuestra mision
             </h2>
             <p className="text-lg text-[var(--color-slate)] leading-8">
               En PowerLink nos comprometemos a brindarte la mejor conectividad con instalaciones de
               calidad, soporte humano y cobertura real en tu zona.
             </p>
-            <div className="mt-8 flex gap-4">
+            {/* Mini paleta de marca */}
+            <div className="mt-8 flex items-center gap-3">
+              {["#DA1F5C","#E9678F","#F5C2CE","#5F2476","#9B61AC","#D4B6DD","#000000"].map((c) => (
+                <div key={c} className="h-7 w-7 rounded-full border-2 border-white shadow-md" style={{ backgroundColor: c }} />
+              ))}
+            </div>
+            <div className="mt-6 flex gap-4">
               <Link
                 href={WHATSAPP_URL}
                 target="_blank"
-                className="inline-flex items-center gap-2 rounded-full bg-[var(--color-pink-dark)] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[var(--color-purple-dark)]"
+                className="inline-flex items-center gap-2 rounded-full bg-[#DA1F5C] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#5F2476]"
               >
                 <WhatsAppIcon />
                 Contactar ahora
               </Link>
             </div>
           </div>
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 relative">
+            <div className="absolute inset-0 rounded-[2rem] bg-[radial-gradient(circle_at_center,rgba(95,36,118,0.20),transparent_70%)] blur-xl" />
             <Image
               src="/mascota-present.jpeg"
               alt="Mascota PowerLink"
               width={380}
               height={440}
-              className="object-contain drop-shadow-2xl rounded-[2rem]"
+              className="relative object-contain drop-shadow-2xl rounded-[2rem]"
             />
           </div>
         </div>
@@ -626,9 +641,9 @@ export default async function Home() {
                 key={card.badge}
                 className={`panel-surface rounded-[2rem] border p-6 sm:p-7 ${card.tone}`}
               >
-                <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[var(--color-slate)]">
+                <span className={`text-[0.72rem] font-bold uppercase tracking-[0.18em] px-3 py-1 rounded-full border ${card.badgeColor}`}>
                   {card.badge}
-                </p>
+                </span>
                 <h3 className="font-display mt-4 text-[clamp(1.9rem,3vw,2.7rem)] leading-[0.98] tracking-[-0.04em] text-[var(--color-ink)]">
                   {card.title}
                 </h3>
@@ -777,24 +792,41 @@ export default async function Home() {
         </div>
       </section>
 
-      <footer className="border-t border-[rgba(218,31,92,0.10)] px-4 py-8 text-sm text-[var(--color-slate)] sm:px-6 lg:px-8">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <p>
-            {SITE_NAME} &middot; Conectividad residencial y empresarial con soporte humano real.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <a href="#empresa" className="transition hover:text-[var(--color-pink-dark)]">
-              Empresa
-            </a>
-            <a href="#cobertura" className="transition hover:text-[var(--color-pink-dark)]">
-              Coberturas
-            </a>
-            <Link href={SOCIAL_ROUTE} className="transition hover:text-[var(--color-pink-dark)]">
-              Redes
-            </Link>
-            <Link href={PAYMENT_ROUTE} className="transition hover:text-[var(--color-pink-dark)]">
-              Pago demo
-            </Link>
+      {/* Banda inferior de colores */}
+      <div className="flex h-1.5 w-full">
+        <div className="flex-1 bg-[#000000]" />
+        <div className="flex-1 bg-[#5F2476]" />
+        <div className="flex-1 bg-[#9B61AC]" />
+        <div className="flex-1 bg-[#D4B6DD]" />
+        <div className="flex-1 bg-[#F5C2CE]" />
+        <div className="flex-1 bg-[#E9678F]" />
+        <div className="flex-1 bg-[#DA1F5C]" />
+      </div>
+
+      <footer className="bg-[linear-gradient(135deg,rgba(95,36,118,0.06),rgba(218,31,92,0.06),rgba(212,182,221,0.10))] px-4 py-10 text-sm text-[var(--color-slate)] sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between mb-8">
+            <div className="flex items-center gap-3">
+              <div className="overflow-hidden rounded-xl bg-white shadow-sm px-2 py-1">
+                <Image src="/powerlink-logo.jpeg" alt="PowerLink" width={110} height={42} className="h-[42px] w-auto object-contain" />
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-4">
+              <a href="#empresa" className="transition hover:text-[#DA1F5C]">Empresa</a>
+              <a href="#cobertura" className="transition hover:text-[#DA1F5C]">Coberturas</a>
+              <Link href={SOCIAL_ROUTE} className="transition hover:text-[#DA1F5C]">Redes</Link>
+              <Link href={PAYMENT_ROUTE} className="transition hover:text-[#DA1F5C]">Pago demo</Link>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2 border-t border-[rgba(218,31,92,0.10)] pt-6 sm:flex-row sm:items-center sm:justify-between">
+            <p className="text-xs text-[var(--color-slate)]">
+              {SITE_NAME} &middot; Conectividad residencial y empresarial con soporte humano real.
+            </p>
+            <div className="flex gap-2">
+              {["#DA1F5C","#E9678F","#F5C2CE","#5F2476","#9B61AC","#D4B6DD"].map((c) => (
+                <div key={c} className="h-4 w-4 rounded-full" style={{ backgroundColor: c }} />
+              ))}
+            </div>
           </div>
         </div>
       </footer>

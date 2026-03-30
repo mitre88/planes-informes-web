@@ -38,9 +38,10 @@ body {
   overflow-x: clip;
   font-family: var(--font-body), sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(218, 31, 92, 0.08), transparent 22%),
-    radial-gradient(circle at top right, rgba(95, 36, 118, 0.08), transparent 20%),
-    linear-gradient(180deg, #ffffff 0%, rgba(245, 194, 206, 0.10) 44%, #fff8fa 100%);
+    radial-gradient(circle at top left, rgba(218, 31, 92, 0.10), transparent 28%),
+    radial-gradient(circle at top right, rgba(95, 36, 118, 0.10), transparent 28%),
+    radial-gradient(circle at bottom center, rgba(212, 182, 221, 0.18), transparent 40%),
+    linear-gradient(180deg, #ffffff 0%, rgba(245, 194, 206, 0.12) 35%, rgba(212, 182, 221, 0.10) 70%, #fff8fa 100%);
   color: var(--color-ink);
 }
 
@@ -79,9 +80,46 @@ select {
 
 .hero-mesh {
   background:
-    radial-gradient(circle at 18% 22%, rgba(218, 31, 92, 0.12), transparent 26%),
-    radial-gradient(circle at 84% 16%, rgba(95, 36, 118, 0.12), transparent 26%),
-    linear-gradient(145deg, rgba(255, 255, 255, 0.90), rgba(245, 194, 206, 0.22));
+    radial-gradient(circle at 18% 22%, rgba(218, 31, 92, 0.14), transparent 28%),
+    radial-gradient(circle at 84% 16%, rgba(95, 36, 118, 0.14), transparent 28%),
+    radial-gradient(circle at 50% 90%, rgba(212, 182, 221, 0.20), transparent 32%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(245, 194, 206, 0.26));
+}
+
+.section-pink-soft {
+  background: linear-gradient(160deg, rgba(245, 194, 206, 0.18), rgba(255, 255, 255, 0.95));
+}
+
+.section-purple-soft {
+  background: linear-gradient(160deg, rgba(212, 182, 221, 0.18), rgba(255, 255, 255, 0.95));
+}
+
+.badge-pink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  background: rgba(233, 103, 143, 0.12);
+  border: 1px solid rgba(233, 103, 143, 0.25);
+  color: #DA1F5C;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.badge-purple {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  background: rgba(212, 182, 221, 0.22);
+  border: 1px solid rgba(155, 97, 172, 0.25);
+  color: #5F2476;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
 }
 
 .grid-aura {
