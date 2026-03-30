@@ -9,7 +9,7 @@ export const SOCIAL_LINKS = [
   {
     name: "Instagram",
     handle: "@powerlink.mx",
-    href: "https://instagram.com/powerlink.mx",
+    href: "https://www.instagram.com/internetpowerlink?utm_source=qr&igsh=YWFjZnV2bjgxajQy",
     accent: "from-[#DA1F5C] via-[#E9678F] to-[#9B61AC]",
     description: "Promociones, instalaciones recientes y cobertura actualizada.",
   },
