@@ -155,7 +155,7 @@ const swotCards = [
   },
   {
     badge: "Debilidades",
-    badgeColor: "text-[#E9678F] bg-[rgba(233,103,143,0.10)] border-[rgba(233,103,143,0.22)]",
+    badgeColor: "text-[#C0305A] bg-[rgba(233,103,143,0.10)] border-[rgba(233,103,143,0.22)]",
     title: "La factibilidad cambia por saturacion, altura y condiciones del sitio.",
     copy:
       "Por eso la cotizacion permanece dinamica y el bot de WhatsApp funciona como filtro inicial antes de confirmar el servicio al cliente.",
@@ -164,7 +164,7 @@ const swotCards = [
   },
   {
     badge: "Amenazas",
-    badgeColor: "text-[#9B61AC] bg-[rgba(155,97,172,0.10)] border-[rgba(155,97,172,0.22)]",
+    badgeColor: "text-[#5F2476] bg-[rgba(155,97,172,0.10)] border-[rgba(155,97,172,0.22)]",
     title: "Terreno, clima y operadores agresivos pueden alterar la promesa comercial.",
     copy:
       "La respuesta de PowerLink es mostrar cobertura ilustrativa, diagnostico previo y mensajes prudentes en todos los puntos de contacto con el prospecto.",
@@ -437,42 +437,69 @@ export default async function Home() {
 
       {/* Seccion mascota PowerLink */}
       <section className="relative py-20 overflow-hidden bg-[linear-gradient(135deg,rgba(245,194,206,0.22)_0%,rgba(212,182,221,0.22)_50%,rgba(255,255,255,0.96)_100%)]">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
-          <div className="flex-1">
-            <span className="badge-pink mb-4 inline-flex">Nuestra Promesa</span>
-            <h2 className="font-display text-[clamp(2rem,4vw,3.5rem)] leading-tight tracking-[-0.04em] text-[var(--color-ink)] mb-6 mt-3">
-              Tu conexion, nuestra mision
-            </h2>
-            <p className="text-lg text-[var(--color-slate)] leading-8">
-              En PowerLink nos comprometemos a brindarte la mejor conectividad con instalaciones de
-              calidad, soporte humano y cobertura real en tu zona.
-            </p>
-            {/* Mini paleta de marca */}
-            <div className="mt-8 flex items-center gap-3">
-              {["#DA1F5C","#E9678F","#F5C2CE","#5F2476","#9B61AC","#D4B6DD","#000000"].map((c) => (
-                <div key={c} className="h-7 w-7 rounded-full border-2 border-white shadow-md" style={{ backgroundColor: c }} />
-              ))}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
+            {/* Text column */}
+            <div>
+              <span className="badge-pink mb-4 inline-flex">Nuestra Promesa</span>
+              <h2 className="font-display text-[clamp(2rem,4vw,3.5rem)] leading-tight tracking-[-0.04em] text-[var(--color-ink)] mb-6 mt-3">
+                Tu conexion, nuestra mision
+              </h2>
+              <p className="text-lg text-[var(--color-slate)] leading-8">
+                En PowerLink nos comprometemos a brindarte la mejor conectividad con instalaciones de
+                calidad, soporte humano y cobertura real en tu zona.
+              </p>
+              {/* Mini paleta de marca */}
+              <div className="mt-8 flex items-center gap-3">
+                {["#DA1F5C","#E9678F","#F5C2CE","#5F2476","#9B61AC","#D4B6DD","#000000"].map((c) => (
+                  <div key={c} className="h-7 w-7 rounded-full border-2 border-white shadow-md" style={{ backgroundColor: c }} />
+                ))}
+              </div>
+              <div className="mt-6">
+                <Link
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#DA1F5C] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#5F2476]"
+                >
+                  <WhatsAppIcon />
+                  Contactar ahora
+                </Link>
+              </div>
             </div>
-            <div className="mt-6 flex gap-4">
-              <Link
-                href={WHATSAPP_URL}
-                target="_blank"
-                className="inline-flex items-center gap-2 rounded-full bg-[#DA1F5C] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#5F2476]"
-              >
-                <WhatsAppIcon />
-                Contactar ahora
-              </Link>
+
+            {/* Images grid — 3 fotos de mascota */}
+            <div className="grid grid-cols-2 gap-4" style={{ gridTemplateRows: "1fr 1fr" }}>
+              {/* Mascota principal — ocupa toda la altura */}
+              <div className="row-span-2 relative overflow-hidden rounded-[2rem] border border-[rgba(218,31,92,0.12)] shadow-[0_20px_60px_-20px_rgba(218,31,92,0.25)] bg-white/60">
+                <Image
+                  src="/mascota-present.jpeg"
+                  alt="Mascota PowerLink presentando"
+                  width={280}
+                  height={480}
+                  className="h-full w-full object-cover object-top"
+                />
+              </div>
+              {/* Mascota con logo — secundaria */}
+              <div className="relative overflow-hidden rounded-[2rem] border border-[rgba(95,36,118,0.18)] shadow-md">
+                <Image
+                  src="/mascota-purple.jpeg"
+                  alt="Mascota PowerLink con logo"
+                  width={280}
+                  height={230}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              {/* Mascota en oficina — terciaria */}
+              <div className="relative overflow-hidden rounded-[2rem] border border-[rgba(218,31,92,0.10)] shadow-md">
+                <Image
+                  src="/mascota-oficina.jpeg"
+                  alt="PowerLink — equipo en campo"
+                  width={280}
+                  height={230}
+                  className="h-full w-full object-cover"
+                />
+              </div>
             </div>
-          </div>
-          <div className="flex-shrink-0 relative">
-            <div className="absolute inset-0 rounded-[2rem] bg-[radial-gradient(circle_at_center,rgba(95,36,118,0.20),transparent_70%)] blur-xl" />
-            <Image
-              src="/mascota-present.jpeg"
-              alt="Mascota PowerLink"
-              width={380}
-              height={440}
-              className="relative object-contain drop-shadow-2xl rounded-[2rem]"
-            />
           </div>
         </div>
       </section>
