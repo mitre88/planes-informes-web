@@ -3,7 +3,7 @@ export const SITE_BASE_URL = "https://planes-informes-web.vercel.app";
 export const SOCIAL_ROUTE = "/redes-demo";
 export const PAYMENT_ROUTE = "/pago-demo";
 export const WHATSAPP_URL =
-  "https://wa.me/5212281204567?text=Hola%2C%20quiero%20cotizacion%20de%20cobertura%20y%20servicios.";
+  "https://wa.me/522721341840?text=Hola%2C%20quiero%20cotizacion%20de%20cobertura%20y%20servicios.";
 
 export const SOCIAL_LINKS = [
   {
