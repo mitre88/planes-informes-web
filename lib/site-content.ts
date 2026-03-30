@@ -20,4 +20,11 @@ export const SOCIAL_LINKS = [
     accent: "from-[#5F2476] to-[#9B61AC]",
     description: "Atencion local, avisos de servicio y testimonios de clientes.",
   },
+  {
+    name: "TikTok",
+    handle: "@powerlinkmendoza",
+    href: "https://www.tiktok.com/@powerlinkmendoza?_r=1&_t=ZS-958Kph7wRi0",
+    accent: "from-[#0f172a] via-[#5F2476] to-[#DA1F5C]",
+    description: "Microvideos de instalaciones, cobertura y tips de conectividad.",
+  },
 ] as const;
