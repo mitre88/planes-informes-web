@@ -16,15 +16,8 @@ export const SOCIAL_LINKS = [
   {
     name: "Facebook",
     handle: "PowerLink",
-    href: "https://facebook.com/PowerLink",
+    href: "https://www.facebook.com/share/1W2HeS4C3b/",
     accent: "from-[#5F2476] to-[#9B61AC]",
     description: "Atencion local, avisos de servicio y testimonios de clientes.",
-  },
-  {
-    name: "TikTok",
-    handle: "@powerlink.conecta",
-    href: "https://tiktok.com/@powerlink.conecta",
-    accent: "from-[#0f172a] via-[#5F2476] to-[#DA1F5C]",
-    description: "Microvideos de instalaciones, cobertura y tips de conectividad.",
   },
 ] as const;
