@@ -388,7 +388,7 @@ export default async function Home() {
                     className="inline-flex items-center justify-center gap-3 rounded-full border border-[rgba(218,31,92,0.20)] bg-white/80 px-7 py-4 text-sm font-semibold text-[var(--color-ink)] transition hover:-translate-y-0.5 hover:border-[rgba(218,31,92,0.36)]"
                   >
                     <PaymentIcon />
-                    Abrir portal de pago demo
+                    Realizar su pago
                   </Link>
                 </div>
 
@@ -447,7 +447,7 @@ export default async function Home() {
                       </p>
                     </div>
                     <p className="mt-3 text-lg font-semibold text-[var(--color-ink)]">
-                      QR a redes sociales y acceso a portal de pago demo.
+                      QR a redes sociales y acceso para realizar su pago.
                     </p>
                     <p className="mt-2 text-sm leading-7 text-[var(--color-slate)]">
                       Dos acciones inmediatas para el cliente sin saturar la portada.
@@ -686,7 +686,7 @@ export default async function Home() {
         <div className="mx-auto max-w-7xl">
           <SectionHeading
             tag="Accesos rapidos"
-            title="QR social, pago demo y entrada directa al bot."
+            title="QR social, pago y entrada directa al bot."
             description="La parte operativa queda clara y visible. Todo lo que necesitas para contactar, pagar o seguir a PowerLink esta en un bloque final premium y accionable."
           />
 
@@ -746,7 +746,7 @@ export default async function Home() {
               </div>
 
               <h3 className="font-display mt-5 text-[clamp(2rem,3.4vw,3rem)] leading-[0.98] tracking-[-0.04em] text-[var(--color-ink)]">
-                Portal de pago demo dentro de la misma web.
+                Realiza tu pago directamente a PowerLink.
               </h3>
               <p className="mt-4 text-sm leading-8 text-[var(--color-slate)]">
                 Se creo una ruta ficticia para presentar cobro seguro, referencia, monto y
@@ -757,7 +757,7 @@ export default async function Home() {
                 href={PAYMENT_ROUTE}
                 className="mt-8 inline-flex items-center gap-3 rounded-full bg-[var(--color-pink-dark)] px-6 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[var(--color-purple-dark)]"
               >
-                Abrir pago demo
+                Realizar su pago
                 <ArrowUpRightIcon />
               </Link>
 
@@ -906,7 +906,7 @@ export default async function Home() {
               <a href="#empresa" className="transition hover:text-[#DA1F5C]">Empresa</a>
               <a href="#cobertura" className="transition hover:text-[#DA1F5C]">Coberturas</a>
               <Link href={SOCIAL_ROUTE} className="transition hover:text-[#DA1F5C]">Redes</Link>
-              <Link href={PAYMENT_ROUTE} className="transition hover:text-[#DA1F5C]">Pago demo</Link>
+              <Link href={PAYMENT_ROUTE} className="transition hover:text-[#DA1F5C]">Realizar pago</Link>
             </div>
           </div>
           <div className="flex flex-col gap-4 border-t border-[rgba(218,31,92,0.10)] pt-6 sm:flex-row sm:items-center sm:justify-between">
