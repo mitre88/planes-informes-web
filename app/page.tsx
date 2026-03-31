@@ -11,11 +11,6 @@ import {
   WHATSAPP_URL,
 } from "@/lib/site-content";
 
-const metrics = [
-  { value: "12+", label: "anos acompanando instalaciones y soporte en campo" },
-  { value: "6", label: "coberturas ilustrativas listas para cotizacion dinamica" },
-  { value: "<24 h", label: "respuesta comercial estimada via bot de WhatsApp" },
-];
 
 const serviceShowcase = [
   {
@@ -293,16 +288,6 @@ function SectionHeading({
   );
 }
 
-function MetricCard({ value, label }: { value: string; label: string }) {
-  return (
-    <article className="panel-surface rounded-[1.6rem] px-5 py-5">
-      <p className="font-display text-[clamp(2rem,4vw,3rem)] leading-none tracking-[-0.05em] text-[var(--color-pink-dark)]">
-        {value}
-      </p>
-      <p className="mt-2 text-sm leading-6 text-[var(--color-slate)]">{label}</p>
-    </article>
-  );
-}
 
 export default async function Home() {
   const socialQrData = await QRCode.toDataURL(`${SITE_BASE_URL}${SOCIAL_ROUTE}`, {
@@ -413,10 +398,43 @@ export default async function Home() {
                   ))}
                 </div>
 
-                <div className="mt-8 grid gap-4 sm:grid-cols-3">
-                  {metrics.map((metric) => (
-                    <MetricCard key={metric.label} {...metric} />
-                  ))}
+                <div className="mt-8 overflow-hidden rounded-[2rem] border border-[rgba(218,31,92,0.10)] bg-white/60 backdrop-blur-sm">
+                  <div className="flex items-start gap-4 border-b border-[rgba(16,32,51,0.06)] px-5 py-4">
+                    <div className="mt-0.5 h-2 w-2 flex-none rounded-full bg-gradient-to-br from-[#DA1F5C] to-[#5F2476]" />
+                    <div>
+                      <p className="text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[var(--color-pink-dark)]">Identidad</p>
+                      <p className="mt-1 text-sm font-semibold text-[var(--color-ink)]">Marca fuerte, técnica y confiable · "Enlace de poder"</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4 border-b border-[rgba(16,32,51,0.06)] px-5 py-4">
+                    <div className="mt-0.5 h-2 w-2 flex-none rounded-full bg-gradient-to-br from-[#5F2476] to-[#9B61AC]" />
+                    <div>
+                      <p className="text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[var(--color-purple-dark)]">Misión</p>
+                      <p className="mt-1 text-sm leading-6 text-[var(--color-slate)]">Llevar conectividad de calidad a las comunidades donde otros no llegan, con servicio confiable, accesible y humano.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4 border-b border-[rgba(16,32,51,0.06)] px-5 py-4">
+                    <div className="mt-0.5 h-2 w-2 flex-none rounded-full bg-gradient-to-br from-[#DA1F5C] to-[#5F2476]" />
+                    <div>
+                      <p className="text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[var(--color-pink-dark)]">Visión</p>
+                      <p className="mt-1 text-sm leading-6 text-[var(--color-slate)]">Ser la empresa líder en conectividad para comunidades de difícil acceso en Veracruz, México, reconocida por su compromiso social e innovación constante.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4 border-b border-[rgba(16,32,51,0.06)] px-5 py-4">
+                    <div className="mt-0.5 h-2 w-2 flex-none rounded-full bg-gradient-to-br from-[#5F2476] to-[#9B61AC]" />
+                    <div>
+                      <p className="text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[var(--color-purple-dark)]">Filosofía</p>
+                      <p className="mt-1 text-sm leading-6 text-[var(--color-slate)]">El poder de la conexión: unir personas, negocios e instituciones a través de la tecnología para impulsar el progreso y mejorar la calidad de vida.</p>
+                    </div>
+                  </div>
+                  <div className="px-5 py-4">
+                    <p className="text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[var(--color-pink-dark)]">Valores</p>
+                    <div className="mt-2.5 flex flex-wrap gap-1.5">
+                      {["Confiabilidad", "Cercanía", "Innovación", "Solidaridad", "Compromiso social", "Excelencia técnica", "Integridad", "Responsabilidad", "Innovación continua", "Trabajo en equipo"].map((v) => (
+                        <span key={v} className="inline-flex items-center rounded-full border border-[rgba(218,31,92,0.16)] bg-white/80 px-3 py-1 text-[0.7rem] font-semibold text-[var(--color-ink)]">{v}</span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
 
