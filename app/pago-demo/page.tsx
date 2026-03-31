@@ -56,6 +56,70 @@ function PaymentIcon() {
 export default function PaymentDemoPage() {
   return (
     <main className="min-h-screen px-4 py-10 sm:px-6 lg:px-8">
+
+      {/* ── Datos bancarios ── */}
+      <div className="mx-auto mb-8 max-w-6xl">
+        <div className="mb-5">
+          <div className="eyebrow">Datos para pago</div>
+          <p className="mt-3 text-sm text-[var(--color-slate)]">
+            Realiza tu transferencia o deposito y envia tu comprobante por WhatsApp para confirmar tu servicio.
+          </p>
+        </div>
+        <div className="grid gap-5 sm:grid-cols-2">
+
+          {/* Transferencia SPEI */}
+          <div className="panel-surface rounded-[2rem] border border-[rgba(218,31,92,0.14)] p-6 sm:p-7">
+            <div className="flex items-center gap-2 mb-5">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-[rgba(218,31,92,0.10)] border border-[rgba(218,31,92,0.22)] px-3 py-1 text-[0.72rem] font-bold uppercase tracking-[0.18em] text-[var(--color-pink-dark)]">
+                Transferencia SPEI
+              </span>
+            </div>
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">
+              Banco
+            </p>
+            <p className="mt-1 text-2xl font-bold text-[var(--color-ink)]">Santander</p>
+
+            <p className="mt-5 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">
+              CLABE Interbancaria
+            </p>
+            <p className="mt-2 rounded-[1.2rem] border border-[rgba(218,31,92,0.14)] bg-[rgba(218,31,92,0.04)] px-4 py-3 font-mono text-[1.45rem] font-bold tracking-[0.06em] text-[var(--color-ink)]">
+              014882250104035854
+            </p>
+            <p className="mt-2 text-[0.68rem] text-[var(--color-slate)]">18 dígitos · copia exacta al hacer la transferencia</p>
+          </div>
+
+          {/* Depósito en ventanilla */}
+          <div className="panel-surface rounded-[2rem] border border-[rgba(95,36,118,0.14)] p-6 sm:p-7">
+            <div className="flex items-center gap-2 mb-5">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-[rgba(95,36,118,0.10)] border border-[rgba(95,36,118,0.22)] px-3 py-1 text-[0.72rem] font-bold uppercase tracking-[0.18em] text-[var(--color-purple-dark)]">
+                Depósito en ventanilla
+              </span>
+            </div>
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">
+              Banco
+            </p>
+            <p className="mt-1 text-2xl font-bold text-[var(--color-ink)]">Santander</p>
+
+            <p className="mt-5 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">
+              Número de Cuenta
+            </p>
+            <p className="mt-2 rounded-[1.2rem] border border-[rgba(95,36,118,0.14)] bg-[rgba(95,36,118,0.04)] px-4 py-3 font-mono text-[1.45rem] font-bold tracking-[0.06em] text-[var(--color-ink)]">
+              5579083043220108
+            </p>
+            <p className="mt-2 text-[0.68rem] text-[var(--color-slate)]">16 dígitos · presenta en caja con este número</p>
+          </div>
+
+        </div>
+
+        {/* Instrucción de comprobante */}
+        <div className="mt-5 flex items-start gap-3 rounded-[1.6rem] border border-[rgba(218,31,92,0.10)] bg-white/80 px-5 py-4">
+          <div className="mt-0.5 h-2 w-2 flex-none rounded-full bg-[var(--color-pink-dark)]" />
+          <p className="text-sm leading-7 text-[var(--color-slate)]">
+            Una vez realizado el pago, envia foto o captura del comprobante por WhatsApp al <span className="font-semibold text-[var(--color-ink)]">+52 272 134 1840</span> indicando tu nombre y colonia para confirmar la instalacion.
+          </p>
+        </div>
+      </div>
+
       <div className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
         <section className="panel-surface rounded-[2.6rem] px-6 py-6 sm:px-8 sm:py-8">
           <div className="eyebrow">Portal demo de cobro</div>
