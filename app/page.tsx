@@ -331,7 +331,8 @@ export default async function Home() {
             <Link
               href={WHATSAPP_URL}
               target="_blank"
-              className="inline-flex items-center gap-2 rounded-full bg-[var(--color-pink-dark)] px-4 py-3 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-white transition hover:-translate-y-0.5 hover:bg-[var(--color-purple-dark)]"
+              className="inline-flex items-center gap-2 rounded-full bg-[var(--color-pink-dark)] px-4 py-3 text-[0.72rem] font-semibold uppercase tracking-[0.18em] transition hover:-translate-y-0.5 hover:bg-[var(--color-purple-dark)]"
+              style={{ color: "#ffffff" }}
             >
               <WhatsAppIcon />
               Bot WhatsApp
@@ -368,7 +369,8 @@ export default async function Home() {
                   <Link
                     href={WHATSAPP_URL}
                     target="_blank"
-                    className="inline-flex items-center justify-center gap-3 rounded-full bg-[var(--color-pink-dark)] px-7 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[var(--color-purple-dark)]"
+                    className="inline-flex items-center justify-center gap-3 rounded-full bg-[var(--color-pink-dark)] px-7 py-4 text-sm font-semibold transition hover:-translate-y-0.5 hover:bg-[var(--color-purple-dark)]"
+                    style={{ color: "#ffffff" }}
                   >
                     <WhatsAppIcon />
                     Solicitar cobertura por WhatsApp
@@ -772,7 +774,8 @@ export default async function Home() {
 
               <Link
                 href={PAYMENT_ROUTE}
-                className="mt-8 inline-flex items-center gap-3 rounded-full bg-[var(--color-pink-dark)] px-6 py-4 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[var(--color-purple-dark)]"
+                className="mt-8 inline-flex items-center gap-3 rounded-full bg-[var(--color-pink-dark)] px-6 py-4 text-sm font-semibold transition hover:-translate-y-0.5 hover:bg-[var(--color-purple-dark)]"
+                style={{ color: "#ffffff" }}
               >
                 Realizar su pago
                 <ArrowUpRightIcon />
