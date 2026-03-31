@@ -692,7 +692,7 @@ export default async function Home() {
           {/* Simple masonry-style gallery: 2 cols tablet, 3 cols desktop */}
           <div className="mt-10 columns-1 gap-5 sm:columns-2 lg:columns-3">
             {galleryMedia.map((item) => (
-              <figure key={item.src} className="mb-5 break-inside-avoid overflow-hidden rounded-[1.5rem] panel-surface">
+              <figure key={item.src} className="mb-5 break-inside-avoid overflow-hidden rounded-[1.5rem]">
                 {item.type === "video" ? (
                   <video
                     src={item.src}
@@ -701,22 +701,17 @@ export default async function Home() {
                     loop
                     playsInline
                     controls
-                    className="block w-full"
+                    className="block w-full rounded-[1.5rem]"
                   />
                 ) : (
                   /* eslint-disable-next-line @next/next/no-img-element */
                   <img
                     src={item.src}
                     alt={item.tag}
-                    className="block w-full"
+                    className="block w-full rounded-[1.5rem]"
                     loading="lazy"
                   />
                 )}
-                <figcaption className="px-4 py-3">
-                  <span className="inline-block rounded-full bg-[rgba(218,31,92,0.12)] px-3 py-1 text-[0.65rem] font-bold uppercase tracking-[0.18em] text-[var(--color-pink-dark)]">
-                    {item.tag}
-                  </span>
-                </figcaption>
               </figure>
             ))}
           </div>
