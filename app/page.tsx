@@ -389,8 +389,8 @@ export default async function Home() {
                       key={social.name}
                       href={social.href}
                       target="_blank"
-                      className="inline-flex items-center gap-2.5 rounded-full px-6 py-3.5 text-sm font-bold shadow-md transition hover:-translate-y-0.5"
-                      style={{ background: "linear-gradient(to right, #DA1F5C, #E9678F, #9B61AC)", color: "#ffffff" }}
+                      className={`inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r ${social.accent} px-6 py-3.5 text-sm font-bold text-white shadow-md transition hover:-translate-y-0.5 hover:text-white`}
+                      style={{ color: "#ffffff" }}
                     >
                       {getSocialIcon(social.name, "h-5 w-5")}
                       {social.name}
