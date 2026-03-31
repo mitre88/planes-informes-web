@@ -550,7 +550,7 @@ export default async function Home() {
         <div className="mx-auto max-w-7xl">
           <SectionHeading
             tag="Internet PowerLink y su expansión"
-            title="Una marca que transmite operaciones reales y conectividad confiable."
+            title="Una empresa que transmite operaciones reales y conectividad confiable."
             description="En un mercado de conectividad en comunidades de dificil acceso, internet POWERLINK se encuentra en un constante proceso de expansion sostenida, impulsado por la creciente necesidad de un servicio de internet confiable, veloz y de alta calidad. Trabajando con equipos por Fibra Optica o Wireless."
           />
 
