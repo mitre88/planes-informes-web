@@ -723,11 +723,12 @@ export default async function Home() {
                         key={social.name}
                         href={social.href}
                         target="_blank"
-                        className={`flex items-center justify-between rounded-[1.6rem] bg-gradient-to-r ${social.accent} px-6 py-5 text-white shadow-md transition hover:-translate-y-0.5`}
+                        className={`flex items-center justify-between rounded-[1.6rem] bg-gradient-to-r ${social.accent} px-6 py-5 shadow-md transition hover:-translate-y-0.5`}
+                        style={{ color: "#ffffff" }}
                       >
                         <div>
-                          <p className="text-base font-bold text-white">{social.name}</p>
-                          <p className="mt-0.5 text-sm text-white">{social.handle}</p>
+                          <p className="text-base font-bold" style={{ color: "#ffffff" }}>{social.name}</p>
+                          <p className="mt-0.5 text-sm" style={{ color: "#ffffff" }}>{social.handle}</p>
                         </div>
                         <ArrowUpRightIcon />
                       </Link>
@@ -920,7 +921,8 @@ export default async function Home() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`inline-flex items-center gap-2 rounded-full bg-gradient-to-r ${social.accent} px-5 py-2.5 text-sm font-bold text-white shadow-sm transition hover:-translate-y-0.5`}
+                  className={`inline-flex items-center gap-2 rounded-full bg-gradient-to-r ${social.accent} px-5 py-2.5 text-sm font-bold shadow-sm transition hover:-translate-y-0.5`}
+                  style={{ color: "#ffffff" }}
                 >
                   {getSocialIcon(social.name, "h-4 w-4")}
                   {social.handle}
