@@ -717,19 +717,17 @@ export default async function Home() {
                     o visita comercial.
                   </p>
 
-                  <div className="mt-5 space-y-3">
+                  <div className="mt-5 flex flex-col gap-4">
                     {SOCIAL_LINKS.map((social) => (
                       <Link
                         key={social.name}
                         href={social.href}
                         target="_blank"
-                        className="flex items-center justify-between rounded-[1.3rem] border border-[rgba(218,31,92,0.10)] bg-white/72 px-4 py-3 transition hover:-translate-y-0.5 hover:border-[rgba(218,31,92,0.22)]"
+                        className={`flex items-center justify-between rounded-[1.6rem] bg-gradient-to-r ${social.accent} px-6 py-5 text-white shadow-md transition hover:-translate-y-0.5`}
                       >
                         <div>
-                          <p className="text-sm font-semibold text-[var(--color-ink)]">
-                            {social.name}
-                          </p>
-                          <p className="text-xs text-[var(--color-slate)]">{social.handle}</p>
+                          <p className="text-base font-bold">{social.name}</p>
+                          <p className="mt-0.5 text-sm text-white/85">{social.handle}</p>
                         </div>
                         <ArrowUpRightIcon />
                       </Link>
