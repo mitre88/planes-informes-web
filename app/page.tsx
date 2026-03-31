@@ -19,8 +19,7 @@ const serviceShowcase = [
     title: "Instalaciones profesionales con entrega impecable",
     description:
       "Alta residencial, reubicacion, alineacion de equipos y puesta en marcha con comunicacion clara para el cliente final.",
-    image:
-      "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1400&q=80",
+    image: "/campo-torre-dia.jpg",
     className: "lg:col-span-7 lg:row-span-2",
     align: "large" as const,
   },
@@ -28,8 +27,7 @@ const serviceShowcase = [
     title: "Cobertura para hogares, empresas y puntos comerciales",
     description:
       "Diagnosticos de factibilidad, extension por zonas y seguimiento postinstalacion con soporte directo.",
-    image:
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
+    image: "/equipo-instalado-luz.jpg",
     className: "lg:col-span-5",
     align: "compact" as const,
   },
@@ -37,8 +35,7 @@ const serviceShowcase = [
     title: "Soporte tecnico, mantenimiento y reubicaciones",
     description:
       "Trabajos correctivos, preventivos y reubicaciones programadas sin exponer planes fijos que luego queden obsoletos.",
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+    image: "/campo-torre-nublado.jpg",
     className: "lg:col-span-5",
     align: "compact" as const,
   },
