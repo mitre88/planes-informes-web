@@ -369,10 +369,15 @@ export default async function Home() {
                 <h1 className="font-display mt-6 max-w-4xl text-balance text-[clamp(2.6rem,6vw,5.4rem)] leading-[0.9] tracking-[-0.06em] text-[var(--color-ink)]">
                   Conectividad que se instala, se explica y se mantiene.
                 </h1>
-                <p className="mt-6 max-w-2xl text-[1.05rem] leading-8 text-[var(--color-slate)] sm:text-[1.12rem]">
-                  PowerLink ofrece instalaciones residenciales y empresariales con soporte humano,
-                  cobertura verificada y una experiencia de servicio que va mas alla de la conexion.
-                </p>
+
+                <div className="mt-6 max-w-2xl rounded-[1.6rem] border border-[rgba(218,31,92,0.14)] bg-white/80 px-5 py-4">
+                  <p className="text-[0.68rem] font-bold uppercase tracking-[0.22em] text-[var(--color-pink-dark)]">
+                    Descripcion del negocio
+                  </p>
+                  <p className="mt-2 text-[1rem] leading-8 text-[var(--color-ink)]">
+                    Negocio local originario de Veracruz Mexico, dedicado a llevar el servicio de internet a comunidades de dificil acceso o aquellas en las que las grandes companias aun no tienen cobertura.
+                  </p>
+                </div>
 
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <Link
