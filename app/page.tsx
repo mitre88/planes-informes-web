@@ -441,22 +441,47 @@ export default async function Home() {
               </div>
 
               <div className="relative grid gap-4">
-                {/* Mascota hero — Link presentando */}
+                {/* Card 1 — Link oficinista / presentando */}
+                <div className="relative overflow-hidden rounded-[2rem] border border-[rgba(95,36,118,0.16)] bg-white shadow-[0_20px_60px_-20px_rgba(95,36,118,0.22)]">
+                  <div className="flex items-center gap-5 px-6 pt-6 pb-4">
+                    <div className="flex-none">
+                      <Image
+                        src="/mascota-present.jpeg"
+                        alt="Link presentando PowerLink"
+                        width={120}
+                        height={140}
+                        className="h-[130px] w-auto object-contain drop-shadow-md"
+                      />
+                    </div>
+                    <div>
+                      <p className="text-[0.68rem] font-bold uppercase tracking-[0.22em] text-[var(--color-purple-dark)]">Conoce a Link</p>
+                      <p className="mt-1 text-lg font-bold leading-tight text-[var(--color-ink)]">La voz oficial de PowerLink</p>
+                      <p className="mt-2 text-sm leading-7 text-[var(--color-slate)]">Link presenta los servicios, comparte novedades y responde dudas en todas las redes sociales de PowerLink. Síguelo para estar al día.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3 border-t border-[rgba(95,36,118,0.10)] bg-white/90 px-5 py-3 backdrop-blur-sm">
+                    <div className="h-2 w-2 rounded-full bg-[#5F2476]" />
+                    <p className="text-sm font-semibold text-[var(--color-ink)]">Link informa</p>
+                    <p className="ml-auto text-xs text-[var(--color-slate)]">Instagram · Facebook · TikTok</p>
+                  </div>
+                </div>
+
+                {/* Card 2 — Link técnico en campo */}
                 <div className="relative overflow-hidden rounded-[2rem] border border-[rgba(218,31,92,0.14)] bg-white shadow-[0_20px_60px_-20px_rgba(218,31,92,0.30)]">
                   <div className="flex items-center gap-5 px-6 pt-6 pb-4">
                     <div className="flex-none">
                       <Image
                         src="/link-mascota.png"
-                        alt="Link, mascota de PowerLink"
+                        alt="Link técnico PowerLink"
                         width={120}
                         height={140}
-                        className="h-[140px] w-auto object-contain drop-shadow-lg"
+                        className="h-[130px] w-auto object-contain drop-shadow-lg"
                       />
                     </div>
                     <div>
-                      <p className="text-[0.68rem] font-bold uppercase tracking-[0.22em] text-[var(--color-pink-dark)]">Te presentamos a Link</p>
-                      <p className="mt-1 text-lg font-bold leading-tight text-[var(--color-ink)]">El técnico que te conecta con PowerLink</p>
-                      <p className="mt-2 text-sm leading-7 text-[var(--color-slate)]">Link es la cara de PowerLink en redes. Te orienta sobre cobertura en tu zona, tipos de instalación y cómo contratar, directo desde Instagram, Facebook o TikTok.</p>
+                      <p className="text-[0.68rem] font-bold uppercase tracking-[0.22em] text-[var(--color-pink-dark)]">Link en campo</p>
+                      <p className="mt-1 text-lg font-bold leading-tight text-[var(--color-ink)]">El técnico que te conecta</p>
+                      <p className="mt-2 text-sm leading-7 text-[var(--color-slate)]">Instalaciones residenciales, empresariales y puntos comerciales en Veracruz. Link coordina la visita técnica y te acompaña hasta que tu servicio quede funcionando.</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 border-t border-[rgba(218,31,92,0.10)] bg-white/90 px-5 py-3 backdrop-blur-sm">
