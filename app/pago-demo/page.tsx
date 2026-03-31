@@ -120,7 +120,7 @@ export default function PaymentDemoPage() {
         </div>
       </div>
 
-      <div className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+      <div className="mx-auto max-w-6xl">
         <section className="panel-surface rounded-[2.6rem] px-6 py-6 sm:px-8 sm:py-8">
           <div className="eyebrow">Portal demo de cobro</div>
           <h1 className="font-display mt-5 text-[clamp(3rem,6vw,5rem)] leading-[0.9] tracking-[-0.06em] text-[var(--color-ink)]">
@@ -179,72 +179,6 @@ export default function PaymentDemoPage() {
               Confirmar por WhatsApp
             </Link>
           </div>
-        </section>
-
-        <section className="overflow-hidden rounded-[2.6rem] border border-[rgba(95,36,118,0.22)] bg-[linear-gradient(155deg,rgba(95,36,118,0.97),rgba(218,31,92,0.88))] px-6 py-6 text-white shadow-[0_30px_90px_-48px_rgba(95,36,118,0.9)] sm:px-8 sm:py-8">
-          <div className="flex items-center gap-3">
-            <PaymentIcon />
-            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white/88">
-              Resumen de pago
-            </p>
-          </div>
-
-          <div className="mt-8 rounded-[2rem] border border-white/10 bg-white/8 p-6">
-            <div className="flex items-start justify-between gap-4">
-              <div>
-                <p className="text-sm text-white/80">Cliente</p>
-                <p className="mt-1 text-xl font-semibold">Instalacion premium demo</p>
-              </div>
-              <span className="rounded-full border border-white/10 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-white/76">
-                Demo
-              </span>
-            </div>
-
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              <div>
-                <p className="text-xs uppercase tracking-[0.18em] text-white/85">Referencia</p>
-                <p className="mt-1 text-lg font-semibold">ALMA-2403-9087</p>
-              </div>
-              <div>
-                <p className="text-xs uppercase tracking-[0.18em] text-white/85">Concepto</p>
-                <p className="mt-1 text-lg font-semibold">Anticipo de instalacion</p>
-              </div>
-              <div>
-                <p className="text-xs uppercase tracking-[0.18em] text-white/85">Monto demo</p>
-                <p className="mt-1 text-[2.4rem] font-semibold tracking-[-0.05em]">$ 1,250.00</p>
-              </div>
-              <div>
-                <p className="text-xs uppercase tracking-[0.18em] text-white/85">Vigencia</p>
-                <p className="mt-1 text-lg font-semibold">48 horas</p>
-              </div>
-            </div>
-
-            <div className="mt-8 rounded-[1.6rem] border border-white/10 bg-white/8 p-4">
-              <p className="text-xs uppercase tracking-[0.18em] text-white/85">Metodos demo</p>
-              <div className="mt-3 flex flex-wrap gap-3">
-                {["Tarjeta", "Transferencia", "Referencia OXXO"].map((method) => (
-                  <span
-                    key={method}
-                    className="rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm font-medium text-white/84"
-                  >
-                    {method}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            <button
-              type="button"
-              className="mt-8 inline-flex w-full items-center justify-center rounded-full bg-white px-6 py-4 text-sm font-semibold text-[var(--color-ink)] transition hover:-translate-y-0.5"
-            >
-              Confirmar pago demo
-            </button>
-          </div>
-
-          <p className="mt-5 text-sm leading-7 text-white/75">
-            {SITE_NAME} puede reemplazar despues este flujo por Stripe, Mercado Pago o la pasarela
-            que la clienta prefiera. Por ahora comunica orden y seriedad.
-          </p>
         </section>
       </div>
     </main>
