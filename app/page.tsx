@@ -399,9 +399,10 @@ export default async function Home() {
                       key={social.name}
                       href={social.href}
                       target="_blank"
-                      className={`inline-flex items-center gap-2 rounded-full bg-gradient-to-r ${social.accent} px-4 py-2.5 text-[0.78rem] font-bold text-white shadow-md transition hover:-translate-y-0.5`}
+                      className="inline-flex items-center gap-2.5 rounded-full px-6 py-3.5 text-sm font-bold shadow-md transition hover:-translate-y-0.5"
+                      style={{ background: "linear-gradient(to right, #DA1F5C, #E9678F, #9B61AC)", color: "#ffffff" }}
                     >
-                      {getSocialIcon(social.name, "h-3.5 w-3.5")}
+                      {getSocialIcon(social.name, "h-5 w-5")}
                       {social.name}
                     </Link>
                   ))}
