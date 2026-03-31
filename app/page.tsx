@@ -409,6 +409,24 @@ export default async function Home() {
                   ))}
                 </div>
 
+                {/* QR WhatsApp en hero */}
+                <div className="mt-6 flex items-center gap-5 rounded-[1.8rem] border border-[rgba(218,31,92,0.16)] bg-white/80 px-5 py-4">
+                  <div className="flex-none overflow-hidden rounded-[1.2rem] border border-[rgba(218,31,92,0.12)] bg-[#fff8fa] p-2">
+                    <Image
+                      src={whatsappQrData}
+                      alt="QR WhatsApp PowerLink"
+                      width={96}
+                      height={96}
+                      className="h-24 w-24 rounded-lg"
+                    />
+                  </div>
+                  <div>
+                    <p className="text-[0.68rem] font-bold uppercase tracking-[0.22em] text-[var(--color-pink-dark)]">WhatsApp directo</p>
+                    <p className="mt-1 text-sm font-semibold text-[var(--color-ink)]">Escanea y contáctanos</p>
+                    <p className="mt-1 text-xs leading-6 text-[var(--color-slate)]">Cotización, cobertura y agenda de instalación</p>
+                  </div>
+                </div>
+
                 <div className="mt-8 overflow-hidden rounded-[2rem] border border-[rgba(218,31,92,0.10)] bg-white/60 backdrop-blur-sm">
                   <div className="flex items-start gap-4 border-b border-[rgba(16,32,51,0.06)] px-5 py-4">
                     <div className="mt-0.5 h-2 w-2 flex-none rounded-full bg-gradient-to-br from-[#DA1F5C] to-[#5F2476]" />
