@@ -549,49 +549,31 @@ export default async function Home() {
       <section id="empresa" className="px-4 py-18 sm:px-6 sm:py-24 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionHeading
-            tag="Empresa"
-            title="Una empresa que transmite operacion real y conectividad confiable."
-            description="En un mercado de conectividad en comunidades de dificil acceso, internet POWERLINK se encuentra en un constante proceso de expansion sostenida, impulsado por la creciente necesidad de un servicio de internet confiable, veloz y de alta calidad. Trabajando con equipos por Fibra Optica o Wireless."
+            tag="La empresa y su cobertura"
+            title="Una marca que transmite operaciones reales y conectividad confiable."
+            description="PowerLink no exhibe paquetes rigidos. Presenta quienes son, como trabajan y por que conviene escribirles para recibir una cotizacion actualizada y real."
           />
 
-          {/* Plan estratégico */}
+          {/* Resumen del Plan Estratégico — pág. 16 §1.1 Entorno y contexto */}
           <div className="mt-8 rounded-[2rem] border border-[rgba(95,36,118,0.18)] bg-[linear-gradient(145deg,rgba(95,36,118,0.06),rgba(212,182,221,0.16),rgba(255,255,255,0.96))] px-7 py-7 sm:px-8 sm:py-8">
-            <p className="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[var(--color-purple-dark)]">Plan Estratégico del Servicio de Internet</p>
+            <p className="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[var(--color-purple-dark)]">Analisis Situacional · Entorno y Contexto</p>
             <p className="mt-4 text-base leading-8 text-[var(--color-slate)]">
-              En un mercado de conectividad en comunidades de difícil acceso, internet <span className="font-bold text-[var(--color-ink)]">POWERLINK</span> se encuentra en un constante proceso de expansión sostenida, impulsado por la creciente necesidad de un servicio de internet confiable, veloz y de alta calidad.
+              El mercado de conectividad en comunidades de dificil acceso se encuentra en expansion sostenida. Las grandes proveedoras de fibra optica han mostrado un crecimiento limitado por los altos costos de infraestructura y la baja densidad poblacional — esa brecha representa una oportunidad clara para <span className="font-bold text-[var(--color-ink)]">PowerLink</span> como alternativa tecnologica eficiente y accesible.
             </p>
             <p className="mt-3 text-base leading-8 text-[var(--color-slate)]">
-              Trabajando con equipos por <span className="font-semibold text-[var(--color-ink)]">Fibra Óptica</span> o <span className="font-semibold text-[var(--color-ink)]">Wireless</span>.
+              Factores como la adopcion del <span className="font-semibold text-[var(--color-ink)]">trabajo remoto</span>, la educacion en linea y la digitalizacion de actividades comerciales han convertido al internet en un recurso esencial para la productividad, incluso en zonas rurales. El usuario ya no solo valora la disponibilidad del servicio — exige <span className="font-semibold text-[var(--color-ink)]">calidad, velocidad y soporte tecnico</span>.
             </p>
           </div>
 
-          {/* Entorno y contexto — Plan de Mercadotecnia §1.1 */}
-          <div className="mt-8 grid gap-4 sm:grid-cols-3">
+          {/* Mercado en expansión — card ancha */}
+          <div className="mt-8">
             <div className="rounded-[1.8rem] border border-[rgba(218,31,92,0.12)] bg-[linear-gradient(145deg,rgba(218,31,92,0.05),rgba(255,255,255,0.94))] px-6 py-6">
               <div className="mb-3 inline-flex items-center gap-2">
                 <div className="h-2 w-2 rounded-full bg-[#DA1F5C]" />
-                <p className="text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[var(--color-pink-dark)]">Mercado en expansión</p>
+                <p className="text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[var(--color-pink-dark)]">Mercado en expansion</p>
               </div>
               <p className="text-sm leading-7 text-[var(--color-slate)]">
-                Las comunidades de difícil acceso viven una demanda creciente de conectividad. Las grandes compañías de fibra óptica no llegan — esa brecha es la oportunidad de PowerLink.
-              </p>
-            </div>
-            <div className="rounded-[1.8rem] border border-[rgba(95,36,118,0.12)] bg-[linear-gradient(145deg,rgba(95,36,118,0.05),rgba(255,255,255,0.94))] px-6 py-6">
-              <div className="mb-3 inline-flex items-center gap-2">
-                <div className="h-2 w-2 rounded-full bg-[#5F2476]" />
-                <p className="text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[var(--color-purple-dark)]">Nueva demanda digital</p>
-              </div>
-              <p className="text-sm leading-7 text-[var(--color-slate)]">
-                Trabajo remoto, educación en línea y digitalización de negocios han convertido el internet en un recurso esencial, incluso en zonas rurales y suburbanas.
-              </p>
-            </div>
-            <div className="rounded-[1.8rem] border border-[rgba(212,182,221,0.28)] bg-[linear-gradient(145deg,rgba(212,182,221,0.10),rgba(255,255,255,0.94))] px-6 py-6">
-              <div className="mb-3 inline-flex items-center gap-2">
-                <div className="h-2 w-2 rounded-full bg-[#9B61AC]" />
-                <p className="text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[var(--color-purple-dark)]">Ventaja diferencial</p>
-              </div>
-              <p className="text-sm leading-7 text-[var(--color-slate)]">
-                El usuario ya no solo busca disponibilidad — exige calidad, velocidad y soporte cercano. Quien ofrece atención personalizada y cobertura real se diferencia solo.
+                Las comunidades de dificil acceso viven una demanda creciente de conectividad. Las grandes companias de fibra optica no llegan — esa brecha es la oportunidad de PowerLink. El entretenimiento digital, las plataformas de streaming y las redes sociales han modificado las expectativas del usuario promedio, quien ahora exige calidad, velocidad y soporte cercano.
               </p>
             </div>
           </div>
