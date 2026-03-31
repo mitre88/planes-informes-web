@@ -551,7 +551,7 @@ export default async function Home() {
 
             {/* Mascota oficina — panel visual empresa */}
             <div className="overflow-hidden rounded-[2rem] bg-[linear-gradient(160deg,rgba(245,194,206,0.30),rgba(212,182,221,0.30))] border border-[rgba(218,31,92,0.12)] shadow-md flex flex-col">
-              <div className="flex-1 relative min-h-[240px]">
+              <div className="relative h-[280px]">
                 <Image
                   src="/mascota-oficina.jpeg"
                   alt="Equipo PowerLink en campo"
@@ -583,8 +583,8 @@ export default async function Home() {
                 key={item.title}
                 className={`panel-surface overflow-hidden rounded-[2rem] ${item.className}`}
               >
-                <div className={`grid h-full gap-0 ${item.align === "large" ? "lg:grid-cols-[1.1fr_0.9fr]" : ""}`}>
-                  <div className={`relative min-h-[18rem] ${item.align === "compact" ? "h-72" : "h-full"}`}>
+                <div className={`grid gap-0 ${item.align === "large" ? "lg:grid-cols-[1.1fr_0.9fr]" : ""}`}>
+                  <div className={`relative ${item.align === "compact" ? "h-72" : "h-[460px]"}`}>
                     <Image
                       src={item.image}
                       alt={item.title}
