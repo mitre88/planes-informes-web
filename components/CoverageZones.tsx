@@ -3,8 +3,8 @@
 import { useState } from "react";
 
 const ZONES = [
-  "Acatla","Capulines","Huitzitila","Mexicala","Terrero","Xoxocotla",
-  "Zolithua","Tilcaico","Mazitualia","Acuapa","Tetlatzinga","Aculzinapa",
+  "Acatla","Capulines","Huitztitla","Mexcala","Terrero","Xoxocotla",
+  "Zolihua","Tlicalco","Mazitualla","Acuapa","Tetlatzinga","Acultzinapa",
   "Ahuacuitlapa","Porvenir","Tepaxapa","Atempa",
 ];
 
