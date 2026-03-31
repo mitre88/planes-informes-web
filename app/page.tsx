@@ -400,29 +400,6 @@ export default async function Home() {
               </div>
 
               <div className="relative grid gap-4">
-                <article className="shimmer-line overflow-hidden rounded-[2rem] border border-[rgba(218,31,92,0.14)] bg-[linear-gradient(160deg,rgba(95,36,118,0.96),rgba(218,31,92,0.88))] p-6 text-white shadow-[0_30px_90px_-48px_rgba(95,36,118,0.9)]">
-                  <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white/88">
-                    Estrategia comercial actualizada
-                  </p>
-                  <h2 className="font-display mt-4 text-[clamp(2rem,4vw,3rem)] leading-[0.95] tracking-[-0.05em]">
-                    Los planes ya no viven aqui.
-                  </h2>
-                  <p className="mt-4 text-sm leading-7 text-white/90">
-                    Se cotizan de forma dinamica segun factibilidad, altura, distancia, saturacion
-                    y tipo de cliente. La web ahora prepara la venta y el cierre sucede en
-                    WhatsApp o durante la visita tecnica.
-                  </p>
-                  <div className="mt-5 rounded-[1.4rem] border border-white/10 bg-white/8 px-4 py-4">
-                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-white/88">
-                      Guion recomendado del bot
-                    </p>
-                    <p className="mt-2 text-sm leading-7 text-white/93">
-                      &ldquo;Comparten ubicacion, tipo de servicio y horario de visita; el bot
-                      responde con disponibilidad, siguientes pasos y promesa comercial.&rdquo;
-                    </p>
-                  </div>
-                </article>
-
                 <div className="grid gap-4 sm:grid-cols-2">
                   <article className="panel-surface rounded-[1.8rem] p-5">
                     <div className="flex items-center gap-2 text-[var(--color-pink-dark)]">
