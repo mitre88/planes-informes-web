@@ -122,16 +122,7 @@ export default function PaymentDemoPage() {
 
       <div className="mx-auto max-w-6xl">
         <section className="panel-surface rounded-[2.6rem] px-6 py-6 sm:px-8 sm:py-8">
-          <div className="eyebrow">Portal demo de cobro</div>
-          <h1 className="font-display mt-5 text-[clamp(3rem,6vw,5rem)] leading-[0.9] tracking-[-0.06em] text-[var(--color-ink)]">
-            Pago ficticio, flujo profesional.
-          </h1>
-          <p className="mt-4 text-sm leading-8 text-[var(--color-slate)] sm:text-base">
-            Esta pagina muestra como podria verse el proceso de pago sin integrar aun una
-            pasarela real. Se creo para que la demo se sienta completa y lista para crecer.
-          </p>
-
-          <div className="mt-8 grid gap-4">
+          <div className="grid gap-4">
             {[
               "Referencia generada al momento",
               "Monto ilustrativo editable",
