@@ -392,19 +392,17 @@ export default async function Home() {
                   </Link>
                 </div>
 
-                <div className="mt-7 flex items-center gap-3">
+                <div className="mt-7 flex flex-wrap items-center gap-3">
                   <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-[var(--color-slate)]">Síguenos</span>
-                  <div className="h-px flex-1 bg-[rgba(16,32,51,0.08)]" />
                   {SOCIAL_LINKS.map((social) => (
                     <Link
                       key={social.name}
                       href={social.href}
                       target="_blank"
-                      aria-label={social.name}
-                      className={`inline-flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br ${social.accent} transition hover:-translate-y-0.5`}
-                      style={{ color: "#ffffff" }}
+                      className={`inline-flex items-center gap-2 rounded-full bg-gradient-to-r ${social.accent} px-4 py-2.5 text-[0.78rem] font-bold text-white shadow-md transition hover:-translate-y-0.5`}
                     >
-                      {getSocialIcon(social.name, "h-4 w-4")}
+                      {getSocialIcon(social.name, "h-3.5 w-3.5")}
+                      {social.name}
                     </Link>
                   ))}
                 </div>
