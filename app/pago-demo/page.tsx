@@ -174,7 +174,7 @@ export default function PaymentDemoPage() {
             <Link
               href={WHATSAPP_URL}
               target="_blank"
-              className="inline-flex items-center gap-2 rounded-full bg-[var(--color-ink)] px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 rounded-full bg-[var(--color-pink-dark)] px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[var(--color-purple-dark)]"
             >
               Confirmar por WhatsApp
             </Link>
