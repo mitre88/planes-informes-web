@@ -392,7 +392,24 @@ export default async function Home() {
                   </Link>
                 </div>
 
-                <div className="mt-10 grid gap-4 sm:grid-cols-3">
+                <div className="mt-7 flex items-center gap-3">
+                  <span className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-[var(--color-slate)]">Síguenos</span>
+                  <div className="h-px flex-1 bg-[rgba(16,32,51,0.08)]" />
+                  {SOCIAL_LINKS.map((social) => (
+                    <Link
+                      key={social.name}
+                      href={social.href}
+                      target="_blank"
+                      aria-label={social.name}
+                      className={`inline-flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br ${social.accent} transition hover:-translate-y-0.5`}
+                      style={{ color: "#ffffff" }}
+                    >
+                      {getSocialIcon(social.name, "h-4 w-4")}
+                    </Link>
+                  ))}
+                </div>
+
+                <div className="mt-8 grid gap-4 sm:grid-cols-3">
                   {metrics.map((metric) => (
                     <MetricCard key={metric.label} {...metric} />
                   ))}
