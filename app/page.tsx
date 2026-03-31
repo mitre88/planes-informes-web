@@ -224,6 +224,39 @@ function MapIcon() {
   );
 }
 
+function InstagramIcon({ className = "h-4 w-4" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
+      <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" strokeWidth="1.8" />
+      <circle cx="12" cy="12" r="4.5" stroke="currentColor" strokeWidth="1.8" />
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+    </svg>
+  );
+}
+
+function FacebookIcon({ className = "h-4 w-4" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+    </svg>
+  );
+}
+
+function TikTokIcon({ className = "h-4 w-4" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.77a4.85 4.85 0 01-1.01-.08z" />
+    </svg>
+  );
+}
+
+function getSocialIcon(name: string, className?: string) {
+  if (name === "Instagram") return <InstagramIcon className={className} />;
+  if (name === "Facebook") return <FacebookIcon className={className} />;
+  if (name === "TikTok") return <TikTokIcon className={className} />;
+  return null;
+}
+
 function CheckIcon() {
   return (
     <svg viewBox="0 0 24 24" fill="none" className="mt-1 h-4 w-4 flex-none" aria-hidden="true">
@@ -823,10 +856,24 @@ export default async function Home() {
               <Link href={PAYMENT_ROUTE} className="transition hover:text-[#DA1F5C]">Pago demo</Link>
             </div>
           </div>
-          <div className="border-t border-[rgba(218,31,92,0.10)] pt-6">
+          <div className="flex flex-col gap-4 border-t border-[rgba(218,31,92,0.10)] pt-6 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-xs text-[var(--color-slate)]">
               {SITE_NAME} &middot; Conectividad residencial y empresarial con soporte humano real.
             </p>
+            <div className="flex flex-wrap gap-2">
+              {SOCIAL_LINKS.map((social) => (
+                <Link
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r ${social.accent} px-3 py-1.5 text-xs font-semibold text-white transition hover:-translate-y-0.5`}
+                >
+                  {getSocialIcon(social.name)}
+                  {social.handle}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </footer>
