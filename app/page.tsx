@@ -16,31 +16,36 @@ import {
 
 const serviceShowcase = [
   {
+    tag: "Instalaciones",
     title: "Instalaciones profesionales con entrega impecable",
     description:
       "Alta residencial, reubicacion, alineacion de equipos y puesta en marcha con comunicacion clara para el cliente final.",
     image: "/campo-torre-dia.jpg",
-    objectPosition: "top",
-    className: "lg:col-span-7 lg:row-span-2",
-    align: "large" as const,
+    objectPosition: "center 25%",
   },
   {
+    tag: "Equipos",
     title: "Cobertura para hogares, empresas y puntos comerciales",
     description:
       "Diagnosticos de factibilidad, extension por zonas y seguimiento postinstalacion con soporte directo.",
     image: "/equipo-instalado-luz.jpg",
-    objectPosition: "bottom",
-    className: "lg:col-span-5",
-    align: "compact" as const,
+    objectPosition: "center 65%",
   },
   {
-    title: "Soporte tecnico, mantenimiento y reubicaciones",
+    tag: "Soporte",
+    title: "Mantenimiento y reubicaciones programadas",
     description:
       "Trabajos correctivos, preventivos y reubicaciones programadas sin exponer planes fijos que luego queden obsoletos.",
     image: "/campo-torre-nublado.jpg",
-    objectPosition: "50% 40%",
-    className: "lg:col-span-5",
-    align: "compact" as const,
+    objectPosition: "center 45%",
+  },
+  {
+    tag: "Antena",
+    title: "Instalacion de antenas y equipos de enlace",
+    description:
+      "Montaje de antenas de microondas y equipos de radioenlace para cobertura punto a punto en zonas de sierra.",
+    image: "/campo-antena.jpg",
+    objectPosition: "center 30%",
   },
 ];
 
@@ -710,51 +715,41 @@ export default async function Home() {
             description="La galeria presenta los frentes de trabajo de PowerLink. Cada imagen representa un tipo de servicio real que se puede cotizar via WhatsApp o visita tecnica programada."
           />
 
-          <div className="mt-10 grid gap-6 lg:grid-cols-12 lg:grid-rows-2">
+          {/* Portrait-native grid — 2 cols tablet, 4 cols desktop */}
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {serviceShowcase.map((item) => (
-              <article
-                key={item.title}
-                className={`panel-surface overflow-hidden rounded-[2rem] ${item.className}`}
-              >
-                <div className={`grid gap-0 ${item.align === "large" ? "lg:grid-cols-[1.1fr_0.9fr]" : ""}`}>
-                  <div className={`relative ${item.align === "compact" ? "h-72" : "h-[460px]"}`}>
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      fill
-                      sizes={item.align === "large" ? "(min-width: 1024px) 42vw, 100vw" : "(min-width: 1024px) 28vw, 100vw"}
-                      className="object-cover"
-                      style={{ objectPosition: item.objectPosition ?? "center" }}
-                    />
-                    <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent,rgba(95,36,118,0.28))]" />
-                  </div>
-                  <div className="flex flex-col justify-between p-6 sm:p-7">
-                    <div>
-                      <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[var(--color-slate)]">
-                        Operacion PowerLink
-                      </p>
-                      <h3 className="font-display mt-4 text-[clamp(2rem,3vw,3rem)] leading-[0.96] tracking-[-0.04em] text-[var(--color-ink)]">
-                        {item.title}
-                      </h3>
-                      <p className="mt-4 text-sm leading-8 text-[var(--color-slate)]">
-                        {item.description}
-                      </p>
-                    </div>
-                    <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-pink-dark)]">
-                      Ver como se presenta el servicio
-                      <ArrowUpRightIcon />
-                    </div>
+              <article key={item.title} className="panel-surface overflow-hidden rounded-[2rem] flex flex-col">
+                {/* Image — aspect-[3/4] matches portrait photos, no awkward cropping */}
+                <div className="relative overflow-hidden" style={{ aspectRatio: "3/4" }}>
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="absolute inset-0 h-full w-full object-cover"
+                    style={{ objectPosition: item.objectPosition }}
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_55%,rgba(16,32,51,0.5))]" />
+                  <span className="absolute bottom-4 left-4 rounded-full bg-[rgba(218,31,92,0.92)] px-3 py-1 text-[0.65rem] font-bold uppercase tracking-[0.18em] text-white backdrop-blur-sm">
+                    {item.tag}
+                  </span>
+                </div>
+                {/* Text */}
+                <div className="flex flex-1 flex-col justify-between p-5">
+                  <div>
+                    <h3 className="text-base font-bold leading-snug text-[var(--color-ink)]">
+                      {item.title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-7 text-[var(--color-slate)]">
+                      {item.description}
+                    </p>
                   </div>
                 </div>
               </article>
             ))}
-          </div>
 
-          {/* Video showcase */}
-          <article className="mt-6 panel-surface overflow-hidden rounded-[2rem]">
-            <div className="grid gap-0 lg:grid-cols-[0.9fr_1.1fr]">
-              {/* Fixed-height video container — matches compact card height */}
-              <div className="relative h-72 lg:h-[380px]">
+            {/* Video card — same aspect ratio */}
+            <article className="panel-surface overflow-hidden rounded-[2rem] flex flex-col sm:col-span-2 lg:col-span-4">
+              <div className="relative overflow-hidden rounded-t-[2rem]" style={{ aspectRatio: "16/7" }}>
                 <video
                   src="/campo-video.mp4"
                   autoPlay
@@ -763,27 +758,21 @@ export default async function Home() {
                   playsInline
                   className="absolute inset-0 h-full w-full object-cover"
                 />
-                <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent,rgba(95,36,118,0.28))]" />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_50%,rgba(16,32,51,0.55))]" />
+                <span className="absolute bottom-4 left-4 rounded-full bg-[rgba(218,31,92,0.92)] px-3 py-1 text-[0.65rem] font-bold uppercase tracking-[0.18em] text-white backdrop-blur-sm">
+                  En campo
+                </span>
               </div>
-              <div className="flex flex-col justify-between p-6 sm:p-7">
-                <div>
-                  <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[var(--color-slate)]">
-                    En campo
-                  </p>
-                  <h3 className="font-display mt-4 text-[clamp(2rem,3vw,3rem)] leading-[0.96] tracking-[-0.04em] text-[var(--color-ink)]">
-                    Operacion real en campo, no renders ni stock.
-                  </h3>
-                  <p className="mt-4 text-sm leading-8 text-[var(--color-slate)]">
-                    El equipo de PowerLink trabaja en condiciones reales del terreno serrano. Lo que ves es lo que llega a tu casa o negocio: tecnico presente, equipo de calidad y comunicacion directa.
-                  </p>
-                </div>
-                <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-pink-dark)]">
-                  Equipo tecnico con experiencia de campo
-                  <ArrowUpRightIcon />
-                </div>
+              <div className="p-5 sm:p-6">
+                <h3 className="text-base font-bold leading-snug text-[var(--color-ink)]">
+                  Operacion real en campo, no renders ni stock.
+                </h3>
+                <p className="mt-2 text-sm leading-7 text-[var(--color-slate)]">
+                  El equipo de PowerLink trabaja en condiciones reales del terreno serrano. Lo que ves es lo que llega a tu casa o negocio: tecnico presente, equipo de calidad y comunicacion directa.
+                </p>
               </div>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
       </section>
 
