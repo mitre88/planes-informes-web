@@ -741,36 +741,18 @@ export default async function Home() {
                 </p>
               </div>
 
-              <div className="mt-5 grid gap-5 sm:grid-cols-2">
-                {/* QR Redes sociales */}
-                <div className="flex flex-col items-center gap-3">
-                  <div className="overflow-hidden rounded-[1.8rem] border border-[rgba(95,36,118,0.12)] bg-[#fff8fa] p-4 w-full">
-                    <Image
-                      src={socialQrData}
-                      alt="QR hacia la pagina de redes demo"
-                      width={280}
-                      height={280}
-                      className="h-auto w-full rounded-[1.2rem]"
-                    />
-                  </div>
-                  <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-purple-dark)]">Redes sociales</p>
-                  <p className="text-xs text-center leading-6 text-[var(--color-slate)]">Escanea para ver Instagram, Facebook y TikTok de PowerLink</p>
+              <div className="mt-5 flex flex-col items-center gap-3">
+                <div className="overflow-hidden rounded-[1.8rem] border border-[rgba(218,31,92,0.16)] bg-[#fff8fa] p-4 w-full max-w-[280px]">
+                  <Image
+                    src={whatsappQrData}
+                    alt="QR de contacto directo por WhatsApp"
+                    width={280}
+                    height={280}
+                    className="h-auto w-full rounded-[1.2rem]"
+                  />
                 </div>
-
-                {/* QR WhatsApp directo */}
-                <div className="flex flex-col items-center gap-3">
-                  <div className="overflow-hidden rounded-[1.8rem] border border-[rgba(218,31,92,0.16)] bg-[#fff8fa] p-4 w-full">
-                    <Image
-                      src={whatsappQrData}
-                      alt="QR de contacto directo por WhatsApp"
-                      width={280}
-                      height={280}
-                      className="h-auto w-full rounded-[1.2rem]"
-                    />
-                  </div>
-                  <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-pink-dark)]">WhatsApp directo</p>
-                  <p className="text-xs text-center leading-6 text-[var(--color-slate)]">Escanea y escríbenos para cotización o consulta de cobertura</p>
-                </div>
+                <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-pink-dark)]">WhatsApp directo</p>
+                <p className="text-xs text-center leading-6 text-[var(--color-slate)]">Escanea y escríbenos para cotización o consulta de cobertura</p>
               </div>
 
               <div className="mt-5 flex flex-col gap-4">
