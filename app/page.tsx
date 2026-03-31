@@ -496,6 +496,26 @@ export default async function Home() {
                   <CoverageMap zones={coverageZones} />
                 </div>
 
+                {/* Colonias con cobertura */}
+                <div className="panel-surface rounded-[2rem] p-5">
+                  <p className="text-[0.68rem] font-bold uppercase tracking-[0.22em] text-[var(--color-pink-dark)]">Zonas con cobertura</p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {[
+                      "Acatla","Capulines","Huitzitila","Mexicala","Terrero","Xoxocotla",
+                      "Zolithua","Tilcaico","Mazitualia","Acuapa","Tetlatzinga","Aculzinapa",
+                      "Ahuacuitlapa","Porvenir","Tepaxapa","Atempa",
+                    ].map((zona) => (
+                      <span
+                        key={zona}
+                        className="inline-flex items-center rounded-full bg-[rgba(218,31,92,0.10)] border border-[rgba(218,31,92,0.22)] px-4 py-2 text-sm font-semibold text-[var(--color-pink-dark)]"
+                      >
+                        {zona}
+                      </span>
+                    ))}
+                  </div>
+                  <p className="mt-4 text-[0.72rem] leading-6 text-[var(--color-slate)]">Factibilidad sujeta a visita técnica · Consulta tu zona por WhatsApp</p>
+                </div>
+
               </div>
             </div>
           </div>
