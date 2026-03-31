@@ -527,6 +527,207 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* Sección de Planes */}
+      <section id="planes" className="px-4 py-18 sm:px-6 sm:py-24 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <SectionHeading
+            tag="Planes disponibles"
+            title="Elige el plan que mejor se adapte a tu hogar o negocio."
+            description="Contamos con opciones de instalacion y reconexion para cada necesidad. Pasa el cursor sobre cada plan para ver como contactarnos."
+          />
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+
+            {/* Plan 1 — Duo 2x1 */}
+            <div className="group [perspective:1000px]">
+              <div className="relative h-full min-h-[520px] transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                {/* Frente */}
+                <article className="absolute inset-0 rounded-[2rem] border border-[rgba(218,31,92,0.22)] bg-[linear-gradient(145deg,rgba(218,31,92,0.07),rgba(245,194,206,0.20),rgba(255,255,255,0.96))] p-7 [backface-visibility:hidden] flex flex-col">
+                  <span className="inline-flex self-start items-center rounded-full bg-[rgba(218,31,92,0.12)] border border-[rgba(218,31,92,0.24)] px-3 py-1.5 text-[0.68rem] font-bold uppercase tracking-[0.18em] text-[var(--color-pink-dark)]">
+                    Plan 1
+                  </span>
+                  <h3 className="font-display mt-5 text-[1.7rem] leading-tight tracking-[-0.04em] text-[var(--color-ink)]">
+                    Plan Duo 2×1
+                  </h3>
+                  <p className="mt-1 text-sm font-semibold text-[var(--color-pink-dark)]">Dos módems al costo de uno</p>
+                  <div className="mt-5 space-y-2">
+                    <div className="flex justify-between rounded-[1rem] border border-[rgba(218,31,92,0.12)] bg-white/70 px-4 py-3">
+                      <span className="text-sm font-semibold text-[var(--color-slate)]">Instalación</span>
+                      <span className="text-sm font-bold text-[var(--color-ink)]">$1,800.00</span>
+                    </div>
+                    <div className="flex justify-between rounded-[1rem] border border-[rgba(218,31,92,0.12)] bg-white/70 px-4 py-3">
+                      <span className="text-sm font-semibold text-[var(--color-slate)]">Reconexión</span>
+                      <span className="text-sm font-bold text-[var(--color-ink)]">$1,000.00</span>
+                    </div>
+                  </div>
+                  <div className="mt-5 rounded-[1.2rem] border border-[rgba(218,31,92,0.16)] bg-[rgba(218,31,92,0.05)] px-4 py-4">
+                    <p className="text-[0.68rem] font-bold uppercase tracking-[0.16em] text-[var(--color-pink-dark)]">Incluye 1 mes gratis</p>
+                    <p className="mt-2 text-sm font-bold text-[var(--color-ink)]">40 MB — $500.00/mes</p>
+                  </div>
+                  <ul className="mt-5 space-y-2 flex-1">
+                    <li className="flex items-start gap-2 text-sm leading-7 text-[var(--color-slate)]">
+                      <span className="mt-1 h-1.5 w-1.5 flex-none rounded-full bg-[#DA1F5C]" />
+                      Instalación: se otorgan 2 módems
+                    </li>
+                    <li className="flex items-start gap-2 text-sm leading-7 text-[var(--color-slate)]">
+                      <span className="mt-1 h-1.5 w-1.5 flex-none rounded-full bg-[#DA1F5C]" />
+                      Reconexión: 1 módem para ampliar cobertura en tu hogar
+                    </li>
+                  </ul>
+                  <p className="mt-5 text-center text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-[var(--color-slate)]">Pasa el cursor para más info</p>
+                </article>
+                {/* Reverso */}
+                <div className="absolute inset-0 rounded-[2rem] bg-[linear-gradient(155deg,rgba(95,36,118,0.97),rgba(218,31,92,0.90))] p-7 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col items-center justify-center gap-6 text-white text-center">
+                  <p className="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-white/80">Plan Duo 2×1</p>
+                  <h3 className="font-display text-[2rem] leading-tight tracking-[-0.04em]">¿Te interesa este plan?</h3>
+                  <p className="text-sm leading-8 text-white/88">Escríbenos por WhatsApp y un asesor te da todos los detalles y agenda tu instalacion.</p>
+                  <Link
+                    href={WHATSAPP_URL}
+                    target="_blank"
+                    className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-4 text-sm font-bold transition hover:-translate-y-0.5"
+                    style={{ color: "#5F2476" }}
+                  >
+                    <WhatsAppIcon />
+                    Deseo recibir más información
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Plan 2 — Mensualidad a elegir */}
+            <div className="group [perspective:1000px]">
+              <div className="relative h-full min-h-[520px] transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                {/* Frente */}
+                <article className="absolute inset-0 rounded-[2rem] border border-[rgba(95,36,118,0.22)] bg-[linear-gradient(145deg,rgba(95,36,118,0.07),rgba(212,182,221,0.22),rgba(255,255,255,0.96))] p-7 [backface-visibility:hidden] flex flex-col">
+                  <span className="inline-flex self-start items-center rounded-full bg-[rgba(95,36,118,0.12)] border border-[rgba(95,36,118,0.24)] px-3 py-1.5 text-[0.68rem] font-bold uppercase tracking-[0.18em] text-[var(--color-purple-dark)]">
+                    Plan 2
+                  </span>
+                  <h3 className="font-display mt-5 text-[1.7rem] leading-tight tracking-[-0.04em] text-[var(--color-ink)]">
+                    Mensualidad a elegir
+                  </h3>
+                  <p className="mt-1 text-sm font-semibold text-[var(--color-purple-dark)]">Instalación o reconexión con el plan que quieras</p>
+                  <div className="mt-5 space-y-2">
+                    <div className="flex justify-between rounded-[1rem] border border-[rgba(95,36,118,0.12)] bg-white/70 px-4 py-3">
+                      <span className="text-sm font-semibold text-[var(--color-slate)]">Instalación</span>
+                      <span className="text-sm font-bold text-[var(--color-ink)]">$1,500.00</span>
+                    </div>
+                    <div className="flex justify-between rounded-[1rem] border border-[rgba(95,36,118,0.12)] bg-white/70 px-4 py-3">
+                      <span className="text-sm font-semibold text-[var(--color-slate)]">Reconexión</span>
+                      <span className="text-sm font-bold text-[var(--color-ink)]">$800.00</span>
+                    </div>
+                  </div>
+                  <div className="mt-5 rounded-[1.2rem] border border-[rgba(95,36,118,0.16)] bg-[rgba(95,36,118,0.05)] px-4 py-4">
+                    <p className="text-[0.68rem] font-bold uppercase tracking-[0.16em] text-[var(--color-purple-dark)]">Incluye 1 mes gratis · Plan mensual</p>
+                    <div className="mt-3 space-y-1.5">
+                      <div className="flex justify-between text-sm">
+                        <span className="font-semibold text-[var(--color-slate)]">30 MB</span>
+                        <span className="font-bold text-[var(--color-ink)]">$350.00</span>
+                      </div>
+                      <div className="flex justify-between text-sm">
+                        <span className="font-semibold text-[var(--color-slate)]">40 MB</span>
+                        <span className="font-bold text-[var(--color-ink)]">$500.00</span>
+                      </div>
+                      <div className="flex justify-between text-sm">
+                        <span className="font-semibold text-[var(--color-slate)]">50 MB</span>
+                        <span className="font-bold text-[var(--color-ink)]">$700.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <ul className="mt-5 flex-1">
+                    <li className="flex items-start gap-2 text-sm leading-7 text-[var(--color-slate)]">
+                      <span className="mt-1 h-1.5 w-1.5 flex-none rounded-full bg-[#5F2476]" />
+                      1 solo módem incluido
+                    </li>
+                  </ul>
+                  <p className="mt-5 text-center text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-[var(--color-slate)]">Pasa el cursor para más info</p>
+                </article>
+                {/* Reverso */}
+                <div className="absolute inset-0 rounded-[2rem] bg-[linear-gradient(155deg,rgba(95,36,118,0.97),rgba(155,97,172,0.90))] p-7 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col items-center justify-center gap-6 text-white text-center">
+                  <p className="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-white/80">Mensualidad a elegir</p>
+                  <h3 className="font-display text-[2rem] leading-tight tracking-[-0.04em]">¿Te interesa este plan?</h3>
+                  <p className="text-sm leading-8 text-white/88">Escríbenos por WhatsApp y elige la velocidad que mejor se ajuste a tu presupuesto.</p>
+                  <Link
+                    href={WHATSAPP_URL}
+                    target="_blank"
+                    className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-4 text-sm font-bold transition hover:-translate-y-0.5"
+                    style={{ color: "#5F2476" }}
+                  >
+                    <WhatsAppIcon />
+                    Deseo recibir más información
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Plan 3 — Instalación Gratis */}
+            <div className="group [perspective:1000px]">
+              <div className="relative h-full min-h-[520px] transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                {/* Frente */}
+                <article className="absolute inset-0 rounded-[2rem] border border-[rgba(218,31,92,0.28)] bg-[linear-gradient(145deg,rgba(218,31,92,0.10),rgba(245,194,206,0.28),rgba(255,255,255,0.96))] p-7 [backface-visibility:hidden] flex flex-col">
+                  <span className="inline-flex self-start items-center rounded-full bg-[rgba(218,31,92,0.14)] border border-[rgba(218,31,92,0.30)] px-3 py-1.5 text-[0.68rem] font-bold uppercase tracking-[0.18em] text-[var(--color-pink-dark)]">
+                    Plan 3 · Más Popular
+                  </span>
+                  <h3 className="font-display mt-5 text-[1.7rem] leading-tight tracking-[-0.04em] text-[var(--color-ink)]">
+                    Instalación o Reconexión Gratis
+                  </h3>
+                  <p className="mt-1 text-sm font-semibold text-[var(--color-pink-dark)]">Solo paga tu primera mensualidad</p>
+                  <div className="mt-5 rounded-[1.2rem] border-2 border-[rgba(218,31,92,0.30)] bg-[rgba(218,31,92,0.06)] px-4 py-5">
+                    <p className="text-[0.68rem] font-bold uppercase tracking-[0.16em] text-[var(--color-pink-dark)]">Instalación gratis · Plan mensual</p>
+                    <div className="mt-3 space-y-2">
+                      <div className="flex justify-between text-sm">
+                        <span className="font-semibold text-[var(--color-slate)]">40 MB</span>
+                        <span className="text-lg font-bold text-[var(--color-ink)]">$500.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <ul className="mt-5 flex-1">
+                    <li className="flex items-start gap-2 text-sm leading-7 text-[var(--color-slate)]">
+                      <span className="mt-1 h-1.5 w-1.5 flex-none rounded-full bg-[#DA1F5C]" />
+                      1 solo módem incluido
+                    </li>
+                    <li className="flex items-start gap-2 text-sm leading-7 text-[var(--color-slate)]">
+                      <span className="mt-1 h-1.5 w-1.5 flex-none rounded-full bg-[#DA1F5C]" />
+                      Sin costo de instalacion o reconexion
+                    </li>
+                  </ul>
+                  <p className="mt-5 text-center text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-[var(--color-slate)]">Pasa el cursor para más info</p>
+                </article>
+                {/* Reverso */}
+                <div className="absolute inset-0 rounded-[2rem] bg-[linear-gradient(155deg,rgba(218,31,92,0.97),rgba(95,36,118,0.90))] p-7 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col items-center justify-center gap-6 text-white text-center">
+                  <p className="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-white/80">Instalación o Reconexión Gratis</p>
+                  <h3 className="font-display text-[2rem] leading-tight tracking-[-0.04em]">¿Te interesa este plan?</h3>
+                  <p className="text-sm leading-8 text-white/88">Sin costo de instalacion. Escríbenos y arrancamos cuando gustes.</p>
+                  <Link
+                    href={WHATSAPP_URL}
+                    target="_blank"
+                    className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-4 text-sm font-bold transition hover:-translate-y-0.5"
+                    style={{ color: "#DA1F5C" }}
+                  >
+                    <WhatsAppIcon />
+                    Deseo recibir más información
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Banner incluido en todos los planes */}
+          <div className="mt-10 flex flex-col gap-3 rounded-[2rem] border border-[rgba(95,36,118,0.18)] bg-[linear-gradient(145deg,rgba(95,36,118,0.06),rgba(212,182,221,0.18),rgba(255,255,255,0.96))] px-7 py-6 sm:flex-row sm:items-center sm:gap-8">
+            <div className="h-2 w-2 flex-none rounded-full bg-gradient-to-br from-[#DA1F5C] to-[#5F2476]" />
+            <p className="text-sm font-bold text-[var(--color-ink)]">En cualquiera de los planes se incluye:</p>
+            <div className="flex flex-wrap gap-4">
+              <span className="inline-flex items-center gap-2 rounded-full border border-[rgba(95,36,118,0.16)] bg-white/80 px-4 py-2 text-sm font-semibold text-[var(--color-ink)]">
+                🕘 Horario de atención a clientes 👫
+              </span>
+              <span className="inline-flex items-center gap-2 rounded-full border border-[rgba(218,31,92,0.16)] bg-white/80 px-4 py-2 text-sm font-semibold text-[var(--color-ink)]">
+                👷🏻🧑🏻‍🔧 Servicios técnicos gratuitos
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Banda de colores de marca */}
       <div className="flex h-2 w-full">
         <div className="flex-1 bg-[#DA1F5C]" />
