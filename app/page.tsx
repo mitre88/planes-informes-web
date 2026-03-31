@@ -491,37 +491,6 @@ export default async function Home() {
                   </div>
                 </div>
 
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <article className="panel-surface rounded-[1.8rem] p-5">
-                    <div className="flex items-center gap-2 text-[var(--color-pink-dark)]">
-                      <MapIcon />
-                      <p className="text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-[var(--color-slate)]">
-                        Coberturas
-                      </p>
-                    </div>
-                    <p className="mt-3 text-lg font-semibold text-[var(--color-ink)]">
-                      Mapa interactivo con zoom, pan y nota de factibilidad.
-                    </p>
-                    <p className="mt-2 text-sm leading-7 text-[var(--color-slate)]">
-                      Sirve para visualizar zonas atendidas sin comprometer un plan fijo.
-                    </p>
-                  </article>
-
-                  <article className="panel-surface rounded-[1.8rem] p-5">
-                    <div className="flex items-center gap-2 text-[var(--color-purple-dark)]">
-                      <QrIcon />
-                      <p className="text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-[var(--color-slate)]">
-                        Redes y pago
-                      </p>
-                    </div>
-                    <p className="mt-3 text-lg font-semibold text-[var(--color-ink)]">
-                      QR a redes sociales y acceso para realizar su pago.
-                    </p>
-                    <p className="mt-2 text-sm leading-7 text-[var(--color-slate)]">
-                      Dos acciones inmediatas para el cliente sin saturar la portada.
-                    </p>
-                  </article>
-                </div>
               </div>
             </div>
           </div>
