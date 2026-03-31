@@ -491,6 +491,11 @@ export default async function Home() {
                   </div>
                 </div>
 
+                {/* Mapa interactivo de cobertura */}
+                <div id="cobertura">
+                  <CoverageMap zones={coverageZones} />
+                </div>
+
               </div>
             </div>
           </div>
@@ -662,19 +667,6 @@ export default async function Home() {
         </div>
       </section>
 
-      <section id="cobertura" className="px-4 py-18 sm:px-6 sm:py-24 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <SectionHeading
-            tag="Coberturas"
-            title="Mapa interactivo para acercar, alejar y vender la factibilidad con criterio."
-            description="No es un mapa definitivo de ingenieria: es una herramienta comercial clara para explicar zonas de atencion, tiempos de respuesta y limitantes antes de enviar cotizacion o agenda."
-          />
-
-          <div className="mt-10">
-            <CoverageMap zones={coverageZones} />
-          </div>
-        </div>
-      </section>
 
       <section id="foda" className="px-4 py-18 sm:px-6 sm:py-24 lg:px-8">
         <div className="mx-auto max-w-7xl">
