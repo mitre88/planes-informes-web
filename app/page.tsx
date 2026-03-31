@@ -456,7 +456,7 @@ export default async function Home() {
                     <div>
                       <p className="text-[0.68rem] font-bold uppercase tracking-[0.22em] text-[var(--color-pink-dark)]">Te presentamos a Link</p>
                       <p className="mt-1 text-lg font-bold leading-tight text-[var(--color-ink)]">Nuestra mascota de redes sociales</p>
-                      <p className="mt-2 text-sm leading-7 text-[var(--color-slate)]">Él te guiará a través de los servicios que ofrecemos.</p>
+                      <p className="mt-2 text-sm leading-7 text-[var(--color-slate)]">Nuestra mascota Link, será tu guía a través de los servicios que PowerLink te brinda.</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 border-t border-[rgba(218,31,92,0.10)] bg-white/90 px-5 py-3 backdrop-blur-sm">
