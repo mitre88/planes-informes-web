@@ -726,8 +726,8 @@ export default async function Home() {
                         className={`flex items-center justify-between rounded-[1.6rem] bg-gradient-to-r ${social.accent} px-6 py-5 text-white shadow-md transition hover:-translate-y-0.5`}
                       >
                         <div>
-                          <p className="text-base font-bold">{social.name}</p>
-                          <p className="mt-0.5 text-sm text-white/85">{social.handle}</p>
+                          <p className="text-base font-bold text-white">{social.name}</p>
+                          <p className="mt-0.5 text-sm text-white">{social.handle}</p>
                         </div>
                         <ArrowUpRightIcon />
                       </Link>
