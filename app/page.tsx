@@ -575,6 +575,37 @@ export default async function Home() {
             description="PowerLink no exhibe paquetes rigidos. Presenta quienes son, como trabajan y por que conviene escribirles para recibir una cotizacion actualizada y real."
           />
 
+          {/* Entorno y contexto — Plan de Mercadotecnia §1.1 */}
+          <div className="mt-8 grid gap-4 sm:grid-cols-3">
+            <div className="rounded-[1.8rem] border border-[rgba(218,31,92,0.12)] bg-[linear-gradient(145deg,rgba(218,31,92,0.05),rgba(255,255,255,0.94))] px-6 py-6">
+              <div className="mb-3 inline-flex items-center gap-2">
+                <div className="h-2 w-2 rounded-full bg-[#DA1F5C]" />
+                <p className="text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[var(--color-pink-dark)]">Mercado en expansión</p>
+              </div>
+              <p className="text-sm leading-7 text-[var(--color-slate)]">
+                Las comunidades de difícil acceso viven una demanda creciente de conectividad. Las grandes compañías de fibra óptica no llegan — esa brecha es la oportunidad de PowerLink.
+              </p>
+            </div>
+            <div className="rounded-[1.8rem] border border-[rgba(95,36,118,0.12)] bg-[linear-gradient(145deg,rgba(95,36,118,0.05),rgba(255,255,255,0.94))] px-6 py-6">
+              <div className="mb-3 inline-flex items-center gap-2">
+                <div className="h-2 w-2 rounded-full bg-[#5F2476]" />
+                <p className="text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[var(--color-purple-dark)]">Nueva demanda digital</p>
+              </div>
+              <p className="text-sm leading-7 text-[var(--color-slate)]">
+                Trabajo remoto, educación en línea y digitalización de negocios han convertido el internet en un recurso esencial, incluso en zonas rurales y suburbanas.
+              </p>
+            </div>
+            <div className="rounded-[1.8rem] border border-[rgba(212,182,221,0.28)] bg-[linear-gradient(145deg,rgba(212,182,221,0.10),rgba(255,255,255,0.94))] px-6 py-6">
+              <div className="mb-3 inline-flex items-center gap-2">
+                <div className="h-2 w-2 rounded-full bg-[#9B61AC]" />
+                <p className="text-[0.68rem] font-bold uppercase tracking-[0.2em] text-[var(--color-purple-dark)]">Ventaja diferencial</p>
+              </div>
+              <p className="text-sm leading-7 text-[var(--color-slate)]">
+                El usuario ya no solo busca disponibilidad — exige calidad, velocidad y soporte cercano. Quien ofrece atención personalizada y cobertura real se diferencia solo.
+              </p>
+            </div>
+          </div>
+
           <div className="mt-10 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.94fr)_minmax(0,0.52fr)]">
             <article className="panel-surface relative overflow-hidden rounded-[2rem] px-6 py-6 sm:px-8 sm:py-8">
               <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[var(--color-slate)]">
