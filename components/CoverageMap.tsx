@@ -90,7 +90,7 @@ export function CoverageMap({ zones }: CoverageMapProps) {
   }
 
   return (
-    <div className="grid gap-5 lg:grid-cols-[minmax(0,1.25fr)_minmax(18rem,0.75fr)]">
+    <div className="grid gap-5">
       <div className="panel-surface overflow-hidden rounded-[2rem]">
         <div className="flex items-center justify-between gap-4 border-b border-[rgba(16,32,51,0.08)] px-5 py-4">
           <div>
@@ -253,46 +253,6 @@ export function CoverageMap({ zones }: CoverageMapProps) {
         </div>
       </div>
 
-      <aside className="panel-surface rounded-[2rem] p-5">
-        <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[var(--color-slate)]">
-          Zona destacada
-        </p>
-        <h3 className="mt-3 font-display text-[clamp(2rem,3vw,2.5rem)] leading-none text-[var(--color-ink)]">
-          {selectedZone?.name}
-        </h3>
-        <p className="mt-3 text-sm leading-7 text-[var(--color-slate)]">
-          {selectedZone?.descriptor}
-        </p>
-
-        <dl className="mt-6 space-y-4">
-          <div className="rounded-[1.4rem] border border-[rgba(16,32,51,0.08)] bg-white/75 px-4 py-3">
-            <dt className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">
-              Respuesta estimada
-            </dt>
-            <dd className="mt-1 text-lg font-semibold text-[var(--color-ink)]">
-              {selectedZone?.responseTime}
-            </dd>
-          </div>
-          <div className="rounded-[1.4rem] border border-[rgba(16,32,51,0.08)] bg-white/75 px-4 py-3">
-            <dt className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">
-              Observacion
-            </dt>
-            <dd className="mt-1 text-sm leading-7 text-[var(--color-slate)]">
-              La cobertura final depende de altura, arbolado, visibilidad del sitio y demanda
-              simultanea del sector.
-            </dd>
-          </div>
-          <div className="rounded-[1.4rem] border border-[rgba(95,36,118,0.22)] bg-[linear-gradient(145deg,rgba(95,36,118,0.97),rgba(218,31,92,0.88))] px-4 py-4 text-white shadow-[0_24px_70px_-42px_rgba(95,36,118,0.9)]">
-            <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-white/90">
-              Nota operativa
-            </p>
-            <p className="mt-2 text-sm leading-7 text-white/88">
-              No se publican planes fijos en la web. El bot de WhatsApp y la visita tecnica
-              entregan la opcion vigente segun zona, equipos y saturacion del nodo.
-            </p>
-          </div>
-        </dl>
-      </aside>
     </div>
   );
 }
