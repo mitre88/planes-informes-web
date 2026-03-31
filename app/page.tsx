@@ -550,7 +550,7 @@ export default async function Home() {
         <div className="mx-auto max-w-7xl">
           <SectionHeading
             tag="Empresa"
-            title="Una marca que transmite operacion real y conectividad confiable."
+            title="Una empresa que transmite operacion real y conectividad confiable."
             description="PowerLink no exhibe paquetes rigidos. Presenta quienes son, como trabajan y por que conviene escribirles para recibir una cotizacion actualizada y real."
           />
 
