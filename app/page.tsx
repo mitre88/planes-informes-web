@@ -674,6 +674,91 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* Nueva expansión del servicio */}
+      <section id="expansion" className="px-4 py-18 sm:px-6 sm:py-24 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <SectionHeading
+            tag="Nueva Expansión del Servicio de Internet"
+            title="Dos tecnologías, un solo compromiso con la conectividad."
+            description="PowerLink expande su cobertura a través de Wireless y Fibra Óptica, llevando internet de calidad tanto a zonas urbanas como a lugares de difícil acceso."
+          />
+
+          <div className="mt-10 grid gap-8 lg:grid-cols-2">
+
+            {/* Wireless */}
+            <div className="overflow-hidden rounded-[2rem] border border-[rgba(218,31,92,0.18)] bg-[linear-gradient(145deg,rgba(218,31,92,0.06),rgba(245,194,206,0.18),rgba(255,255,255,0.96))]">
+              <div className="px-7 py-6 sm:px-8">
+                <span className="inline-flex items-center rounded-full bg-[rgba(218,31,92,0.10)] border border-[rgba(218,31,92,0.22)] px-3 py-1.5 text-[0.68rem] font-bold uppercase tracking-[0.18em] text-[var(--color-pink-dark)]">
+                  Tecnología Wireless
+                </span>
+                <h3 className="font-display mt-4 text-[clamp(1.9rem,3vw,2.8rem)] leading-[0.96] tracking-[-0.04em] text-[var(--color-ink)]">
+                  Internet por Wireless
+                </h3>
+                <p className="mt-2 text-sm font-semibold text-[var(--color-pink-dark)]">Tecnología de Calidad y de Alto Alcance</p>
+                <p className="mt-4 text-sm leading-8 text-[var(--color-slate)]">
+                  Señal inalámbrica de largo alcance instalada en antenas exteriores, ideal para hogares y negocios en zonas donde el cableado convencional no llega.
+                </p>
+              </div>
+              {/* Placeholder para fotos/videos de antenas — se añaden después */}
+              <div className="mx-6 mb-6 sm:mx-8 sm:mb-8 flex h-56 items-center justify-center rounded-[1.6rem] border-2 border-dashed border-[rgba(218,31,92,0.20)] bg-white/60">
+                <div className="text-center">
+                  <p className="text-[0.72rem] font-bold uppercase tracking-[0.18em] text-[var(--color-pink-dark)]">📡 Fotos y videos próximamente</p>
+                  <p className="mt-1 text-xs text-[var(--color-slate)]">Instalaciones de antenas Wireless</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Fibra Óptica */}
+            <div className="overflow-hidden rounded-[2rem] border border-[rgba(95,36,118,0.18)] bg-[linear-gradient(145deg,rgba(95,36,118,0.06),rgba(212,182,221,0.20),rgba(255,255,255,0.96))]">
+              <div className="px-7 py-6 sm:px-8">
+                <span className="inline-flex items-center rounded-full bg-[rgba(95,36,118,0.10)] border border-[rgba(95,36,118,0.22)] px-3 py-1.5 text-[0.68rem] font-bold uppercase tracking-[0.18em] text-[var(--color-purple-dark)]">
+                  Tecnología Fibra Óptica
+                </span>
+                <h3 className="font-display mt-4 text-[clamp(1.9rem,3vw,2.8rem)] leading-[0.96] tracking-[-0.04em] text-[var(--color-ink)]">
+                  Internet por Fibra Óptica
+                </h3>
+                <p className="mt-2 text-sm font-semibold text-[var(--color-purple-dark)]">Tecnología para lugares de difícil acceso</p>
+                <p className="mt-4 text-sm leading-8 text-[var(--color-slate)]">
+                  Infraestructura de fibra óptica desplegada en postes y zonas rurales, garantizando conectividad estable incluso en comunidades alejadas.
+                </p>
+              </div>
+              {/* Imágenes de fibra óptica */}
+              <div className="mx-6 mb-4 sm:mx-8 grid grid-cols-2 gap-3">
+                <div className="relative h-44 overflow-hidden rounded-[1.4rem]">
+                  <Image
+                    src="/fibra-optica-1.jpeg"
+                    alt="Instalación de fibra óptica en poste"
+                    fill
+                    className="object-cover"
+                    sizes="(min-width:1024px) 20vw, 45vw"
+                  />
+                </div>
+                <div className="relative h-44 overflow-hidden rounded-[1.4rem]">
+                  <Image
+                    src="/fibra-optica-2.jpeg"
+                    alt="Infraestructura de fibra óptica en comunidad"
+                    fill
+                    className="object-cover"
+                    sizes="(min-width:1024px) 20vw, 45vw"
+                  />
+                </div>
+              </div>
+              {/* Video fibra óptica */}
+              <div className="mx-6 mb-6 sm:mx-8 sm:mb-8 overflow-hidden rounded-[1.4rem]">
+                <video
+                  src="/fibra-optica.mp4"
+                  controls
+                  playsInline
+                  className="h-auto w-full rounded-[1.4rem]"
+                  aria-label="Video de instalación de fibra óptica PowerLink"
+                />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       <section id="trabajos" className="px-4 py-18 sm:px-6 sm:py-24 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionHeading
