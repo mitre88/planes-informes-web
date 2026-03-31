@@ -455,14 +455,14 @@ export default async function Home() {
                     </div>
                     <div>
                       <p className="text-[0.68rem] font-bold uppercase tracking-[0.22em] text-[var(--color-pink-dark)]">Te presentamos a Link</p>
-                      <p className="mt-1 text-lg font-bold leading-tight text-[var(--color-ink)]">Nuestra mascota de redes sociales</p>
-                      <p className="mt-2 text-sm leading-7 text-[var(--color-slate)]">Nuestra mascota Link, será tu guía a través de los servicios que PowerLink te brinda.</p>
+                      <p className="mt-1 text-lg font-bold leading-tight text-[var(--color-ink)]">El técnico que te conecta con PowerLink</p>
+                      <p className="mt-2 text-sm leading-7 text-[var(--color-slate)]">Link es la cara de PowerLink en redes. Te orienta sobre cobertura en tu zona, tipos de instalación y cómo contratar, directo desde Instagram, Facebook o TikTok.</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3 border-t border-[rgba(218,31,92,0.10)] bg-white/90 px-5 py-3 backdrop-blur-sm">
                     <div className="h-2 w-2 rounded-full bg-[#DA1F5C]" />
                     <p className="text-sm font-semibold text-[var(--color-ink)]">Link te orienta</p>
-                    <p className="ml-auto text-xs text-[var(--color-slate)]">Escribenos ahora</p>
+                    <p className="ml-auto text-xs text-[var(--color-slate)]">Síguenos en redes</p>
                   </div>
                 </div>
 
@@ -822,26 +822,24 @@ export default async function Home() {
 
               <div className="p-6 sm:p-7">
               <h3 className="font-display text-[clamp(2.1rem,3.5vw,3rem)] leading-[0.96] tracking-[-0.04em]">
-                El cierre comercial entra por aqui.
+                Link te atiende directo por WhatsApp.
               </h3>
               <p className="mt-4 text-sm leading-8 text-white/90">
-                El bot recibe zona, tipo de servicio y horario sugerido. Desde ahi se envian
-                cobertura, seguimiento y paso siguiente sin exponer planes desactualizados.
+                Cuéntale a Link tu zona, si es para hogar o negocio, y el horario que te conviene.
+                Desde ahí te llega cobertura, cotización actualizada y el siguiente paso sin rodeos.
               </p>
 
               <div className="mt-6 space-y-3">
                 <div className="rounded-[1.4rem] border border-white/10 bg-white/8 px-4 py-4">
-                  <p className="text-sm font-semibold text-white">Entrada recomendada</p>
+                  <p className="text-sm font-semibold text-white">Así puedes empezar</p>
                   <p className="mt-1 text-sm leading-7 text-white/88">
-                    &ldquo;Hola, quiero saber si hay cobertura en mi zona y cual es el tiempo de
-                    instalacion.&rdquo;
+                    &ldquo;Hola Link, quiero saber si hay cobertura en mi colonia y cuánto cuesta la instalación.&rdquo;
                   </p>
                 </div>
                 <div className="rounded-[1.4rem] border border-white/10 bg-white/8 px-4 py-4">
-                  <p className="text-sm font-semibold text-white">Promesa correcta</p>
+                  <p className="text-sm font-semibold text-white">Lo que Link te garantiza</p>
                   <p className="mt-1 text-sm leading-7 text-white/88">
-                    Cotizacion variable, visita tecnica y seguimiento humano cuando la operacion lo
-                    requiera.
+                    Respuesta real, visita técnica coordinada y seguimiento hasta que tu servicio quede funcionando.
                   </p>
                 </div>
               </div>

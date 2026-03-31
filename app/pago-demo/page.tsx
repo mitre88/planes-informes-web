@@ -126,18 +126,18 @@ export default function PaymentPage() {
 
           {/* Mascota helper */}
           <div className="mt-6 flex items-center gap-4 rounded-[1.4rem] border border-[rgba(218,31,92,0.10)] bg-white/70 px-5 py-4">
-            <div className="h-12 w-12 flex-none overflow-hidden rounded-full border-2 border-[rgba(218,31,92,0.18)] shadow-sm">
+            <div className="h-14 w-14 flex-none overflow-hidden rounded-full border-2 border-[rgba(218,31,92,0.18)] bg-white shadow-sm">
               <Image
-                src="/mascota-present.jpeg"
-                alt="Mascota PowerLink"
-                width={48}
-                height={48}
-                className="h-full w-full object-cover object-top"
+                src="/link-mascota.png"
+                alt="Link, mascota PowerLink"
+                width={56}
+                height={56}
+                className="h-full w-full object-contain"
               />
             </div>
             <p className="text-sm leading-7 text-[var(--color-slate)]">
               <span className="font-semibold text-[var(--color-ink)]">Link te confirma:</span>{" "}
-              en cuanto recibamos tu comprobante, un asesor te contacta para agendar la instalacion.
+              en cuanto recibamos tu comprobante, un asesor de PowerLink te contacta para agendar la instalación en tu zona. Sin esperas innecesarias.
             </p>
           </div>
 
