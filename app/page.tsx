@@ -29,7 +29,7 @@ const serviceShowcase = [
     description:
       "Diagnosticos de factibilidad, extension por zonas y seguimiento postinstalacion con soporte directo.",
     image: "/equipo-instalado-luz.jpg",
-    objectPosition: "center",
+    objectPosition: "bottom",
     className: "lg:col-span-5",
     align: "compact" as const,
   },
@@ -38,7 +38,7 @@ const serviceShowcase = [
     description:
       "Trabajos correctivos, preventivos y reubicaciones programadas sin exponer planes fijos que luego queden obsoletos.",
     image: "/campo-torre-nublado.jpg",
-    objectPosition: "top",
+    objectPosition: "50% 40%",
     className: "lg:col-span-5",
     align: "compact" as const,
   },
@@ -751,17 +751,17 @@ export default async function Home() {
           </div>
 
           {/* Video showcase */}
-          <div className="mt-6 panel-surface overflow-hidden rounded-[2rem]">
+          <article className="mt-6 panel-surface overflow-hidden rounded-[2rem]">
             <div className="grid gap-0 lg:grid-cols-[0.9fr_1.1fr]">
-              <div className="relative min-h-[280px] lg:min-h-0">
+              {/* Fixed-height video container — matches compact card height */}
+              <div className="relative h-72 lg:h-[380px]">
                 <video
                   src="/campo-video.mp4"
                   autoPlay
                   muted
                   loop
                   playsInline
-                  className="h-full w-full object-cover"
-                  style={{ minHeight: "280px" }}
+                  className="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent,rgba(95,36,118,0.28))]" />
               </div>
@@ -783,7 +783,7 @@ export default async function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </section>
 
