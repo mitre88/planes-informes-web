@@ -224,17 +224,33 @@ export function CoverageMap({ zones }: CoverageMapProps) {
                       opacity={isSelected ? 0.52 : 0.3}
                       stroke={isSelected ? "rgba(16,32,51,0.28)" : "rgba(16,32,51,0.18)"}
                     />
+                    {/* Pin shadow */}
+                    <ellipse
+                      cx={zone.x}
+                      cy={zone.y + 2}
+                      rx={7}
+                      ry={3}
+                      fill="rgba(16,32,51,0.22)"
+                    />
+                    {/* Pin body */}
+                    <path
+                      d={`M${zone.x},${zone.y} L${zone.x - 9},${zone.y - 18} Q${zone.x - 12},${zone.y - 30} ${zone.x},${zone.y - 32} Q${zone.x + 12},${zone.y - 30} ${zone.x + 9},${zone.y - 18} Z`}
+                      fill={isSelected ? "#DA1F5C" : "#102033"}
+                      stroke="#f7f2ea"
+                      strokeWidth="2"
+                      strokeLinejoin="round"
+                    />
+                    {/* Pin inner dot */}
                     <circle
                       cx={zone.x}
-                      cy={zone.y}
-                      r={11}
-                      fill="#102033"
-                      stroke="#f7f2ea"
-                      strokeWidth="4"
+                      cy={zone.y - 24}
+                      r={4.5}
+                      fill="white"
+                      opacity="0.9"
                     />
                     <text
-                      x={zone.x + 18}
-                      y={zone.y - 16}
+                      x={zone.x + 16}
+                      y={zone.y - 14}
                       fill="#102033"
                       fontSize="18"
                       fontWeight="600"
