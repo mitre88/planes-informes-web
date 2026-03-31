@@ -69,6 +69,10 @@ export function CoverageZones() {
         zoom: 11,
         zoomControl: true,
         scrollWheelZoom: false,
+        touchZoom: true,
+        dragging: true,
+        tap: false,
+        doubleClickZoom: true,
       });
 
       // Satelital base
@@ -182,7 +186,7 @@ export function CoverageZones() {
           href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
           crossOrigin=""
         />
-        <div ref={mapContainerRef} style={{ height: "380px", width: "100%" }} />
+        <div ref={mapContainerRef} style={{ height: "380px", width: "100%", touchAction: "pan-x pan-y" }} />
       </div>
 
     </>
