@@ -554,6 +554,17 @@ export default async function Home() {
             description="PowerLink no exhibe paquetes rigidos. Presenta quienes son, como trabajan y por que conviene escribirles para recibir una cotizacion actualizada y real."
           />
 
+          {/* Plan estratégico */}
+          <div className="mt-8 rounded-[2rem] border border-[rgba(95,36,118,0.18)] bg-[linear-gradient(145deg,rgba(95,36,118,0.06),rgba(212,182,221,0.16),rgba(255,255,255,0.96))] px-7 py-7 sm:px-8 sm:py-8">
+            <p className="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[var(--color-purple-dark)]">Plan Estratégico del Servicio de Internet</p>
+            <p className="mt-4 text-base leading-8 text-[var(--color-slate)]">
+              En un mercado de conectividad en comunidades de difícil acceso, internet <span className="font-bold text-[var(--color-ink)]">POWERLINK</span> se encuentra en un constante proceso de expansión sostenida, impulsado por la creciente necesidad de un servicio de internet confiable, veloz y de alta calidad.
+            </p>
+            <p className="mt-3 text-base leading-8 text-[var(--color-slate)]">
+              Trabajando con equipos por <span className="font-semibold text-[var(--color-ink)]">Fibra Óptica</span> o <span className="font-semibold text-[var(--color-ink)]">Wireless</span>.
+            </p>
+          </div>
+
           {/* Entorno y contexto — Plan de Mercadotecnia §1.1 */}
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
             <div className="rounded-[1.8rem] border border-[rgba(218,31,92,0.12)] bg-[linear-gradient(145deg,rgba(218,31,92,0.05),rgba(255,255,255,0.94))] px-6 py-6">
