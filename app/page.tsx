@@ -819,7 +819,8 @@ export default async function Home() {
               <Link
                 href={WHATSAPP_URL}
                 target="_blank"
-                className="mt-8 inline-flex items-center gap-3 rounded-full bg-white px-6 py-4 text-sm font-semibold text-[#5F2476] transition hover:-translate-y-0.5 hover:bg-[#F5C2CE]"
+                className="mt-8 inline-flex items-center gap-3 rounded-full bg-white px-6 py-4 text-sm font-semibold transition hover:-translate-y-0.5 hover:bg-[#F5C2CE]"
+                style={{ color: "#5F2476" }}
               >
                 Abrir bot
                 <ArrowUpRightIcon />
