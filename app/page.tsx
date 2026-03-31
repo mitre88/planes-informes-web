@@ -360,7 +360,7 @@ export default async function Home() {
                     Descripcion del negocio
                   </p>
                   <p className="mt-2 text-[1rem] leading-8 text-[var(--color-ink)]">
-                    Negocio local originario de Veracruz Mexico, dedicado a llevar el servicio de internet a comunidades de dificil acceso o aquellas en las que las grandes companias aun no tienen cobertura.
+                    Negocio local originario de Ciudad Mendoza, Veracruz, Mexico, dedicado a llevar el servicio de internet a comunidades de dificil acceso o aquellas en las que las grandes companias aun no tienen cobertura.
                   </p>
                 </div>
 
