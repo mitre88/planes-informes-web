@@ -71,7 +71,6 @@ export function CoverageZones() {
         scrollWheelZoom: false,
         touchZoom: true,
         dragging: true,
-        tap: false,
         doubleClickZoom: true,
       });
 
