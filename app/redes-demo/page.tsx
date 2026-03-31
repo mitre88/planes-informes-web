@@ -73,29 +73,29 @@ export default function SocialDemoPage() {
             </Link>
           </div>
 
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
+          <div className="mt-10 grid gap-6 sm:grid-cols-1 lg:grid-cols-3">
             {SOCIAL_LINKS.map((social) => (
               <article
                 key={social.name}
-                className="panel-surface rounded-[2rem] p-5"
+                className="panel-surface flex flex-col rounded-[2.2rem] p-8 sm:p-9"
               >
                 <div
-                  className={`inline-flex rounded-full bg-gradient-to-r ${social.accent} px-4 py-2 text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-white`}
+                  className={`inline-flex self-start rounded-full bg-gradient-to-r ${social.accent} px-5 py-2.5 text-[0.78rem] font-bold uppercase tracking-[0.22em] text-white shadow-md`}
                 >
                   {social.name}
                 </div>
-                <p className="mt-5 text-xl font-semibold text-[var(--color-ink)]">
+                <p className="mt-6 text-[1.6rem] font-bold leading-tight text-[var(--color-ink)]">
                   {social.handle}
                 </p>
-                <p className="mt-3 text-sm leading-7 text-[var(--color-slate)]">
+                <p className="mt-4 flex-1 text-base leading-8 text-[var(--color-slate)]">
                   {social.description}
                 </p>
                 <Link
                   href={social.href}
                   target="_blank"
-                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-ink)]"
+                  className={`mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r ${social.accent} px-6 py-4 text-sm font-bold text-white shadow-lg transition hover:-translate-y-0.5`}
                 >
-                  Abrir red
+                  Abrir {social.name}
                   <ArrowUpRightIcon />
                 </Link>
               </article>
