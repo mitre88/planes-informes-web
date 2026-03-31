@@ -920,9 +920,9 @@ export default async function Home() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r ${social.accent} px-3 py-1.5 text-xs font-semibold text-white transition hover:-translate-y-0.5`}
+                  className={`inline-flex items-center gap-2 rounded-full bg-gradient-to-r ${social.accent} px-5 py-2.5 text-sm font-bold text-white shadow-sm transition hover:-translate-y-0.5`}
                 >
-                  {getSocialIcon(social.name)}
+                  {getSocialIcon(social.name, "h-4 w-4")}
                   {social.handle}
                 </Link>
               ))}
