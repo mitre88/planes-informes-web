@@ -299,6 +299,15 @@ export default async function Home() {
     },
   });
 
+  const whatsappQrData = await QRCode.toDataURL("https://wa.me/message/UIJWX4SPVN64L1", {
+    width: 320,
+    margin: 1,
+    color: {
+      dark: "#DA1F5C",
+      light: "#FFF8FA",
+    },
+  });
+
   return (
     <main className="relative">
       <header className="fixed inset-x-0 top-0 z-50">
@@ -732,42 +741,54 @@ export default async function Home() {
                 </p>
               </div>
 
-              <div className="mt-5 grid gap-5 sm:grid-cols-[14rem_1fr] sm:items-center">
-                <div className="overflow-hidden rounded-[1.8rem] border border-[rgba(95,36,118,0.12)] bg-[#fff8fa] p-4">
-                  <Image
-                    src={socialQrData}
-                    alt="QR hacia la pagina de redes demo"
-                    width={280}
-                    height={280}
-                    className="h-auto w-full rounded-[1.2rem]"
-                  />
-                </div>
-
-                <div>
-                  <p className="text-sm leading-8 text-[var(--color-slate)]">
-                    Escanea y abre una pagina de redes creada dentro del sitio. Esto evita links
-                    dispersos y convierte el QR en un acceso realmente util para volante, mostrador
-                    o visita comercial.
-                  </p>
-
-                  <div className="mt-5 flex flex-col gap-4">
-                    {SOCIAL_LINKS.map((social) => (
-                      <Link
-                        key={social.name}
-                        href={social.href}
-                        target="_blank"
-                        className={`flex items-center justify-between rounded-[1.6rem] bg-gradient-to-r ${social.accent} px-6 py-5 shadow-md transition hover:-translate-y-0.5`}
-                        style={{ color: "#ffffff" }}
-                      >
-                        <div>
-                          <p className="text-base font-bold" style={{ color: "#ffffff" }}>{social.name}</p>
-                          <p className="mt-0.5 text-sm" style={{ color: "#ffffff" }}>{social.handle}</p>
-                        </div>
-                        <ArrowUpRightIcon />
-                      </Link>
-                    ))}
+              <div className="mt-5 grid gap-5 sm:grid-cols-2">
+                {/* QR Redes sociales */}
+                <div className="flex flex-col items-center gap-3">
+                  <div className="overflow-hidden rounded-[1.8rem] border border-[rgba(95,36,118,0.12)] bg-[#fff8fa] p-4 w-full">
+                    <Image
+                      src={socialQrData}
+                      alt="QR hacia la pagina de redes demo"
+                      width={280}
+                      height={280}
+                      className="h-auto w-full rounded-[1.2rem]"
+                    />
                   </div>
+                  <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-purple-dark)]">Redes sociales</p>
+                  <p className="text-xs text-center leading-6 text-[var(--color-slate)]">Escanea para ver Instagram, Facebook y TikTok de PowerLink</p>
                 </div>
+
+                {/* QR WhatsApp directo */}
+                <div className="flex flex-col items-center gap-3">
+                  <div className="overflow-hidden rounded-[1.8rem] border border-[rgba(218,31,92,0.16)] bg-[#fff8fa] p-4 w-full">
+                    <Image
+                      src={whatsappQrData}
+                      alt="QR de contacto directo por WhatsApp"
+                      width={280}
+                      height={280}
+                      className="h-auto w-full rounded-[1.2rem]"
+                    />
+                  </div>
+                  <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-pink-dark)]">WhatsApp directo</p>
+                  <p className="text-xs text-center leading-6 text-[var(--color-slate)]">Escanea y escríbenos para cotización o consulta de cobertura</p>
+                </div>
+              </div>
+
+              <div className="mt-5 flex flex-col gap-4">
+                {SOCIAL_LINKS.map((social) => (
+                  <Link
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    className={`flex items-center justify-between rounded-[1.6rem] bg-gradient-to-r ${social.accent} px-6 py-5 shadow-md transition hover:-translate-y-0.5`}
+                    style={{ color: "#ffffff" }}
+                  >
+                    <div>
+                      <p className="text-base font-bold" style={{ color: "#ffffff" }}>{social.name}</p>
+                      <p className="mt-0.5 text-sm" style={{ color: "#ffffff" }}>{social.handle}</p>
+                    </div>
+                    <ArrowUpRightIcon />
+                  </Link>
+                ))}
               </div>
             </article>
 
