@@ -366,7 +366,7 @@ export default async function Home() {
             <div className="grid gap-8 lg:grid-cols-[minmax(0,1.06fr)_minmax(22rem,0.94fr)] lg:items-end">
               <div className="relative">
                 <div className="eyebrow">Conectividad con respaldo profesional</div>
-                <h1 className="font-display mt-6 max-w-4xl text-balance text-[clamp(3.3rem,8vw,7.2rem)] leading-[0.9] tracking-[-0.06em] text-[var(--color-ink)]">
+                <h1 className="font-display mt-6 max-w-4xl text-balance text-[clamp(2.6rem,6vw,5.4rem)] leading-[0.9] tracking-[-0.06em] text-[var(--color-ink)]">
                   Conectividad que se instala, se explica y se mantiene.
                 </h1>
                 <p className="mt-6 max-w-2xl text-[1.05rem] leading-8 text-[var(--color-slate)] sm:text-[1.12rem]">
