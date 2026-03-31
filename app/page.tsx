@@ -699,12 +699,36 @@ export default async function Home() {
                   Señal inalámbrica de largo alcance instalada en antenas exteriores, ideal para hogares y negocios en zonas donde el cableado convencional no llega.
                 </p>
               </div>
-              {/* Placeholder para fotos/videos de antenas — se añaden después */}
-              <div className="mx-6 mb-6 sm:mx-8 sm:mb-8 flex h-56 items-center justify-center rounded-[1.6rem] border-2 border-dashed border-[rgba(218,31,92,0.20)] bg-white/60">
-                <div className="text-center">
-                  <p className="text-[0.72rem] font-bold uppercase tracking-[0.18em] text-[var(--color-pink-dark)]">📡 Fotos y videos próximamente</p>
-                  <p className="mt-1 text-xs text-[var(--color-slate)]">Instalaciones de antenas Wireless</p>
+              {/* Imágenes de antenas Wireless */}
+              <div className="mx-6 mb-4 sm:mx-8 grid grid-cols-2 gap-3">
+                <div className="relative h-44 overflow-hidden rounded-[1.4rem]">
+                  <Image
+                    src="/wireless-1.jpeg"
+                    alt="Técnico instalando antena Wireless en torre"
+                    fill
+                    className="object-cover object-top"
+                    sizes="(min-width:1024px) 20vw, 45vw"
+                  />
                 </div>
+                <div className="relative h-44 overflow-hidden rounded-[1.4rem]">
+                  <Image
+                    src="/wireless-2.jpeg"
+                    alt="Instalación de antena Wireless en altura"
+                    fill
+                    className="object-cover object-top"
+                    sizes="(min-width:1024px) 20vw, 45vw"
+                  />
+                </div>
+              </div>
+              {/* Video wireless */}
+              <div className="mx-6 mb-6 sm:mx-8 sm:mb-8 overflow-hidden rounded-[1.4rem]">
+                <video
+                  src="/wireless.mp4"
+                  controls
+                  playsInline
+                  className="h-auto w-full rounded-[1.4rem]"
+                  aria-label="Video de instalación Wireless PowerLink"
+                />
               </div>
             </div>
 
