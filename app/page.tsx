@@ -574,7 +574,6 @@ export default async function Home() {
                       Reconexión: 1 módem para ampliar cobertura en tu hogar
                     </li>
                   </ul>
-                  <p className="mt-5 text-center text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-[var(--color-slate)]">Pasa el cursor para más info</p>
                 </article>
                 {/* Reverso */}
                 <div className="absolute inset-0 rounded-[2rem] bg-[linear-gradient(155deg,rgba(95,36,118,0.97),rgba(218,31,92,0.90))] p-7 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col items-center justify-center gap-6 text-white text-center">
@@ -639,7 +638,6 @@ export default async function Home() {
                       1 solo módem incluido
                     </li>
                   </ul>
-                  <p className="mt-5 text-center text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-[var(--color-slate)]">Pasa el cursor para más info</p>
                 </article>
                 {/* Reverso */}
                 <div className="absolute inset-0 rounded-[2rem] bg-[linear-gradient(155deg,rgba(95,36,118,0.97),rgba(155,97,172,0.90))] p-7 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col items-center justify-center gap-6 text-white text-center">
@@ -690,7 +688,6 @@ export default async function Home() {
                       Sin costo de instalacion o reconexion
                     </li>
                   </ul>
-                  <p className="mt-5 text-center text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-[var(--color-slate)]">Pasa el cursor para más info</p>
                 </article>
                 {/* Reverso */}
                 <div className="absolute inset-0 rounded-[2rem] bg-[linear-gradient(155deg,rgba(218,31,92,0.97),rgba(95,36,118,0.90))] p-7 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col items-center justify-center gap-6 text-white text-center">
