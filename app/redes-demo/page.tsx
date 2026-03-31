@@ -118,7 +118,7 @@ export default function SocialDemoPage() {
               target="_blank"
               className="mt-7 inline-flex items-center gap-2 rounded-full bg-white px-6 py-4 text-sm font-semibold text-[var(--color-ink)] transition hover:-translate-y-0.5"
             >
-              Abrir bot de WhatsApp
+              Pulse para más información
               <ArrowUpRightIcon />
             </Link>
           </div>

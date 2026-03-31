@@ -345,7 +345,7 @@ export default async function Home() {
               style={{ color: "#ffffff" }}
             >
               <WhatsAppIcon />
-              Bot WhatsApp
+              Pulse para más información
             </Link>
           </div>
         </div>
