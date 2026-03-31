@@ -441,6 +441,22 @@ export default async function Home() {
               </div>
 
               <div className="relative grid gap-4">
+                {/* Mascota hero — Link presentando */}
+                <div className="relative overflow-hidden rounded-[2rem] border border-[rgba(218,31,92,0.14)] bg-white shadow-[0_20px_60px_-20px_rgba(218,31,92,0.30)]">
+                  <Image
+                    src="/mascota-present.jpeg"
+                    alt="Link, mascota de PowerLink"
+                    width={480}
+                    height={340}
+                    className="h-[260px] w-full object-contain object-bottom bg-white"
+                  />
+                  <div className="flex items-center gap-3 border-t border-[rgba(218,31,92,0.10)] bg-white/90 px-5 py-3 backdrop-blur-sm">
+                    <div className="h-2 w-2 rounded-full bg-[#DA1F5C]" />
+                    <p className="text-sm font-semibold text-[var(--color-ink)]">Link te orienta</p>
+                    <p className="ml-auto text-xs text-[var(--color-slate)]">Escribenos ahora</p>
+                  </div>
+                </div>
+
                 <div className="grid gap-4 sm:grid-cols-2">
                   <article className="panel-surface rounded-[1.8rem] p-5">
                     <div className="flex items-center gap-2 text-[var(--color-pink-dark)]">
@@ -471,22 +487,6 @@ export default async function Home() {
                       Dos acciones inmediatas para el cliente sin saturar la portada.
                     </p>
                   </article>
-                </div>
-
-                {/* Mascota hero — Link presentando */}
-                <div className="relative overflow-hidden rounded-[2rem] border border-[rgba(218,31,92,0.14)] bg-white shadow-[0_20px_60px_-20px_rgba(218,31,92,0.30)]">
-                  <Image
-                    src="/mascota-present.jpeg"
-                    alt="Link, mascota de PowerLink"
-                    width={480}
-                    height={340}
-                    className="h-[260px] w-full object-contain object-bottom bg-white"
-                  />
-                  <div className="flex items-center gap-3 border-t border-[rgba(218,31,92,0.10)] bg-white/90 px-5 py-3 backdrop-blur-sm">
-                    <div className="h-2 w-2 rounded-full bg-[#DA1F5C]" />
-                    <p className="text-sm font-semibold text-[var(--color-ink)]">Link te orienta</p>
-                    <p className="ml-auto text-xs text-[var(--color-slate)]">Escribenos ahora</p>
-                  </div>
                 </div>
               </div>
             </div>
