@@ -20,6 +20,7 @@ const serviceShowcase = [
     description:
       "Alta residencial, reubicacion, alineacion de equipos y puesta en marcha con comunicacion clara para el cliente final.",
     image: "/campo-torre-dia.jpg",
+    objectPosition: "top",
     className: "lg:col-span-7 lg:row-span-2",
     align: "large" as const,
   },
@@ -28,6 +29,7 @@ const serviceShowcase = [
     description:
       "Diagnosticos de factibilidad, extension por zonas y seguimiento postinstalacion con soporte directo.",
     image: "/equipo-instalado-luz.jpg",
+    objectPosition: "center",
     className: "lg:col-span-5",
     align: "compact" as const,
   },
@@ -36,6 +38,7 @@ const serviceShowcase = [
     description:
       "Trabajos correctivos, preventivos y reubicaciones programadas sin exponer planes fijos que luego queden obsoletos.",
     image: "/campo-torre-nublado.jpg",
+    objectPosition: "top",
     className: "lg:col-span-5",
     align: "compact" as const,
   },
@@ -721,6 +724,7 @@ export default async function Home() {
                       fill
                       sizes={item.align === "large" ? "(min-width: 1024px) 42vw, 100vw" : "(min-width: 1024px) 28vw, 100vw"}
                       className="object-cover"
+                      style={{ objectPosition: item.objectPosition ?? "center" }}
                     />
                     <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent,rgba(95,36,118,0.28))]" />
                   </div>
@@ -744,6 +748,41 @@ export default async function Home() {
                 </div>
               </article>
             ))}
+          </div>
+
+          {/* Video showcase */}
+          <div className="mt-6 panel-surface overflow-hidden rounded-[2rem]">
+            <div className="grid gap-0 lg:grid-cols-[0.9fr_1.1fr]">
+              <div className="relative min-h-[280px] lg:min-h-0">
+                <video
+                  src="/campo-video.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  className="h-full w-full object-cover"
+                  style={{ minHeight: "280px" }}
+                />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent,rgba(95,36,118,0.28))]" />
+              </div>
+              <div className="flex flex-col justify-between p-6 sm:p-7">
+                <div>
+                  <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[var(--color-slate)]">
+                    En campo
+                  </p>
+                  <h3 className="font-display mt-4 text-[clamp(2rem,3vw,3rem)] leading-[0.96] tracking-[-0.04em] text-[var(--color-ink)]">
+                    Operacion real en campo, no renders ni stock.
+                  </h3>
+                  <p className="mt-4 text-sm leading-8 text-[var(--color-slate)]">
+                    El equipo de PowerLink trabaja en condiciones reales del terreno serrano. Lo que ves es lo que llega a tu casa o negocio: tecnico presente, equipo de calidad y comunicacion directa.
+                  </p>
+                </div>
+                <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-pink-dark)]">
+                  Equipo tecnico con experiencia de campo
+                  <ArrowUpRightIcon />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
