@@ -131,25 +131,6 @@ export function CoverageZones() {
 
   return (
     <>
-      {/* Real Leaflet map */}
-      <div
-        id="cobertura"
-        className="overflow-hidden rounded-[2rem] border border-[rgba(218,31,92,0.14)] shadow-[0_12px_40px_-16px_rgba(218,31,92,0.20)]"
-      >
-        <div className="flex items-center gap-3 border-b border-[rgba(16,32,51,0.08)] bg-white/90 px-5 py-3 backdrop-blur-sm">
-          <div className="h-2 w-2 rounded-full bg-[#DA1F5C]" />
-          <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[var(--color-slate)]">
-            {selected ? `${selected} · Veracruz` : "Cobertura PowerLink · Sierra de Zongolica, Veracruz"}
-          </p>
-        </div>
-        <link
-          rel="stylesheet"
-          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-          crossOrigin=""
-        />
-        <div ref={mapContainerRef} style={{ height: "380px", width: "100%" }} />
-      </div>
-
       {/* Zone pills */}
       <div className="panel-surface rounded-[2rem] p-5">
         <p className="text-[0.68rem] font-bold uppercase tracking-[0.22em] text-[var(--color-pink-dark)]">
@@ -178,6 +159,26 @@ export function CoverageZones() {
           Factibilidad sujeta a visita técnica · Consulta tu zona por WhatsApp
         </p>
       </div>
+
+      {/* Real Leaflet map */}
+      <div
+        id="cobertura"
+        className="overflow-hidden rounded-[2rem] border border-[rgba(218,31,92,0.14)] shadow-[0_12px_40px_-16px_rgba(218,31,92,0.20)]"
+      >
+        <div className="flex items-center gap-3 border-b border-[rgba(16,32,51,0.08)] bg-white/90 px-5 py-3 backdrop-blur-sm">
+          <div className="h-2 w-2 rounded-full bg-[#DA1F5C]" />
+          <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[var(--color-slate)]">
+            {selected ? `${selected} · Veracruz` : "Cobertura PowerLink · Sierra de Zongolica, Veracruz"}
+          </p>
+        </div>
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          crossOrigin=""
+        />
+        <div ref={mapContainerRef} style={{ height: "380px", width: "100%" }} />
+      </div>
+
     </>
   );
 }
