@@ -734,13 +734,13 @@ export default async function Home() {
             <article className="overflow-hidden rounded-[2rem] border border-[rgba(212,182,221,0.28)] bg-[linear-gradient(145deg,rgba(212,182,221,0.08),rgba(255,255,255,0.96))]">
               <div className="px-7 py-6 sm:px-8">
                 <span className="inline-flex items-center rounded-full bg-[rgba(155,97,172,0.10)] border border-[rgba(155,97,172,0.22)] px-3 py-1.5 text-[0.68rem] font-bold uppercase tracking-[0.18em] text-[var(--color-purple-dark)]">
-                  Proximamente
+                  Escuelas
                 </span>
                 <h3 className="font-display mt-4 text-[clamp(1.9rem,3vw,2.8rem)] leading-[0.96] tracking-[-0.04em] text-[var(--color-ink)]">
-                  Mas soluciones en camino
+                  Internet para escuelas
                 </h3>
                 <p className="mt-4 text-sm leading-8 text-[var(--color-slate)]">
-                  Contenido y fotos proximamente.
+                  Internet para tu escuela. Contenido y fotos proximamente.
                 </p>
               </div>
             </article>
