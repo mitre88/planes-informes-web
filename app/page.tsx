@@ -23,23 +23,6 @@ const galleryMedia = [
   { type: "image" as const, src: "/equipo-instalado-dia.jpg", tag: "Cobertura" },
 ];
 
-const workCategories = [
-  "Instalacion residencial de fibra y punto a punto",
-  "Internet empresarial y coworking",
-  "Reubicacion y cambio de domicilio",
-  "Mantenimiento preventivo y correctivo",
-  "Diagnostico de senal y factibilidad",
-  "Soporte tecnico con seguimiento personalizado",
-];
-
-const values = [
-  "Velocidad real garantizada",
-  "Instalacion limpia y profesional",
-  "Soporte humano 24/7",
-  "Precios transparentes",
-  "Cobertura verificada",
-  "Compromiso post-instalacion",
-];
 
 const coverageZones: CoverageZone[] = [
   {
@@ -233,19 +216,6 @@ function getSocialIcon(name: string, className?: string) {
   return null;
 }
 
-function CheckIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" className="mt-1 h-4 w-4 flex-none" aria-hidden="true">
-      <path
-        d="M5 12.5L9.3 16.5L19 7.5"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
 
 function SectionHeading({
   tag,
@@ -636,97 +606,54 @@ export default async function Home() {
 
           </div>
 
-          <div className="mt-10 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.94fr)_minmax(0,0.52fr)]">
-            <article className="panel-surface relative overflow-hidden rounded-[2rem] px-6 py-6 sm:px-8 sm:py-8">
-              <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[var(--color-slate)]">
-                Mision
-              </p>
-              <p className="font-display mt-4 text-[clamp(2rem,4vw,3rem)] leading-[0.96] tracking-[-0.04em] text-[var(--color-ink)]">
-                Llevar conectividad confiable con una atencion que se siente cercana.
-              </p>
-              <p className="mt-4 max-w-2xl text-sm leading-8 text-[var(--color-slate)]">
-                PowerLink acompana desde la primer pregunta hasta la entrega final. La experiencia
-                digital y la operacion en campo hablan con la misma voz: orden, claridad y
-                expectativas realistas.
-              </p>
+          {/* Datos de pago */}
+          <div className="mt-10 panel-surface rounded-[2rem] px-6 py-7 sm:px-8 sm:py-8">
+            <p className="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[var(--color-pink-dark)]">
+              Datos de pago
+            </p>
+            <h3 className="font-display mt-4 text-[clamp(2rem,4vw,3rem)] leading-[0.96] tracking-[-0.04em] text-[var(--color-ink)]">
+              Realiza tu pago directo y confirma por WhatsApp.
+            </h3>
+            <p className="mt-4 max-w-3xl text-sm leading-8 text-[var(--color-slate)]">
+              Transferencia SPEI o deposito en ventanilla. Una vez pagado, envia tu comprobante al WhatsApp para confirmar tu instalacion.
+            </p>
 
-              <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                <article className="rounded-[1.6rem] border border-[rgba(218,31,92,0.10)] bg-[rgba(255,255,255,0.78)] px-5 py-5">
-                  <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">
-                    Vision
-                  </p>
-                  <p className="mt-3 text-sm leading-7 text-[var(--color-slate)]">
-                    Ser la referencia local de conectividad premium para hogares, negocios y
-                    expansiones de zona donde la promesa comercial coincida con la realidad del
-                    servicio.
-                  </p>
-                </article>
-                <article className="rounded-[1.6rem] border border-[rgba(218,31,92,0.10)] bg-[rgba(255,255,255,0.78)] px-5 py-5">
-                  <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">
-                    Anos de experiencia
-                  </p>
-                  <p className="font-display mt-3 text-[3.6rem] leading-none tracking-[-0.06em] text-[var(--color-pink-dark)]">
-                    12
-                  </p>
-                  <p className="mt-2 text-sm leading-7 text-[var(--color-slate)]">
-                    En instalaciones, soporte y acompanamiento comercial orientado a cierre.
-                  </p>
-                </article>
-              </div>
-            </article>
-
-            <article className="panel-surface rounded-[2rem] p-6 sm:p-8">
-              <p className="text-[0.72rem] font-semibold uppercase tracking-[0.22em] text-[var(--color-slate)]">
-                Valores y trabajos
-              </p>
-
-              <div className="mt-5 flex flex-wrap gap-3">
-                {values.map((value) => (
-                  <span
-                    key={value}
-                    className="rounded-full border border-[rgba(218,31,92,0.16)] bg-white/78 px-4 py-2 text-sm font-medium text-[var(--color-ink)]"
-                  >
-                    {value}
-                  </span>
-                ))}
-              </div>
-
-              <div className="mt-8 grid gap-4">
-                {workCategories.map((item) => (
-                  <div
-                    key={item}
-                    className="flex items-start gap-3 rounded-[1.4rem] border border-[rgba(218,31,92,0.08)] bg-white/70 px-4 py-4"
-                  >
-                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[rgba(218,31,92,0.10)] text-[var(--color-pink-dark)]">
-                      <CheckIcon />
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-[var(--color-ink)]">{item}</p>
-                      <p className="mt-1 text-sm leading-7 text-[var(--color-slate)]">
-                        Presentado como servicio real, no como lista generica. Cada frente se
-                        dirige al tipo de cliente correcto.
-                      </p>
-                    </div>
+            <div className="mt-8 grid gap-5 sm:grid-cols-2">
+              {/* SPEI */}
+              <article className="rounded-[1.6rem] border border-[rgba(218,31,92,0.14)] bg-[rgba(255,255,255,0.82)] px-6 py-6">
+                <span className="inline-flex items-center rounded-full bg-[rgba(218,31,92,0.10)] border border-[rgba(218,31,92,0.22)] px-3 py-1.5 text-[0.65rem] font-bold uppercase tracking-[0.18em] text-[var(--color-pink-dark)]">
+                  Transferencia SPEI
+                </span>
+                <div className="mt-5 space-y-3">
+                  <div>
+                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">Banco</p>
+                    <p className="mt-1 text-base font-bold text-[var(--color-ink)]">Santander</p>
                   </div>
-                ))}
-              </div>
-            </article>
+                  <div>
+                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">CLABE interbancaria</p>
+                    <p className="mt-1 text-lg font-bold tracking-wide text-[var(--color-ink)] font-mono">014882250104035854</p>
+                    <p className="mt-1 text-xs text-[var(--color-slate)]">18 digitos · copia exacta al hacer la transferencia</p>
+                  </div>
+                </div>
+              </article>
 
-            {/* Mascota oficina — panel visual empresa */}
-            <div className="overflow-hidden rounded-[2rem] bg-[linear-gradient(160deg,rgba(245,194,206,0.30),rgba(212,182,221,0.30))] border border-[rgba(218,31,92,0.12)] shadow-md flex flex-col">
-              <div className="relative h-[280px]">
-                <Image
-                  src="/mascota-oficina.jpeg"
-                  alt="Equipo PowerLink en campo"
-                  fill
-                  className="object-cover object-top"
-                  sizes="(min-width:1024px) 18vw, 100vw"
-                />
-              </div>
-              <div className="px-5 py-4 bg-white/80 border-t border-[rgba(218,31,92,0.10)]">
-                <p className="text-[0.68rem] font-bold uppercase tracking-[0.18em] text-[#DA1F5C]">Equipo PowerLink</p>
-                <p className="mt-1 text-sm font-medium text-[var(--color-ink)]">Profesionales en campo, listos para ti.</p>
-              </div>
+              {/* Ventanilla */}
+              <article className="rounded-[1.6rem] border border-[rgba(95,36,118,0.14)] bg-[rgba(255,255,255,0.82)] px-6 py-6">
+                <span className="inline-flex items-center rounded-full bg-[rgba(95,36,118,0.10)] border border-[rgba(95,36,118,0.22)] px-3 py-1.5 text-[0.65rem] font-bold uppercase tracking-[0.18em] text-[var(--color-purple-dark)]">
+                  Deposito en ventanilla
+                </span>
+                <div className="mt-5 space-y-3">
+                  <div>
+                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">Banco</p>
+                    <p className="mt-1 text-base font-bold text-[var(--color-ink)]">Santander</p>
+                  </div>
+                  <div>
+                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">Numero de cuenta</p>
+                    <p className="mt-1 text-lg font-bold tracking-wide text-[var(--color-ink)] font-mono">5579083043220108</p>
+                    <p className="mt-1 text-xs text-[var(--color-slate)]">16 digitos · presenta en caja con este numero</p>
+                  </div>
+                </div>
+              </article>
             </div>
           </div>
         </div>
