@@ -606,71 +606,6 @@ export default async function Home() {
 
           </div>
 
-          {/* Datos de pago */}
-          <div className="mt-10 panel-surface rounded-[2rem] px-6 py-7 sm:px-8 sm:py-8">
-            <p className="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[var(--color-pink-dark)]">
-              Datos de pago
-            </p>
-            <h3 className="font-display mt-4 text-[clamp(2rem,4vw,3rem)] leading-[0.96] tracking-[-0.04em] text-[var(--color-ink)]">
-              Realiza tu pago directo y confirma por WhatsApp.
-            </h3>
-            <p className="mt-4 max-w-3xl text-sm leading-8 text-[var(--color-slate)]">
-              Transferencia SPEI o deposito en ventanilla. Una vez pagado, envia tu comprobante al WhatsApp para confirmar tu instalacion.
-            </p>
-
-            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {/* SPEI */}
-              <article className="rounded-[1.6rem] border border-[rgba(218,31,92,0.14)] bg-[rgba(255,255,255,0.82)] px-6 py-6">
-                <span className="inline-flex items-center rounded-full bg-[rgba(218,31,92,0.10)] border border-[rgba(218,31,92,0.22)] px-3 py-1.5 text-[0.65rem] font-bold uppercase tracking-[0.18em] text-[var(--color-pink-dark)]">
-                  Transferencia SPEI
-                </span>
-                <div className="mt-5 space-y-3">
-                  <div>
-                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">Banco</p>
-                    <p className="mt-1 text-base font-bold text-[var(--color-ink)]">Santander</p>
-                  </div>
-                  <div>
-                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">CLABE interbancaria</p>
-                    <p className="mt-1 text-lg font-bold tracking-wide text-[var(--color-ink)] font-mono">014882250104035854</p>
-                    <p className="mt-1 text-xs text-[var(--color-slate)]">18 digitos · copia exacta al hacer la transferencia</p>
-                  </div>
-                </div>
-              </article>
-
-              {/* Ventanilla */}
-              <article className="rounded-[1.6rem] border border-[rgba(95,36,118,0.14)] bg-[rgba(255,255,255,0.82)] px-6 py-6">
-                <span className="inline-flex items-center rounded-full bg-[rgba(95,36,118,0.10)] border border-[rgba(95,36,118,0.22)] px-3 py-1.5 text-[0.65rem] font-bold uppercase tracking-[0.18em] text-[var(--color-purple-dark)]">
-                  Deposito en ventanilla
-                </span>
-                <div className="mt-5 space-y-3">
-                  <div>
-                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">Banco</p>
-                    <p className="mt-1 text-base font-bold text-[var(--color-ink)]">Santander</p>
-                  </div>
-                  <div>
-                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">Numero de cuenta</p>
-                    <p className="mt-1 text-lg font-bold tracking-wide text-[var(--color-ink)] font-mono">5579083043220108</p>
-                    <p className="mt-1 text-xs text-[var(--color-slate)]">16 digitos · presenta en caja con este numero</p>
-                  </div>
-                </div>
-              </article>
-
-              {/* QR WhatsApp */}
-              <article className="rounded-[1.6rem] border border-[rgba(218,31,92,0.14)] bg-[rgba(255,255,255,0.82)] px-6 py-6 flex flex-col items-center justify-center text-center sm:col-span-2 lg:col-span-1">
-                <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-pink-dark)]">Confirma por WhatsApp</p>
-                <div className="mt-4 overflow-hidden rounded-[1.4rem] border border-[rgba(218,31,92,0.16)] bg-[#fff8fa] p-3 w-full max-w-[200px]">
-                  <Image
-                    src={whatsappQrData}
-                    alt="QR de contacto directo por WhatsApp"
-                    width={200}
-                    height={200}
-                    className="h-auto w-full rounded-[1rem]"
-                  />
-                </div>
-                <p className="mt-3 text-xs leading-6 text-[var(--color-slate)]">Escanea y envia tu comprobante de pago</p>
-              </article>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -750,7 +685,76 @@ export default async function Home() {
 
 
 
-      {/* Sección datos de pago */}
+      {/* Datos de pago — antes del footer */}
+      <section id="pago" className="px-4 py-18 sm:px-6 sm:py-24 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="panel-surface rounded-[2rem] px-6 py-7 sm:px-8 sm:py-8">
+            <p className="text-[0.72rem] font-bold uppercase tracking-[0.22em] text-[var(--color-pink-dark)]">
+              Datos de pago
+            </p>
+            <h3 className="font-display mt-4 text-[clamp(2rem,4vw,3rem)] leading-[0.96] tracking-[-0.04em] text-[var(--color-ink)]">
+              Realiza tu pago directo y confirma por WhatsApp.
+            </h3>
+            <p className="mt-4 max-w-3xl text-sm leading-8 text-[var(--color-slate)]">
+              Transferencia SPEI o deposito en ventanilla. Una vez pagado, envia tu comprobante al WhatsApp para confirmar tu instalacion.
+            </p>
+
+            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {/* SPEI */}
+              <article className="rounded-[1.6rem] border border-[rgba(218,31,92,0.14)] bg-[rgba(255,255,255,0.82)] px-6 py-6">
+                <span className="inline-flex items-center rounded-full bg-[rgba(218,31,92,0.10)] border border-[rgba(218,31,92,0.22)] px-3 py-1.5 text-[0.65rem] font-bold uppercase tracking-[0.18em] text-[var(--color-pink-dark)]">
+                  Transferencia SPEI
+                </span>
+                <div className="mt-5 space-y-3">
+                  <div>
+                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">Banco</p>
+                    <p className="mt-1 text-base font-bold text-[var(--color-ink)]">Santander</p>
+                  </div>
+                  <div>
+                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">CLABE interbancaria</p>
+                    <p className="mt-1 text-lg font-bold tracking-wide text-[var(--color-ink)] font-mono">014882250104035854</p>
+                    <p className="mt-1 text-xs text-[var(--color-slate)]">18 digitos · copia exacta al hacer la transferencia</p>
+                  </div>
+                </div>
+              </article>
+
+              {/* Ventanilla */}
+              <article className="rounded-[1.6rem] border border-[rgba(95,36,118,0.14)] bg-[rgba(255,255,255,0.82)] px-6 py-6">
+                <span className="inline-flex items-center rounded-full bg-[rgba(95,36,118,0.10)] border border-[rgba(95,36,118,0.22)] px-3 py-1.5 text-[0.65rem] font-bold uppercase tracking-[0.18em] text-[var(--color-purple-dark)]">
+                  Deposito en ventanilla
+                </span>
+                <div className="mt-5 space-y-3">
+                  <div>
+                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">Banco</p>
+                    <p className="mt-1 text-base font-bold text-[var(--color-ink)]">Santander</p>
+                  </div>
+                  <div>
+                    <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">Numero de cuenta</p>
+                    <p className="mt-1 text-lg font-bold tracking-wide text-[var(--color-ink)] font-mono">5579083043220108</p>
+                    <p className="mt-1 text-xs text-[var(--color-slate)]">16 digitos · presenta en caja con este numero</p>
+                  </div>
+                </div>
+              </article>
+
+              {/* QR WhatsApp */}
+              <article className="rounded-[1.6rem] border border-[rgba(218,31,92,0.14)] bg-[rgba(255,255,255,0.82)] px-6 py-6 flex flex-col items-center justify-center text-center sm:col-span-2 lg:col-span-1">
+                <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-pink-dark)]">Confirma por WhatsApp</p>
+                <div className="mt-4 overflow-hidden rounded-[1.4rem] border border-[rgba(218,31,92,0.16)] bg-[#fff8fa] p-3 w-full max-w-[200px]">
+                  <Image
+                    src={whatsappQrData}
+                    alt="QR de contacto directo por WhatsApp"
+                    width={200}
+                    height={200}
+                    className="h-auto w-full rounded-[1rem]"
+                  />
+                </div>
+                <p className="mt-3 text-xs leading-6 text-[var(--color-slate)]">Escanea y envia tu comprobante de pago</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Banda inferior de colores */}
       <div className="flex h-1.5 w-full">
         <div className="flex-1 bg-[#000000]" />
