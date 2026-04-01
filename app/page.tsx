@@ -699,26 +699,22 @@ export default async function Home() {
                   Señal inalámbrica de largo alcance instalada en antenas exteriores, ideal para hogares y negocios en zonas donde el cableado convencional no llega.
                 </p>
               </div>
-              {/* Imágenes de antenas Wireless */}
+              {/* Imágenes de antenas Wireless — portrait, se muestran completas */}
               <div className="mx-6 mb-4 sm:mx-8 grid grid-cols-2 gap-3">
-                <div className="relative h-44 overflow-hidden rounded-[1.4rem]">
-                  <Image
-                    src="/wireless-1.jpeg"
-                    alt="Técnico instalando antena Wireless en torre"
-                    fill
-                    className="object-cover object-top"
-                    sizes="(min-width:1024px) 20vw, 45vw"
-                  />
-                </div>
-                <div className="relative h-44 overflow-hidden rounded-[1.4rem]">
-                  <Image
-                    src="/wireless-2.jpeg"
-                    alt="Instalación de antena Wireless en altura"
-                    fill
-                    className="object-cover object-top"
-                    sizes="(min-width:1024px) 20vw, 45vw"
-                  />
-                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/wireless-1.jpeg"
+                  alt="Técnico instalando antena Wireless en torre"
+                  className="block w-full rounded-[1.4rem]"
+                  loading="lazy"
+                />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/wireless-2.jpeg"
+                  alt="Instalación de antena Wireless en altura"
+                  className="block w-full rounded-[1.4rem]"
+                  loading="lazy"
+                />
               </div>
               {/* Video wireless */}
               <div className="mx-6 mb-6 sm:mx-8 sm:mb-8 overflow-hidden rounded-[1.4rem]">
