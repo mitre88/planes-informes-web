@@ -618,7 +618,7 @@ export default async function Home() {
               Transferencia SPEI o deposito en ventanilla. Una vez pagado, envia tu comprobante al WhatsApp para confirmar tu instalacion.
             </p>
 
-            <div className="mt-8 grid gap-5 sm:grid-cols-2">
+            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {/* SPEI */}
               <article className="rounded-[1.6rem] border border-[rgba(218,31,92,0.14)] bg-[rgba(255,255,255,0.82)] px-6 py-6">
                 <span className="inline-flex items-center rounded-full bg-[rgba(218,31,92,0.10)] border border-[rgba(218,31,92,0.22)] px-3 py-1.5 text-[0.65rem] font-bold uppercase tracking-[0.18em] text-[var(--color-pink-dark)]">
@@ -653,6 +653,21 @@ export default async function Home() {
                     <p className="mt-1 text-xs text-[var(--color-slate)]">16 digitos · presenta en caja con este numero</p>
                   </div>
                 </div>
+              </article>
+
+              {/* QR WhatsApp */}
+              <article className="rounded-[1.6rem] border border-[rgba(218,31,92,0.14)] bg-[rgba(255,255,255,0.82)] px-6 py-6 flex flex-col items-center justify-center text-center sm:col-span-2 lg:col-span-1">
+                <p className="text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-pink-dark)]">Confirma por WhatsApp</p>
+                <div className="mt-4 overflow-hidden rounded-[1.4rem] border border-[rgba(218,31,92,0.16)] bg-[#fff8fa] p-3 w-full max-w-[200px]">
+                  <Image
+                    src={whatsappQrData}
+                    alt="QR de contacto directo por WhatsApp"
+                    width={200}
+                    height={200}
+                    className="h-auto w-full rounded-[1rem]"
+                  />
+                </div>
+                <p className="mt-3 text-xs leading-6 text-[var(--color-slate)]">Escanea y envia tu comprobante de pago</p>
               </article>
             </div>
           </div>
