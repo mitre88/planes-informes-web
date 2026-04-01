@@ -665,7 +665,7 @@ export default async function Home() {
               </div>
             </article>
 
-            {/* Card 3 — Pendiente */}
+            {/* Card 3 — Escuelas */}
             <article className="overflow-hidden rounded-[2rem] border border-[rgba(212,182,221,0.28)] bg-[linear-gradient(145deg,rgba(212,182,221,0.08),rgba(255,255,255,0.96))]">
               <div className="px-7 py-6 sm:px-8">
                 <span className="inline-flex items-center rounded-full bg-[rgba(155,97,172,0.10)] border border-[rgba(155,97,172,0.22)] px-3 py-1.5 text-[0.68rem] font-bold uppercase tracking-[0.18em] text-[var(--color-purple-dark)]">
@@ -675,8 +675,33 @@ export default async function Home() {
                   Internet para escuelas
                 </h3>
                 <p className="mt-4 text-sm leading-8 text-[var(--color-slate)]">
-                  Internet para tu escuela. Contenido y fotos proximamente.
+                  Conectividad estable para escuelas y centros educativos. PowerLink instala equipos de red en instituciones para que alumnos y docentes cuenten con internet confiable en sus actividades diarias.
                 </p>
+              </div>
+              {/* Imagen equipo instalado en escuela */}
+              <div className="mx-6 mb-4 sm:mx-8">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/escuela-equipo.jpeg"
+                  alt="Router instalado en escuela"
+                  className="block w-full rounded-[1.4rem]"
+                  loading="lazy"
+                />
+              </div>
+              {/* Videos de instalación en escuelas */}
+              <div className="mx-6 mb-6 sm:mx-8 sm:mb-8 grid grid-cols-2 gap-3">
+                <video
+                  src="/escuela-video-1.mp4"
+                  controls
+                  playsInline
+                  className="block w-full rounded-[1.4rem]"
+                />
+                <video
+                  src="/escuela-video-2.mp4"
+                  controls
+                  playsInline
+                  className="block w-full rounded-[1.4rem]"
+                />
               </div>
             </article>
           </div>
