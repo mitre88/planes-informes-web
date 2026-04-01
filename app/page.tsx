@@ -732,45 +732,6 @@ export default async function Home() {
         </div>
       </section>
 
-
-      <section id="trabajos" className="px-4 py-18 sm:px-6 sm:py-24 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <SectionHeading
-            tag="Trabajos que realizan"
-            title="Instalaciones reales, entregadas con orden y comunicacion clara."
-            description="La galeria presenta los frentes de trabajo de PowerLink. Cada imagen representa un tipo de servicio real que se puede cotizar via WhatsApp o visita tecnica programada."
-          />
-
-          {/* Simple masonry-style gallery: 2 cols tablet, 3 cols desktop */}
-          <div className="mt-10 columns-1 gap-5 sm:columns-2 lg:columns-3">
-            {galleryMedia.map((item) => (
-              <figure key={item.src} className="mb-5 break-inside-avoid overflow-hidden rounded-[1.5rem]">
-                {item.type === "video" ? (
-                  <video
-                    src={item.src}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    controls
-                    className="block w-full rounded-[1.5rem]"
-                  />
-                ) : (
-                  /* eslint-disable-next-line @next/next/no-img-element */
-                  <img
-                    src={item.src}
-                    alt={item.tag}
-                    className="block w-full rounded-[1.5rem]"
-                    loading="lazy"
-                  />
-                )}
-              </figure>
-            ))}
-          </div>
-        </div>
-      </section>
-
-
       <section id="foda" className="px-4 py-18 sm:px-6 sm:py-24 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionHeading
