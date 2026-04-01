@@ -748,32 +748,6 @@ export default async function Home() {
         </div>
       </section>
 
-      <section id="foda" className="px-4 py-18 sm:px-6 sm:py-24 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <SectionHeading
-            tag="FODA"
-            title="PowerLink entiende su terreno, sus ventajas y sus limites."
-            description="El FODA se presenta como parte del discurso comercial: deja claro que la marca conoce su sector, sus ventajas competitivas y por que la cotizacion debe seguir siendo dinamica y verificada."
-          />
-
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
-            {swotCards.map((card) => (
-              <article
-                key={card.badge}
-                className={`panel-surface rounded-[2rem] border p-6 sm:p-7 ${card.tone}`}
-              >
-                <span className={`text-[0.72rem] font-bold uppercase tracking-[0.18em] px-3 py-1 rounded-full border ${card.badgeColor}`}>
-                  {card.badge}
-                </span>
-                <h3 className="font-display mt-4 text-[clamp(1.9rem,3vw,2.7rem)] leading-[0.98] tracking-[-0.04em] text-[var(--color-ink)]">
-                  {card.title}
-                </h3>
-                <p className="mt-4 text-sm leading-8 text-[var(--color-slate)]">{card.copy}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section id="contacto" className="px-4 pb-20 pt-18 sm:px-6 sm:pb-24 sm:pt-24 lg:px-8">
         <div className="mx-auto max-w-7xl">
