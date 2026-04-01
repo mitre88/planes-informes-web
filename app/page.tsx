@@ -627,7 +627,10 @@ export default async function Home() {
                 <img src="/fibra-optica-2.jpeg" alt="Infraestructura de fibra óptica en comunidad" className="block w-full rounded-[1.4rem]" loading="lazy" />
               </div>
               <div className="mx-6 mb-6 sm:mx-8 sm:mb-8 overflow-hidden rounded-[1.4rem]">
-                <video src="/fibra-optica.mp4" controls playsInline className="h-auto w-full rounded-[1.4rem]" aria-label="Video de instalación de fibra óptica PowerLink" />
+                <video controls playsInline className="h-auto w-full rounded-[1.4rem]" aria-label="Video de instalación de fibra óptica PowerLink">
+                  <source src="/fibra-optica.mov" type="video/mp4" />
+                  <source src="/fibra-optica.mov" type="video/quicktime" />
+                </video>
               </div>
             </div>
 
