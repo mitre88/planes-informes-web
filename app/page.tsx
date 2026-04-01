@@ -751,56 +751,6 @@ export default async function Home() {
 
 
       {/* Sección datos de pago */}
-      <section id="pago" className="px-4 py-18 sm:px-6 sm:py-24 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <SectionHeading
-            tag="Datos de pago"
-            title="Realiza tu pago directo y confirma por WhatsApp."
-            description="Transferencia SPEI o depósito en ventanilla. Una vez pagado, envia tu comprobante al WhatsApp para confirmar tu instalacion."
-          />
-
-          <div className="mt-10 grid gap-6 sm:grid-cols-2">
-            {/* SPEI */}
-            <article className="panel-surface rounded-[2rem] border border-[rgba(218,31,92,0.14)] p-7 sm:p-8">
-              <span className="inline-flex items-center rounded-full bg-[rgba(218,31,92,0.10)] border border-[rgba(218,31,92,0.22)] px-3 py-1 text-[0.72rem] font-bold uppercase tracking-[0.18em] text-[var(--color-pink-dark)]">
-                Transferencia SPEI
-              </span>
-              <p className="mt-6 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">Banco</p>
-              <p className="mt-1 text-2xl font-bold text-[var(--color-ink)]">Santander</p>
-              <p className="mt-5 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">CLABE Interbancaria</p>
-              <p className="mt-2 rounded-[1.2rem] border border-[rgba(218,31,92,0.14)] bg-[rgba(218,31,92,0.04)] px-4 py-3 font-mono text-[1.3rem] font-bold tracking-[0.06em] text-[var(--color-ink)] break-all">
-                014882250104035854
-              </p>
-              <p className="mt-2 text-[0.68rem] text-[var(--color-slate)]">18 dígitos · copia exacta al hacer la transferencia</p>
-            </article>
-
-            {/* Ventanilla */}
-            <article className="panel-surface rounded-[2rem] border border-[rgba(95,36,118,0.14)] p-7 sm:p-8">
-              <span className="inline-flex items-center rounded-full bg-[rgba(95,36,118,0.10)] border border-[rgba(95,36,118,0.22)] px-3 py-1 text-[0.72rem] font-bold uppercase tracking-[0.18em] text-[var(--color-purple-dark)]">
-                Depósito en ventanilla
-              </span>
-              <p className="mt-6 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">Banco</p>
-              <p className="mt-1 text-2xl font-bold text-[var(--color-ink)]">Santander</p>
-              <p className="mt-5 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-[var(--color-slate)]">Número de Cuenta</p>
-              <p className="mt-2 rounded-[1.2rem] border border-[rgba(95,36,118,0.14)] bg-[rgba(95,36,118,0.04)] px-4 py-3 font-mono text-[1.3rem] font-bold tracking-[0.06em] text-[var(--color-ink)] break-all">
-                5579083043220108
-              </p>
-              <p className="mt-2 text-[0.68rem] text-[var(--color-slate)]">16 dígitos · presenta en caja con este número</p>
-            </article>
-          </div>
-
-          {/* Instrucción comprobante */}
-          <div className="mt-6 flex items-start gap-3 rounded-[1.6rem] border border-[rgba(218,31,92,0.10)] bg-white/80 px-6 py-5">
-            <div className="mt-1.5 h-2.5 w-2.5 flex-none rounded-full bg-[#DA1F5C]" />
-            <p className="text-sm leading-8 text-[var(--color-slate)]">
-              Una vez realizado el pago, envia foto o captura del comprobante por WhatsApp al{" "}
-              <span className="font-bold text-[var(--color-ink)]">+52 272 134 1840</span>{" "}
-              indicando tu nombre y colonia para confirmar la instalacion.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Banda inferior de colores */}
       <div className="flex h-1.5 w-full">
         <div className="flex-1 bg-[#000000]" />
