@@ -732,6 +732,80 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* Internet para: Hogar, Negocio, (tercera pendiente) */}
+      <section id="internet-para" className="px-4 py-18 sm:px-6 sm:py-24 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <SectionHeading
+            tag="Soluciones de conectividad"
+            title="Internet para cada necesidad."
+            description="PowerLink lleva conectividad confiable al hogar, al negocio y a donde se necesite."
+          />
+
+          <div className="mt-10 grid gap-6 lg:grid-cols-3">
+            {/* Card 1 — Hogar */}
+            <article className="overflow-hidden rounded-[2rem] border border-[rgba(218,31,92,0.18)] bg-[linear-gradient(145deg,rgba(218,31,92,0.04),rgba(255,255,255,0.96))]">
+              <div className="px-7 py-6 sm:px-8">
+                <span className="inline-flex items-center rounded-full bg-[rgba(218,31,92,0.10)] border border-[rgba(218,31,92,0.22)] px-3 py-1.5 text-[0.68rem] font-bold uppercase tracking-[0.18em] text-[var(--color-pink-dark)]">
+                  Hogar
+                </span>
+                <h3 className="font-display mt-4 text-[clamp(1.9rem,3vw,2.8rem)] leading-[0.96] tracking-[-0.04em] text-[var(--color-ink)]">
+                  Internet para el hogar
+                </h3>
+                <p className="mt-4 text-sm leading-8 text-[var(--color-slate)]">
+                  Internet POWERLINK se compromete a darle un internet de calidad para su vida cotidiana.
+                </p>
+              </div>
+              <div className="mx-6 mb-6 sm:mx-8 sm:mb-8 grid grid-cols-2 gap-3">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/hogar-antena.png"
+                  alt="Antena Ubiquiti instalada en hogar"
+                  className="block w-full rounded-[1.4rem]"
+                  loading="lazy"
+                />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/hogar-equipo.png"
+                  alt="Equipo de red instalado en hogar"
+                  className="block w-full rounded-[1.4rem]"
+                  loading="lazy"
+                />
+              </div>
+            </article>
+
+            {/* Card 2 — Negocio (contenido pendiente) */}
+            <article className="overflow-hidden rounded-[2rem] border border-[rgba(95,36,118,0.18)] bg-[linear-gradient(145deg,rgba(95,36,118,0.04),rgba(255,255,255,0.96))]">
+              <div className="px-7 py-6 sm:px-8">
+                <span className="inline-flex items-center rounded-full bg-[rgba(95,36,118,0.10)] border border-[rgba(95,36,118,0.22)] px-3 py-1.5 text-[0.68rem] font-bold uppercase tracking-[0.18em] text-[var(--color-purple-dark)]">
+                  Negocio
+                </span>
+                <h3 className="font-display mt-4 text-[clamp(1.9rem,3vw,2.8rem)] leading-[0.96] tracking-[-0.04em] text-[var(--color-ink)]">
+                  Internet para tu negocio
+                </h3>
+                <p className="mt-4 text-sm leading-8 text-[var(--color-slate)]">
+                  Contenido y fotos proximamente.
+                </p>
+              </div>
+            </article>
+
+            {/* Card 3 — Pendiente */}
+            <article className="overflow-hidden rounded-[2rem] border border-[rgba(212,182,221,0.28)] bg-[linear-gradient(145deg,rgba(212,182,221,0.08),rgba(255,255,255,0.96))]">
+              <div className="px-7 py-6 sm:px-8">
+                <span className="inline-flex items-center rounded-full bg-[rgba(155,97,172,0.10)] border border-[rgba(155,97,172,0.22)] px-3 py-1.5 text-[0.68rem] font-bold uppercase tracking-[0.18em] text-[var(--color-purple-dark)]">
+                  Proximamente
+                </span>
+                <h3 className="font-display mt-4 text-[clamp(1.9rem,3vw,2.8rem)] leading-[0.96] tracking-[-0.04em] text-[var(--color-ink)]">
+                  Mas soluciones en camino
+                </h3>
+                <p className="mt-4 text-sm leading-8 text-[var(--color-slate)]">
+                  Contenido y fotos proximamente.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section id="foda" className="px-4 py-18 sm:px-6 sm:py-24 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <SectionHeading
